@@ -1,0 +1,215 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+html, 
+body {
+	position: relative;
+	height: 100%;
+	background: #232323;
+	font: 12px/1.2em Verdana, Arial, Helvetica, sans-serif;
+	color: #000;
+}
+
+ul {
+	margin-left: 20px;
+}
+
+a {
+	color: #a00606;
+}
+
+/* ui */
+
+
+.box {
+	float: left;
+	border: 1px solid #333;
+	padding: 5px 10px;
+	margin: 5px;
+	width: 110px;
+}
+
+.button {
+	cursor: pointer;
+}
+
+.button.active:hover {
+	background: #a00606;
+	color: white;
+}
+.button  {
+	color: #aaa;
+}
+.button.active {
+	color: black;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+
+
+
+/* layout */
+
+header {
+	height: 0px;
+}
+
+#container {
+	width: 640px;
+	height: 1136px;
+	position: relative;
+	left: 50%;
+	top: 20px;
+	margin: 0 0 0 -320px;
+}
+
+#logo {
+	width: 640px;
+	height: 0px;
+	text-align: center;
+}
+
+#logo img {
+	width: 640px;
+	height: 115px;
+}
+
+#upper_playboard {
+	position: relative;
+	width: 640px;
+	height: 280px;
+	background: white;
+}
+
+#lower_playboard {
+	position: relative;
+	width: 640px;
+	height: 740px;
+	overflow: auto;
+	background: white;
+}
+
+#upgrades {
+	position: relative;
+	float: left;
+	width: 520px;
+}
+
+#Achievements {
+	position: relative;
+	float: right;
+	width: 100px;
+	height: 740px;
+	background: black;
+}
+
+footer {
+	clear: both;
+}
+
+
+/* areas */
+
+#upper_playboard > div {
+	position: relative;
+	width: 100px;
+	height: 100px;
+}
+#upper_playboard > div p.value {
+	font-size: 2.5em;
+	text-align: center;
+	margin-top: 0.9em;
+	font-weight: bold;
+}
+
+#upper_playboard div.rate {
+	position: absolute;
+	width: 110px;
+	bottom: 0px;
+	right: 5px;
+	font-size: 0.8em;
+}
+
+div.perclick {
+	float: left;
+}
+
+div.persecond {
+	float: right;
+}
+
+#upper_playboard #Wähler {
+	background: black;
+	color: white;
+}
+
+.flyAway {
+	position: absolute;
+	margin-top: -10px;
+}
+
+
+#upgrades > div {
+	position: relative;
+	float: left;
+	width: 500px;
+	height: 80px;
+}
+
+#upgrades p.title {
+	font-weight: bold;
+	float: left;
+	font-size: 1.2em;
+}
+#upgrades p.requirement {
+	font-style: italic;
+	font-size: 0.8em;
+	float: right;
+}
+
+#upgrades p.text {
+	clear: both;
+	padding: 5px 0 5px 0;
+}
+
+#upgrades p.fruit {
+	float: right;
+	font-weight: bold;
+	font-size: 0.8em;
+	text-align: right;
+}
+
+#Achievements > div {
+	position: relative;
+	float: left;
+	width: 93px;
+	height: 60px;
+	border: 1px dotted #bbb;
+	padding-top: 23px;
+	font-size: 1.0em;
+	text-align: center;
+	background: #000;
+	color: white;
+	margin: 3px 0 0 3px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+
+/* init */
+
+#Mitglieder, #Wähler, #Geld, 
+#Vodka .value,
+#Vodka .perclick,
+#Vodka .persecond,
+#Geld .persecond  {
+	display: none;
+}
