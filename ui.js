@@ -1,11 +1,11 @@
 // make Vodka
-$("#Vodka").click( function() {
+$("#prod").click( function() {
 	value.Klicks += 1;
 	inc("Vodka", clickRate.Vodka);
 });
 
 // spend Vodka
-$("#Mitglieder").click( function() {
+$("#ausg").click( function() {
 	value.Klicks += 1;
 	requirements("Vodka", clickRate.Mitglieder, function() {
 		inc("Mitglieder", clickRate.Mitglieder);

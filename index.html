@@ -12,44 +12,67 @@
 
 <body>
 	
-<header></header>
-
 <div id="container">
-	
-	<div id="logo"><img src="images/dieparteilogo640.png" /></div>
-	
-	<div id="upper_playboard">
-		<div id="Vodka" class="box button active">
-			<p class="text">Hier klicken!</p> 
-			<p class="value">0</p> 
-			<div class="rate">
-				<div class="perclick"><span>1</span>/click</div>
-				<div class="persecond"><span>0</span>/s</div>
+	<div id="fix">
+		<div id="logo"><img src="images/dieparteilogo640.png" /></div>
+		<div id="upper_playboard">
+			<table>
+				<tr>
+					<td id="Destille" rowspan="3"><img src="images/destille.gif" /></td>
+					<td id="Vodka">
+						<div id="Vodka" class="values">
+							<p class="text">Hier klicken!</p> 
+							<p class="value">0</p> 
+							<div class="rate">
+								<div class="perclick"><span>1</span>/click</div>
+								<div class="persecond"><span>0</span>/s</div>
+							</div>
+						</div>
+					</td>
+					<td id="Mitglieder">
+						<div id="Mitglieder" class="values">
+							Parteimitglieder
+							<p class="value">0</p>
+							<div class="rate">
+								<div class="perclick"><span>1</span>/click</div>
+								<div class="persecond"><span>0</span>/s</div>
+							</div>
+						</div>
+					</td>
+					<td id="Popularität">
+						<div id="Wähler" class="values">
+							Popularität
+							<p class="value">0</p>
+							<div class="rate">
+								<div class="persecond"><span>0</span>/s</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="prod" class="box button active">Vodka produzieren</div>
+					</td>
+					<td id="Setting" colspan="2" rowspan="2">setting</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="ausg" class="box button active">einen ausgeben</div>
+					</td>
+				</tr>
+			</table>
+						
+			<div id="Geld" class="box button active">
+				Geld
+				<p class="value">0</p>
+				<div class="rate">
+					<div class="perclick"><span>1</span>/click</div>
+					<div class="persecond"><span>0</span>/s</div>
+				</div>
 			</div>
 		</div>
-		<div id="Mitglieder" class="box button active">
-			Parteimitglieder
-			<p class="value">0</p>
-			<div class="rate">
-				<div class="perclick"><span>1</span>/click</div>
-				<div class="persecond"><span>0</span>/s</div>
-			</div>
-		</div>
-		<div id="Wähler" class="box">
-			Popularität
-			<p class="value">0</p>
-			<div class="rate">
-				<div class="persecond"><span>0</span>/s</div>
-			</div>
-		</div>
-		<div id="Geld" class="box button active">
-			Geld
-			<p class="value">0</p>
-			<div class="rate">
-				<div class="perclick"><span>1</span>/click</div>
-				<div class="persecond"><span>0</span>/s</div>
-			</div>
-		</div>
+		
+		<div id="ticker"></div>
 	</div>
 	
 	<div id="lower_playboard">	
