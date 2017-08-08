@@ -105,14 +105,26 @@ function prettyShortNumbers(num) {
 	return String(round(num, dp)) + postfix;
 }
 
-function round(num, dp) {
-	if (typeof dp == 'undefined') {
-		dp = 0;
-	}
+function round(num, dp = 0) {
 	var f = Math.pow(10, dp);
-	num = Math.round(num * f)
-	return num / f;
+	return Math.round(num * f) / f;
 }
 
 
+
+
+function getWindowDimensions() {
+	var c = $("#container")[0];
+	
+	displayH = round(c.getBoundingClientRect().bottom);
+	displayW = round(c.getBoundingClientRect().width);
+	alert(displayW + " / " + displayH);
+
+//	xoCenterX = xo.first().width() / 2;
+//	xoCenterY = xoHeight / 2;
+	
+//	containerHeight = getBottom($("#container")[0]);
+}
+
+getWindowDimensions();
 
