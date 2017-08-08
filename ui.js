@@ -23,9 +23,9 @@ $("#Geld").click( function() {
 function updateValuesView() {
 	for (var i = 0; i < values.length; i++) {
 		var key = values[i];
-		$("#" + key + " p.value").text(prettyShortNumbers(value[key]));
-		$("#" + key + " div.rate div.persecond span").text(prettyShortNumbers(growthRate[key]));
-		$("#" + key + " div.rate div.perclick span").text(prettyShortNumbers(clickRate[key]));
+		$("#" + key + " div.value").text(prettyShortNumbers(value[key]));
+		$("#" + key + " div.persecond span").text(prettyShortNumbers(growthRate[key]));
+		$("#" + key + " div.perclick span").text(prettyShortNumbers(clickRate[key]));
 		$("#Geld div.perclick span").text(clickRate.Geld);
 	}
 }
