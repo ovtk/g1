@@ -18,15 +18,15 @@
 		<div id="upper_playboard">
 			<table>
 				<tr>
-					<td id="Destille" rowspan="3"><img src="images/destille.gif" /></td>
-					<td id="Vodka">
+					<td id="Destille" class="left" rowspan="3"><img src="images/destille.gif" /></td>
+					<td id="Vodka" class="left">
 						<div id="Vodka" class="values">
-							<p class="text">Hier klicken!</p> 
 							<p class="value">0</p> 
 							<div class="rate">
-								<div class="perclick"><span>1</span>/click</div>
+								
 								<div class="persecond"><span>0</span>/s</div>
 							</div>
+							<p class="text">Vodka</p> 
 						</div>
 					</td>
 					<td id="Mitglieder">
@@ -34,8 +34,7 @@
 							Parteimitglieder
 							<p class="value">0</p>
 							<div class="rate">
-								<div class="perclick"><span>1</span>/click</div>
-								<div class="persecond"><span>0</span>/s</div>
+								<div class="persecond"><span>1</span>/s</div>
 							</div>
 						</div>
 					</td>
@@ -44,20 +43,22 @@
 							Popularität
 							<p class="value">0</p>
 							<div class="rate">
-								<div class="persecond"><span>0</span>/s</div>
+								<div class="persecond"><span>0</span><br/>/s</div>
 							</div>
 						</div>
 					</td>
 				</tr>
 				<tr>
-					<td>
+					<td class="left">
 						<div id="prod" class="box button active">Vodka produzieren</div>
+						<div class="vodka perclick"><span>1</span><br/>/click</div>
 					</td>
-					<td id="Setting" colspan="2" rowspan="2">setting</td>
+					<td id="Setting" colspan="2" rowspan="2"><img src="images/setting.gif" /></td>
 				</tr>
 				<tr>
-					<td>
+					<td class="left">
 						<div id="ausg" class="box button active">einen ausgeben</div>
+						<div class="mitglieder perclick"><span>0</span><br/>/click</div>
 					</td>
 				</tr>
 			</table>

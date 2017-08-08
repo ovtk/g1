@@ -126,5 +126,5 @@ function getWindowDimensions() {
 //	containerHeight = getBottom($("#container")[0]);
 }
 
-getWindowDimensions();
+//getWindowDimensions();
 

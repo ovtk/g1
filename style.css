@@ -4,17 +4,12 @@
 	border: 0;
 }
 
-html, 
-body {
+html, body {
 	position: relative;
 	height: 100%;
-	background: #232323;
+	background: #171717;
 	font: 12px/1.2em Verdana, Arial, Helvetica, sans-serif;
-	color: #000;
-}
-
-a {
-	color: #a00606;
+	color: #fff;
 }
 
 /* ui */
@@ -35,11 +30,9 @@ a {
 	background: #a00606;
 	color: white;
 }
-.button  {
-	color: #aaa;
-}
+
 .button.active {
-	color: black;
+	background: #747474;
 }
 
 .bold {
@@ -80,27 +73,43 @@ a {
 	position: relative;
 	width: 640px;
 	height: 280px;
-	background: white;
 }
 
 table {
 	width: 100%;
+	border-spacing: 0;
 }
 
 td {
-	border: 1px solid black;
+	border: none;
+	padding: 0;
+	position: relative;
+}
+
+td.left {
+	background: #3e3e3e;
+} 
+
+#prod, #ausg {
+	font-size: 2em;	
+	line-height: 1.2em;
+}
+
+.perclick {
+	position: absolute;
+	top: 0.8em;
+	right: 1.2em;
+	font-size: 0.7em;
 }
 
 #Destille {
 	width: 16%;
+	vertical-align: bottom;
+	text-align: center;
 }
 
 #Vodka {
 	width: 28%;
-}
-
-#Vodka img {
-	width: 100%;
 }
 
 #lower_playboard {
@@ -109,7 +118,6 @@ td {
 	top: 65px;
 	width: 640px;
 	height: 740px;
-	background: white;
 }
 
 #upgrades {
@@ -123,7 +131,6 @@ td {
 	float: right;
 	width: 100px;
 	height: 740px;
-	background: black;
 }
 
 footer {
@@ -159,11 +166,6 @@ div.perclick {
 
 div.persecond {
 	float: right;
-}
-
-#upper_playboard #Wähler {
-	background: black;
-	color: white;
 }
 
 .flyAway {
@@ -219,7 +221,9 @@ div.persecond {
 	border-radius: 5px;
 }
 
-
+#logo, #Geld {
+	display: none;
+}
 
 /* init 
 
