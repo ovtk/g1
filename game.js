@@ -3,7 +3,7 @@ var day = 0;
 
 var fps = 5;
 
-var values = ["Vodka", "Mitglieder", "Wähler", "Klicks", "Achievements", "Wahlberechtigte", "Weltbevölkerung"];
+var values = ["Vodka", "Mitglieder", "Popularität", "Klicks", "Achievements", "Wahlberechtigte", "Weltbevölkerung"];
 
 var value = {};
 var growth = {};

@@ -49,10 +49,10 @@ var upgrades = {
 		"Ein Logo",
 		"Vodka", 100,
 		"Sie zu knechten, sie alle zu finden, ins Dunkel zu treiben...",
-		"+1 Wähler / Sekunde",
+		"+1 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler += 1;
-			fadeIn("#Wähler");
+			growthRate.Popularität += 1;
+			fadeIn("#Popularität");
 			growthRate.Vodka += 1;
 			clickRate.Vodka += 1;
 			$("#Vodka div.perclick span").text(clickRate.Vodka);
@@ -80,7 +80,7 @@ var upgrades = {
 		"+3 Mitglieder / Sekunde",
 		function() {
 			growthRate.Mitglieder += 3;
-			growthRate.Wähler += 1;
+			growthRate.Popularität += 1;
 			addAchievement("Partei gegründet (2)");
 		}],
 		
@@ -110,23 +110,23 @@ var upgrades = {
 		"Mettbrötchen verschenken",
 		"Vodka", 150,
 		"Weil wir es können",
-		"+3 Wähler / Sekunde",
+		"+3 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler += 3;
+			growthRate.Popularität += 3;
 		}],
 		
 	"blabla": [
 		"Bla bla",
 		"Mitglieder", 250,
 		"Blablabla bla blabla blablablablabla.",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 2;
+			growthRate.Popularität *= 2;
 		}],
 		
 	"jubelperser": [
 		"Jubelperser",
-		"Wähler", 100,
+		"Popularität", 100,
 		"Für die FDP jubeln!",
 		"x3 Mitglieder / Sekunde",
 		function() {
@@ -146,9 +146,9 @@ var upgrades = {
 		"Der besten Slogan aller Zeiten",
 		"Vodka", 400,
 		"'Wählt die Partei, sie ist sehr gut!'",
-		"x5 Wähler / Sekunde",
+		"x5 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 5;
+			growthRate.Popularität *= 5;
 		}],
 
 	"dictator": [
@@ -173,27 +173,27 @@ var upgrades = {
 		"Der alte Ziegenwitz",
 		"Vodka", 1500,
 		"Europäischen Möchtegern-Diktator beleidigen.",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 2;
+			growthRate.Popularität *= 2;
 		}],
 
 	"fifafu": [
 		"FIFA-Funktionär bestechen",
 		"Vodka", 2500,
 		"Deutschland muss Weltmeister bleiben!",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 2;
+			growthRate.Popularität *= 2;
 		}],
 
 	"meta": [
 		"Meta",
 		"Vodka", 4000,
 		"Auf der AfD-Pressekonferenz eine Pressekonferenz geben.",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 2;
+			growthRate.Popularität *= 2;
 		}],
 
 	"metaebene": [
@@ -227,9 +227,9 @@ var upgrades = {
 		"Bayer-Monsanto-Grasovka",
 		"Mitglieder", 800,
 		"Glyphosat dem Vodka beimengen.",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 2;
+			growthRate.Popularität *= 2;
 		}],
 
 	"ovtk": [
@@ -245,9 +245,9 @@ var upgrades = {
 		"Visionner",
 		"Vodka", 20000,
 		"a Kin Jong Un un peu.",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 2;
+			growthRate.Popularität *= 2;
 		}],
 
 	"rule34": [
@@ -262,7 +262,7 @@ var upgrades = {
 	"error404": [
 		"Error 404",
 		"Mitglieder", 8818,
-		"AfD Wähler sind hier richtig!",
+		"AfD Wühler sind hier richtig!",
 		"+69 Vodka / Sekunde",
 		function() {
 			growthRate.Vodka += 69;
@@ -270,7 +270,7 @@ var upgrades = {
 
 	"kohle": [
 		"Fett Kohle einstreichen",
-		"Wähler", 100000,
+		"Popularität", 100000,
 		"Ein Sitzen im Europaparlament.",
 		"x2 Vodka / Sekunde",
 		function() {
@@ -290,18 +290,18 @@ var upgrades = {
 		"Antikapitalistischer Schutzwall",
 		"Vodka", 5000000,
 		"Die Mauer wieder aufbauen.",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 10;
+			growthRate.Popularität *= 10;
 		}],
 
 	"blackhole": [
 		"Einen drin",
 		"Vodka", 999999999999999999,
 		"Ein schwarzes Loch mit Vodka (ab-) füllen.",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 2;
+			growthRate.Popularität *= 2;
 		}],
 
 	"pig": [
@@ -310,18 +310,18 @@ var upgrades = {
 		"Singularis Porcus und dazu lauwarme Cervisia.",
 		"-200 Popularität",
 		function() {
-			// growthRate.Wähler *= 2;
+			// growthRate.Popularität *= 2;
 			addAchievement("Singularis Porcus");
-			growthRate.Wähler -= 200;
+			growthRate.Popularität -= 200;
 		}],
 
 	"fdp": [
 		"Die FDP auslachen",
 		"Mitglieder", 58000,
 		"Die wer?",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 2;
+			growthRate.Popularität *= 2;
 		}],
 
 	"turtle": [
@@ -335,7 +335,7 @@ var upgrades = {
 
 	"brewery": [
 		"Parteispende Brauerei",
-		"Wähler", 5000,
+		"Popularität", 5000,
 		"Alles legal, ich gebe ihnen mein teutsches Reinheitsgebiet!",
 		"+ 10.000.000 Geld",
 		function() {
@@ -347,122 +347,122 @@ var upgrades = {
 		"Ed Snowden einladen",
 		"Mitglieder", 500,
 		" Zum Kaffee (in Moskau).",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 2;
+			growthRate.Popularität *= 2;
 		}],
 
 	"fair": [
 		"All is fair in love and war",
 		"Mitglieder", 500,
 		"Prinz Steineimer nach Guantanamo entführen.",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 2;
+			growthRate.Popularität *= 2;
 		}],
 
 	"roderich": [
 		"Irgendwie, irdendwo.",
 		"Mitglieder", 500,
 		"Irgendwas mit Roderich Egeler machen.",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 2;
+			growthRate.Popularität *= 2;
 		}],
 
 	"canabis": [
 		"Canabis verbieten",
 		"Mitglieder", 500,
 		"Ha ha ha aha ha ha ah aha hahahah!!",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 2;
+			growthRate.Popularität *= 2;
 		}],
 
 	"speed": [
 		"Speedlimit abschaffen",
 		"Mitglieder", 500,
 		"Neeeooowrrmmmm!!!!!",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 2;
+			growthRate.Popularität *= 2;
 		}],
 
 	"nuke": [
 		"Brennstäbe besteuern",
 		"Mitglieder", 500,
 		"Nikotinsteuer anheben, du Spast.",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 2;
+			growthRate.Popularität *= 2;
 		}],
 
 	"rip": [
 		"Weltfrieden",
 		"Mitglieder", 500,
 		"Atomwaffen vernichten, Parkplätze bauen.",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 2;
+			growthRate.Popularität *= 2;
 		}],
 
 	"cancer": [
 		"Krebs besiegen",
 		"Mitglieder", 500,
 		"Dieter, wir vermissen dich!",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 2;
+			growthRate.Popularität *= 2;
 		}],
 
 	"prom1": [
 		"Wahlversprechen einhalten",
 		"Mitglieder", 500,
 		"Manager-Gehälter auf 25 mio / Monat begrenzen.",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 2;
+			growthRate.Popularität *= 2;
 		}],
 
 	"prom2": [
 		"Wahlversprechen einhalten (2)",
 		"Mitglieder", 500,
 		"Die 100 reichsten Deutschen flachlegen.",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 2;
+			growthRate.Popularität *= 2;
 		}],
 
 	"pyro": [
 		"Pyromiden bauen",
 		"Mitglieder", 500,
 		"1000 qm Leerstand in bester Lage, zu günstigen Konditionen.",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 2;
+			growthRate.Popularität *= 2;
 		}],
 
 	"pope": [
 		"Staatsreligion",
 		"Mitglieder", 500,
 		"Gottkaiser Pabst Martin I, der Sonnengeborene.",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 2;
+			growthRate.Popularität *= 2;
 		}],
 
 	"break1": [
 		"Auf Wahlversprechen pfeifen",
 		"Mitglieder", 500,
 		"Die Industrie die Gesetze schreiben lassen und später Aufsichtsratsposten abgreifen.",
-		"x2 Wähler / Sekunde",
+		"x2 Popularität / Sekunde",
 		function() {
-			growthRate.Wähler *= 2;
+			growthRate.Popularität *= 2;
 		}],
 
 	"break2": [
 		"Parteispende",
-		"Wähler", 50000,
+		"Popularität", 50000,
 		"Kl. Aufmerksamkeit eines namhaften Mineralölkonzerns;.",
 		" Elf Millionen Mark",
 		function() {

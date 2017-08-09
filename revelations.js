@@ -27,20 +27,20 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (value["Wähler"] > value["Mitglieder"]);
+		return (value["Popularität"] > value["Mitglieder"]);
 	}, function() {
-		addAchievement("Mehr Wähler als Mitglieder!");
+		addAchievement("Mehr Wühler als Mitglieder!");
 	}],
 	
 	[function() {
-		return (value["Wähler"] > (value.Wahlberechtigte * 0.7 * 0.05) );
+		return (value["Popularität"] > (value.Wahlberechtigte * 0.7 * 0.05) );
 	}, function() {
 		addAchievement("5%-Hürde überwunden!");
 		growthRate.Vodka *= 1.5;
 	}],
 	
 	[function() {
-		return (value["Wähler"] > (value.Wahlberechtigte * 0.7 * 0.5) );
+		return (value["Popularität"] > (value.Wahlberechtigte * 0.7 * 0.5) );
 	}, function() {
 		addAchievement("Wir sind Regierung!");
 		set("regierung");
@@ -48,7 +48,7 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (value["Wähler"] > value.Wahlberechtigte);
+		return (value["Popularität"] > value.Wahlberechtigte);
 	}, function() {
 		addAchievement("100% + X");
 	}],
@@ -75,9 +75,9 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (value["Wähler"] >= 23);
+		return (value["Popularität"] >= 23);
 	}, function() {
-		addAchievement("Die ersten 23 (sic!) Wähler");
+		addAchievement("Die ersten 23 (sic!) Wühler");
 	}],
 	
 	[function() {
@@ -111,7 +111,7 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (value["Wähler"] >= 30);
+		return (value["Popularität"] >= 30);
 	}, function() {
 		addUpgrade("jubelperser");
 	}],
@@ -213,7 +213,7 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (value["Wähler"] >= 10000);
+		return (value["Popularität"] >= 10000);
 	}, function() {
 		addUpgrade("kohle");
 	}],
@@ -243,7 +243,7 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (value["Wähler"] >= 1000);
+		return (value["Popularität"] >= 1000);
 	}, function() {
 		addUpgrade("turtle");
 	}],
