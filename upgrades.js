@@ -12,7 +12,7 @@ var upgrades = {
 		"Ihr seid alle meine Kumpels!",
 		"Vodka", 10,
 		"Trinker fragen, Politiker antworten",
-		"1 Vodka / Sekunde",
+		"+ 1 Vodka / s",
 		function() {
 			fadeIn("#Vodka .persecond");
 			growthRate.Vodka += 1;

@@ -82,22 +82,20 @@ html, body {
 	height: 280px;
 }
 
-table {
+#upper_playboard table {
 	width: 100%;
 	border-spacing: 0;
 }
 
-td {
+#upper_playboard td {
 	border: none;
 	padding: 0;
 	position: relative;
 }
 
-td.left {
+#upper_playboard td.left {
 	background: #3e3e3e;
 } 
-
-
 
 /* clicker buttons */
 
@@ -111,9 +109,8 @@ td.left {
 	top: 1.2em;
 	right: 1.2em;
 	font-size: 0.7em;
+	display: none;
 }
-
-
 
 /* destille */
 
@@ -122,8 +119,6 @@ td.left {
 	vertical-align: bottom;
 	text-align: center;
 }
-
-
 
 /* values */
 
@@ -143,11 +138,12 @@ td.left {
 
 .values .persecond {
 	float: left;
-	margin-top: 0.4em;
+	margin-top: 0.6em;
 }
 
 .values .text {
 	clear: both;
+	font-size: 2em;
 	line-height: 2em;
 }
 
@@ -161,11 +157,26 @@ td.left {
 
 
 
+/* ticker */
+
+#ticker {
+	background: #5b5b5b;
+	width: 640px;
+	height: 1.8em;
+	text-align: center;
+	font-size: 1.2em;
+	margin: 0.5em 0;
+	padding-top: 0.8em;
+}
+
+
+
+/* lower playboard */
 
 #lower_playboard {
 	position: relative;
 	clear: both;
-	top: 65px;
+	top: 25px;
 	width: 640px;
 	height: 740px;
 }
@@ -195,58 +206,60 @@ td.left {
 
 #upgrades > div {
 	position: relative;
-	float: left;
-	width: 500px;
-	height: 80px;
+	width: 95%;
+	height: 10em;
 }
 
 #upgrades p.title {
 	font-weight: bold;
-	float: left;
-	font-size: 1.2em;
-}
-#upgrades p.requirement {
-	font-style: italic;
-	font-size: 0.8em;
-	float: right;
+	font-size: 1.5em;
+	line-height: 2em;
 }
 
 #upgrades p.text {
-	clear: both;
+	font-size: 1.2em;
+	line-height: 2em;
 	padding: 5px 0 5px 0;
 }
 
+#upgrades p.requirement,
 #upgrades p.fruit {
-	float: right;
-	font-weight: bold;
-	font-size: 0.8em;
-	text-align: right;
+	font-size: 1.2em;
+	padding-left: 1em;
 }
 
-#Achievements > div {
+
+#Achievements table {
 	position: relative;
-	float: left;
-	width: 93px;
-	height: 60px;
+	width: 100%;
+	height: 7em;
 	border: 1px dotted #bbb;
-	padding-top: 23px;
-	font-size: 1.0em;
-	text-align: center;
 	background: #000;
-	color: white;
 	margin: 3px 0 0 3px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 }
 
-#logo, #Geld, .perclick {
+#Achievements td {
+	font-size: 1.2em;
+	line-height: 1.2em;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#logo, #Geld, .perclick,
+#Mitglieder, #Wähler {
 	display: none;
+}
+
+#Vodka, #Destille, #ausg {
+	opacity: 0.5;
 }
 
 /* init 
 
-#Mitglieder, #Wähler, #Geld, 
+, 
 #Vodka .value,
 #Vodka .perclick,
 #Vodka .persecond,

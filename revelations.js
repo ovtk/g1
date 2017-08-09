@@ -3,8 +3,8 @@ var revelations = [
 	[function() {
 		return (value.Klicks >= 1);
 	}, function() {
-		$("#Vodka .value").fadeIn();
-		$("#Vodka .text").text("Weiter klicken!")
+		$("#Vodka").fadeIn();
+		tickText("Weiter klicken um mehr Vodka zu produzieren!");
 		addAchievement("1x<br />geklickt");
 	}],
 	
@@ -56,7 +56,6 @@ var revelations = [
 	[function() {
 		return (value.Vodka >= 5);
 	}, function() {
-		$("#Vodka .text").text("Vodka");
 		$("#Vodka .perclick").fadeIn();
 		addUpgrade("saalrunde");
 	}],

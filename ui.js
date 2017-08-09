@@ -60,10 +60,14 @@ function fadeIn(item) {
 	$(item).fadeIn();
 }
 
+function tickText(text) {
+	$("#ticker").text(text);
+}
+
 function addAchievement(text, delay = 0) {
 	var j = $("#Achievements");
-	j.append("<div>" + text + "</dív>");
-	var n = j.find("div:last-of-type");
+	j.append("<table><tr><td>" + text + "</td></tr></table>");
+	var n = j.find("table:last-of-type");
 	n.css("marginTop", "-400px");
 	n.delay(delay).animate({ 
 		marginTop: "3px",
@@ -86,8 +90,8 @@ function addUpgrade(key) {
 	j.append("<div id='" + key + "' class='box button'></dív>");
 	var n = j.find("div:last-of-type");
 	n.append("<p class='title'>" + up[0] + "</p>");
-	n.append("<p class='requirement'>-" + up[2] + " " + up[1] + "</p>");
 	n.append("<p class='text'>" + up[3] + "</p>");
+	n.append("<p class='requirement'>– " + up[2] + " " + up[1] + "</p>");
 	n.append("<p class='fruit'>" + up[4] + "</p>");
 	n.css("display", "none");
 	n.fadeIn(500);
