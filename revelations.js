@@ -117,7 +117,7 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (value["Geld"] >= 1);
+		return (value["Mitglieder"] >= 100);
 	}, function() {
 		addUpgrade("sellmoney");
 	}],
@@ -231,7 +231,7 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (value["Geld"] >= 100);
+		return (value["Vodka"] >= 100);
 	}, function() {
 		addUpgrade("pig");
 	}],

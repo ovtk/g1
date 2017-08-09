@@ -12,13 +12,6 @@ $("#ausg").click( function() {
 	});
 });
 
-// geld
-$("#Geld").click( function() {
-	value.Klicks += 1;
-	requirements("Vodka", clickRate.Geld, function() {
-		inc("Geld", clickRate.Geld);
-	});
-});
 
 function updateValuesView() {
 	for (var i = 0; i < values.length; i++) {
@@ -26,7 +19,6 @@ function updateValuesView() {
 		$("#" + key + " div.value").text(prettyShortNumbers(value[key]));
 		$("#" + key + " div.persecond span").text(prettyShortNumbers(growthRate[key]));
 		$("#" + key + " div.perclick span").text(prettyShortNumbers(clickRate[key]));
-		$("#Geld div.perclick span").text(clickRate.Geld);
 	}
 }
 

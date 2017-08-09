@@ -131,17 +131,15 @@ var upgrades = {
 		"x3 Mitglieder / Sekunde",
 		function() {
 			growthRate.Mitglieder *= 3;
-			fadeIn("#Geld");
-			set("Geld");
 		}],
 		
 	"sellmoney": [
 		"Geld verkaufen",
-		"Geld", 25,
+		"Mitglieder", 250,
 		"Reich werden mit GELD!",
-		"x5 Geld / Klick",
+		"x5 Mitglieder / Klick",
 		function() {
-			clickRate.Geld *= 5;
+			clickRate.Mitglieder *= 5;
 		}],
 
 	"slogan": [
@@ -276,8 +274,7 @@ var upgrades = {
 		"Ein Sitzen im Europaparlament.",
 		"x2 Vodka / Sekunde",
 		function() {
-			growthRate.Geld += 100;
-			fadeIn("#Geld .persecond");
+			growthRate.Vodka += 100;
 		}],
 
 	"vodka": [
@@ -309,13 +306,13 @@ var upgrades = {
 
 	"pig": [
 		"Ein Schwein schlachten und grillen",
-		"Geld", 500,
+		"Mitglieder", 500,
 		"Singularis Porcus und dazu lauwarme Cervisia.",
 		"-200 Popularität",
 		function() {
 			// growthRate.Wähler *= 2;
 			addAchievement("Singularis Porcus");
-			clickRate.Mitglieder += 9;
+			growthRate.Wähler -= 200;
 		}],
 
 	"fdp": [
@@ -342,7 +339,7 @@ var upgrades = {
 		"Alles legal, ich gebe ihnen mein teutsches Reinheitsgebiet!",
 		"+ 10.000.000 Geld",
 		function() {
-			value.Geld += 10000000;
+			value.Vodka += 10000000;
 			addAchievement("Wir vergessen keinen", 600);
 		}],
 
@@ -469,7 +466,7 @@ var upgrades = {
 		"Kl. Aufmerksamkeit eines namhaften Mineralölkonzerns;.",
 		" Elf Millionen Mark",
 		function() {
-			value.Geld += 5500000;
+			value.Vodka += 5500000;
 		}]
 
 }

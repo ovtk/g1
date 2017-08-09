@@ -248,7 +248,7 @@ html, body {
 	text-align: center;
 }
 
-#logo, #Geld, .perclick,
+#logo, .perclick,
 #Mitglieder, #Wähler {
 	display: none;
 }
@@ -262,8 +262,7 @@ html, body {
 , 
 #Vodka .value,
 #Vodka .perclick,
-#Vodka .persecond,
-#Geld .persecond  {
+#Vodka .persecond {
 	display: none;
 }
 */

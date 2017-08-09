@@ -3,7 +3,7 @@ var day = 0;
 
 var fps = 5;
 
-var values = ["Vodka", "Mitglieder", "Wähler", "Geld", "Klicks", "Achievements", "Wahlberechtigte", "Weltbevölkerung"];
+var values = ["Vodka", "Mitglieder", "Wähler", "Klicks", "Achievements", "Wahlberechtigte", "Weltbevölkerung"];
 
 var value = {};
 var growth = {};
@@ -21,7 +21,6 @@ for (var i = 0; i < values.length; i++) {
 
 clickRate.Vodka = 1;
 clickRate.Mitglieder = 1;
-clickRate.Geld = 1;
 value.Wahlberechtigte = 61500000;
 value.Weltbevölkerung = 7540123440;
 growthRate.Weltbevölkerung = 229277; // Zuwachs pro Tag
