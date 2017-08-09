@@ -3,15 +3,58 @@ var revelations = [
 	[function() {
 		return (value.Klicks >= 1);
 	}, function() {
-		$("#Vodka").fadeIn();
-		tickText("Weiter klicken um mehr Vodka zu produzieren!");
+		fadeIn("#Vodka");
+		tickText("Und immer weiter klicken!");
 		addAchievement("1x<br />geklickt");
+	}],
+	
+	[function() {
+		return (value.Klicks >= 2);
+	}, function() {
+		tickText("Du machst das gut!");
+	}],
+	
+	[function() {
+		return (value.Klicks >= 4);
+	}, function() {
+		tickText("Immer weiter, bis Du 10 Vodka hast!");
+	}],
+	
+	[function() {
+		return (value.Vodka >= 7);
+	}, function() {
+		addUpgrade("saalrunde");
 	}],
 	
 	[function() {
 		return (value["Klicks"] >= 10);
 	}, function() {
-		addAchievement("10x<br />geklickt");
+		tickText("So, jetzt kauf Dein erstes Upgrade!");
+		addAchievement("10x<br />geklickt", 500);
+	}],
+	
+	[function() {
+		return (get("destille") && value["Vodka"] >= 5);
+	}, function() {
+		tickText("Wenn Du weiter klickst beschleunigst Du die Vodka-Produktion.");
+	}],
+	
+	[function() {
+		return (get("destille") && value["Vodka"] >= 10);
+	}, function() {
+		addUpgrade("parteiname");
+	}],
+	
+	[function() {
+		return (value.Achievements >= 4);
+	}, function() {
+		addUpgrade("sellach1");
+	}],
+	
+	[function() {
+		return (value.Mitglieder >= 1);
+	}, function() {
+		fadeIn("#Mitglieder");
 	}],
 	
 	[function() {
@@ -54,19 +97,6 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (value.Vodka >= 5);
-	}, function() {
-		$("#Vodka .perclick").fadeIn();
-		addUpgrade("saalrunde");
-	}],
-	
-	[function() {
-		return (get("destille"));
-	}, function() {
-		addUpgrade("parteiname");
-	}],
-	
-	[function() {
 		return (get("name"));
 	}, function() {
 		addUpgrade("founding1");
@@ -84,12 +114,6 @@ var revelations = [
 		return (get("founded") && value["´Mitglieder"] >= 50);
 	}, function() {
 		addUpgrade("founding2");
-	}],
-	
-	[function() {
-		return (value.Achievements >= 3);
-	}, function() {
-		addUpgrade("sellach1");
 	}],
 	
 	[function() {

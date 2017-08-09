@@ -7,7 +7,7 @@
 html, body {
 	position: relative;
 	height: 100%;
-	background: #171717;
+	background: #232323;
 	font: 12px/1.2em Verdana, Arial, Helvetica, sans-serif;
 	color: #fff;
 }
@@ -44,9 +44,10 @@ html, body {
 /* layout */
 
 #container {
-	width: 100%;
+	width: 640px;
 	height: 100%;
 	position: relative;
+	background: #171717;
 }
 
 #fix {
@@ -63,13 +64,12 @@ html, body {
 
 #logo {
 	width: 640px;
-	height: 0px;
-	text-align: center;
+	height: 95px;
 }
 
 #logo img {
 	width: 640px;
-	height: 115px;
+	height: 90px;
 }
 
 
@@ -176,7 +176,7 @@ html, body {
 #lower_playboard {
 	position: relative;
 	clear: both;
-	top: 25px;
+	top: -5px;
 	width: 640px;
 	height: 740px;
 }
@@ -248,13 +248,14 @@ html, body {
 	text-align: center;
 }
 
-#logo, .perclick,
-#Mitglieder, #Popularität {
-	display: none;
-}
 
-#Vodka, #Destille, #ausg {
-	opacity: 0.5;
+#Vodka, 
+#Destille, #Vodka .persecond, 
+#Setting,
+#ausg,
+#Mitglieder, #Popularität, 
+#logo, .perclick {
+	opacity: 0.0;
 }
 
 /* init 
@@ -262,7 +263,7 @@ html, body {
 , 
 #Vodka .value,
 #Vodka .perclick,
-#Vodka .persecond {
+ {
 	display: none;
 }
 */

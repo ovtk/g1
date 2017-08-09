@@ -48,8 +48,14 @@ function fadeNumbers(item, val) {
 	);
 }
 
-function fadeIn(item) {
-	$(item).fadeIn();
+function fadeIn(item, time = 500) {
+	$(item).animate({opacity: 1.0}, time);
+}
+
+function showLogo() {
+	$("#logo").delay(500).animate({ 
+		height: "90px"
+		}, 5000);
 }
 
 function tickText(text) {

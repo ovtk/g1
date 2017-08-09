@@ -14,10 +14,11 @@ var upgrades = {
 		"Trinker fragen, Politiker antworten",
 		"+ 1 Vodka / s",
 		function() {
-			fadeIn("#Vodka .persecond");
 			growthRate.Vodka += 1;
+			tickText("Perfekt, Du hast die Vodka-Destille angeworfen.");
 			addAchievement("Vodka-Destille läuft", 200);
-			// show destille
+			fadeIn("#Destille");
+			fadeIn("#Vodka .persecond");
 			set("destille");
 		}],
 		
@@ -28,9 +29,9 @@ var upgrades = {
 		"Partei-Name",
 		function() {
 			growthRate.Vodka *= 2;
-			fadeIn("#Mitglieder");
+			fadeIn("#ausg");
+			tickText("Sie soll 'Die PARTEI' heißen! Darauf trinken wir!");
 			set("name");
-			// show name
 			addAchievement("Die Partei ist 'Die PARTEI'");
 		}],
 		
@@ -55,11 +56,8 @@ var upgrades = {
 			fadeIn("#Popularität");
 			growthRate.Vodka += 1;
 			clickRate.Vodka += 1;
-			$("#Vodka div.perclick span").text(clickRate.Vodka);
-			// logo
-			$("#logo").delay(500).animate({ 
-				height: "144px"
-				}, 5000);
+			// $("#Vodka div.perclick span").text(clickRate.Vodka);
+			fadeIn("#logo", 5000);
 			addAchievement("Logos regieren die Welt", 6000);
 		}],
 		
