@@ -7,7 +7,7 @@
 	<title>Die ParteIDLE - Ein veganes Trinkspiel für die ganze Familie</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta name="author" content="Olaf Nowacki">
-	<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=0.4, maximum-scale=0.4, user-scalable=no" />
 </head>
 
 <body>
@@ -83,6 +83,8 @@
 	
 	<script type="text/javascript">
 		$(document).ready( function() {	
+			
+			alert(Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
 						
 			mainLoop();
 										
