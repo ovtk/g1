@@ -44,7 +44,7 @@ html, body {
 /* layout */
 
 #container {
-	width: 440px;
+	width: 828px;
 	height: 100%;
 	position: relative;
 	background: #171717;
@@ -63,7 +63,7 @@ html, body {
 /* partei logo */
 
 #logo {
-	width: 440px;
+	width: 828px;
 	height: 50px;
 }
 
@@ -71,12 +71,12 @@ html, body {
 
 #upper_playboard {
 	position: relative;
-	width: 440px;
-	height: 280px;
+	width: 828px;
+
 }
 
 #upper_playboard table {
-	width: 100%;
+	width: 828px;
 	border-spacing: 0;
 }
 
@@ -154,7 +154,7 @@ html, body {
 
 #ticker {
 	background: #5b5b5b;
-	width: 640px;
+	width: 100%;
 	height: 1.8em;
 	text-align: center;
 	font-size: 1.2em;
@@ -170,8 +170,7 @@ html, body {
 	position: relative;
 	clear: both;
 	top: -5px;
-	width: 640px;
-	height: 740px;
+	width: 814px;
 }
 
 #upgrades {
@@ -184,7 +183,6 @@ html, body {
 	position: relative;
 	float: right;
 	width: 100px;
-	height: 740px;
 }
 
 
