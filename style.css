@@ -44,7 +44,7 @@ html, body {
 /* layout */
 
 #container {
-	width: 640px;
+	width: 440px;
 	height: 100%;
 	position: relative;
 	background: #171717;
@@ -63,15 +63,15 @@ html, body {
 /* partei logo */
 
 #logo {
-	width: 640px;
-	height: 95px;
+	width: 440px;
+	height: 50px;
 }
 
 /* upper playboard */
 
 #upper_playboard {
 	position: relative;
-	width: 640px;
+	width: 440px;
 	height: 280px;
 }
 
