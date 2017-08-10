@@ -56,6 +56,7 @@ html, body {
 	width: 100%;
 	left: 0;
 	top: 0;
+	background: #171717;
 }
 
 
@@ -64,7 +65,7 @@ html, body {
 
 #logo {
 	width: 640px;
-	height: 7px;
+	height: 70px;
 }
 
 /* upper playboard */
@@ -95,6 +96,8 @@ html, body {
 #prod, #ausg {
 	font-size: 2em;	
 	line-height: 1.2em;
+	padding: 25px 10px;
+	width: 85%;
 }
 
 .perclick {
@@ -173,38 +176,25 @@ html, body {
 	width: 640px;
 }
 
+
+
 #upgrades {
 	position: relative;
 	float: left;
 	width: 520px;
 }
 
-#Achievements {
-	position: relative;
-	float: right;
-	width: 100px;
-}
-
-
-
-.flyAway {
-	position: absolute;
-	margin-top: -10px;
-}
-
-
-
-
 #upgrades > div {
 	position: relative;
-	width: 95%;
-	height: 10em;
+	width: 520px;
+	padding: 5px 10px 10px 10px;
+	margin-top: 5px;
 }
 
 #upgrades p.title {
 	font-weight: bold;
 	font-size: 1.5em;
-	line-height: 2em;
+	line-height: 1em;
 }
 
 #upgrades p.text {
@@ -220,16 +210,23 @@ html, body {
 }
 
 
+
+#Achievements {
+	position: relative;
+	float: right;
+	width: 100px;
+}
+
 #Achievements table {
 	position: relative;
+	right: 5px;
 	width: 100%;
 	height: 7em;
-	border: 1px dotted #bbb;
 	background: #000;
-	margin: 3px 0 0 3px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+	padding: 2px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
 }
 
 #Achievements td {
@@ -237,7 +234,19 @@ html, body {
 	line-height: 1.2em;
 	vertical-align: middle;
 	text-align: center;
+	border: 2px dotted #bbb;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
 }
+
+
+
+.flyAway {
+	position: absolute;
+	margin-top: -10px;
+}
+
 
 
 #Vodka, 
