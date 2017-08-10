@@ -73,7 +73,6 @@ html, body {
 #upper_playboard {
 	position: relative;
 	width: 640px;
-
 }
 
 #upper_playboard table {
@@ -174,6 +173,7 @@ html, body {
 	clear: both;
 	top: -5px;
 	width: 640px;
+	background: #171717;
 }
 
 
