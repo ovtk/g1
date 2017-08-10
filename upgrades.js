@@ -11,7 +11,7 @@ var upgrades = {
 	"saalrunde": [
 		"Ihr seid alle meine Kumpels!",
 		"Vodka", 10,
-		"Trinker fragen, Politiker antworten",
+		"Trinker fragen, Politiker antworten.",
 		"+ 1 Vodka / s",
 		function() {
 			growthRate.Vodka += 1;

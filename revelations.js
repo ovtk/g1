@@ -29,7 +29,7 @@ var revelations = [
 	[function() {
 		return (value["Klicks"] >= 10);
 	}, function() {
-		tickText("So, jetzt kauf Dein erstes Upgrade!");
+		tickText("Kauf Dein erstes Upgrade!");
 		addAchievement("10x<br />geklickt", 500);
 	}],
 	

@@ -85,9 +85,9 @@ function delAchievements(num = 1) {
 function addUpgrade(key) {
 	var j = $("#upgrades");
 	var up = upgrades[key];
-	j.append("<div id='" + key + "' class='box button'></dív>");
+	j.append("<div id='" + key + "' class='button'></dív>");
 	var n = j.find("div:last-of-type");
-	n.append("<p class='title'>" + up[0] + "</p>");
+	n.append("<p class='title bold'>" + up[0] + "</p>");
 	n.append("<p class='text'>" + up[3] + "</p>");
 	n.append("<p class='requirement'>– " + up[2] + " " + up[1] + "</p>");
 	n.append("<p class='fruit'>" + up[4] + "</p>");
