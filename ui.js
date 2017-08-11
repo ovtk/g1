@@ -59,7 +59,7 @@ function showLogo() {
 }
 
 function tickText(text) {
-	$("#ticker").text(text);
+	$("#ticker p").text(text);
 }
 
 function addAchievement(text, delay = 0) {
