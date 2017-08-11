@@ -59,7 +59,15 @@ function showLogo() {
 }
 
 function tickText(text) {
-	$("#ticker p").text(text);
+	$("#ticker p").animate({
+		marginLeft: "-700px"
+	}, 200, function() {
+		$("#ticker p").text(text);
+		$("#ticker p").css("marginLeft", "0px");
+		$("#ticker p").css("marginRight", "-700px");
+		$("#ticker p").animate({marginRight: "0px"}, 200);
+	});
+	
 }
 
 function addAchievement(text, delay = 0) {

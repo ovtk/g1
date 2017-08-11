@@ -209,15 +209,19 @@ html, body {
 /* ticker */
 
 #ticker {
+	width: 100%;
+	font-size: 1.6em;
+	margin: 10px 0;
 	vertical-align: middle;
 	text-align: center;
-
+	overflow: hidden;
 }
 
 #ticker p {
 	background: #5b5b5b;
-	width: 100%;
-	font-size: 1.6em;
+}
+
+#ticker p {
 	margin: 10px 0;
 	padding: 20px 0;
 }
