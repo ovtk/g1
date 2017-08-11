@@ -9,10 +9,10 @@
 */
 
 var upgrades = {
-	"saalrunde": [
-		"Ihr seid alle meine Kumpels!",
-		"Vodka", 10,
-		"Trinker fragen, Politiker antworten.",
+	"destille": [
+		"Destille anwerfen",
+		"Vodka", 5,
+		"Selbstfahrende Destille, damit Du nicht mehr so viel klicken musst.",
 		"+ 1 Vodka / s",
 		"silver",
 		function() {
@@ -25,21 +25,34 @@ var upgrades = {
 		}],
 		
 	"parteiname": [
-		"Branding",
-		"Vodka", 25,
-		"Wie soll die PARTEI heißen?",
-		"Partei-Name",
-		"silver",
+		"Ich hab einen Traum!",
+		"Vodka", 10,
+		"Es braucht eine neue Partei! Aber wie soll die PARTEI heißen?",
+		"+ Partei-Name",
+		"blue",
 		function() {
-			growthRate.Vodka *= 2;
-			fadeIn("#ausg");
-			tickText("Sie soll 'Die PARTEI' heißen! Darauf trinken wir!");
+			tickText("Sie soll 'Die PARTEI' heißen!");
 			set("name");
 			addAchievement("Die Partei ist 'Die PARTEI'");
+			fadeIn("#logo", 2000);
 		}],
-		
+
+	"vereinsheim": [
+		"Wir brauchen ein Vereinsheim",
+		"Vodka", 30,
+		"Erbaut auf den Ruinen der Manyo. (Never forget, never forgive.)",
+		"+ Vereinsheim",
+		"blue",
+		function() {
+			tickText("Ich mach schon mal das Licht an.");
+			growthRate.Vodka += 1;
+			fadeIn("#Setting");
+			set("setting1");
+			fadeIn("#ausg", 8000);
+		}],
+
 	"founding1": [
-		"Die PARTEI gründen",
+		"Gründungs-Mythos",
 		"Mitglieder", 7,
 		"Sind sieben Menschen 1e Partei, wenn sie 1e Partei sind?",
 		"+1 Mitglieder / Sekunde",
@@ -50,17 +63,26 @@ var upgrades = {
 			set("founded");
 		}],
 		
+	"saalrunde": [
+		"Ihr seid alle meine Kumpels!",
+		"Vodka", 100,
+		"Trinker fragen, Politiker antworten.",
+		"+ 1 Mitglieder / s",
+		"blue",
+		function() {
+			growthRate.Mitglieder += 1;
+		}],
+
 	"parteilogo": [
 		"Ein Logo",
-		"Vodka", 100,
+		"Vodka", 250,
 		"Sie zu knechten, sie alle zu finden, ins Dunkel zu treiben...",
 		"+1 Popularität / Sekunde",
 		"orange",
 		function() {
 			growthRate.Popularität += 1;
-			fadeIn("#Popularität");
-			growthRate.Vodka += 1;
-			clickRate.Vodka += 1;
+			// growthRate.Vodka += 1;
+			clickRate.Vodka += 3;
 			// $("#Vodka div.perclick span").text(clickRate.Vodka);
 			fadeIn("#logo", 5000);
 			addAchievement("Logos regieren die Welt", 6000);
@@ -68,13 +90,14 @@ var upgrades = {
 		
 	"parteiprogramm": [
 		"Ein Parteiprogramm schreiben",
-		"Vodka", 50,
+		"Mitglieder", 100,
 		"Am besten irgendwas mit Tierschutz!",
 		"+2 Mitglieder / Sekunde",
 		"blue",
 		function() {
 			growthRate.Mitglieder += 2;
 			addAchievement("Ein Partei-Programm");
+			set("programm");
 		}],
 		
 	"founding2": [

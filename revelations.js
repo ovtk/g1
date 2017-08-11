@@ -17,24 +17,12 @@ var revelations = [
 	[function() {
 		return (value.Klicks >= 3);
 	}, function() {
-		tickText("Immer weiter, bis Du 10 Vodka hast!");
+		tickText("Immer weiter, bis Du 5 Vodka hast!");
+		addUpgrade("destille");
 	}],
 	
 	[function() {
-		return (value.Klicks >= 6);
-	}, function() {
-		tickText("Ich mach schon mal das Licht an.");
-		fadeIn("#Setting");
-	}],
-	
-	[function() {
-		return (value.Vodka >= 8);
-	}, function() {
-		addUpgrade("saalrunde");
-	}],
-	
-	[function() {
-		return (value["Klicks"] >= 10);
+		return (value["Klicks"] >= 5);
 	}, function() {
 		tickText("Kauf Dein erstes Upgrade!");
 		addAchievement("10x<br />geklickt", 500);
@@ -43,13 +31,19 @@ var revelations = [
 	[function() {
 		return (get("destille") && value["Vodka"] >= 5);
 	}, function() {
-		tickText("Wenn Du weiter klickst beschleunigst Du die Vodka-Produktion.");
+		tickText("Klick weiter, um die Vodka-Produktion anzukurbeln.");
 	}],
 	
 	[function() {
-		return (get("destille") && value["Vodka"] >= 10);
+		return (get("destille") && value["Vodka"] >= 2);
 	}, function() {
 		addUpgrade("parteiname");
+	}],
+	
+	[function() {
+		return (get("name") && value["Vodka"] >= 2);
+	}, function() {
+		addUpgrade("vereinsheim");
 	}],
 	
 	[function() {
@@ -59,9 +53,35 @@ var revelations = [
 	}],
 	
 	[function() {
+		return (get("setting1"));
+	}, function() {
+		addUpgrade("founding1");
+	}],
+	
+	[function() {
+		return (get("setting1") && value.Vodka >= 25);
+	}, function() {
+		addUpgrade("saalrunde");
+		tickText("Klick auf 'einen ausgeben', um einen auszugeben!");
+	}],
+	
+	[function() {
+		return (get("founded"));
+	}, function() {
+		addUpgrade("parteiprogramm");
+		addUpgrade("parteilogo");
+	}],
+	
+	[function() {
 		return (value.Mitglieder >= 1);
 	}, function() {
 		fadeIn("#Mitglieder");
+	}],
+	
+	[function() {
+		return (value.Popularität >= 1);
+	}, function() {
+		fadeIn("#Popularität");
 	}],
 	
 	[function() {
@@ -104,21 +124,13 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (get("name"));
-	}, function() {
-		addUpgrade("founding1");
-		addUpgrade("parteiprogramm");
-		addUpgrade("parteilogo");
-	}],
-	
-	[function() {
 		return (value["Popularität"] >= 23);
 	}, function() {
 		addAchievement("Die ersten 23 (sic!) Wühler");
 	}],
 	
 	[function() {
-		return (get("founded") && value["´Mitglieder"] >= 50);
+		return (get("founded") && value["Mitglieder"] >= 50);
 	}, function() {
 		addUpgrade("founding2");
 	}],
@@ -160,127 +172,127 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (value["Vodka"] >= 100);
+		return (get("founded") && value["Vodka"] >= 100);
 	}, function() {
 		addUpgrade("dictator");
 	}],
 	
 	[function() {
-		return (value["Vodka"] >= 300);
+		return (get("founded") && value["Vodka"] >= 300);
 	}, function() {
 		addUpgrade("kollektion");
 	}],
 	
 	[function() {
-		return (value["Vodka"] >= 500);
+		return (get("founded") && value["Vodka"] >= 500);
 	}, function() {
 		addUpgrade("goaty");
 	}],
 	
 	[function() {
-		return (value["Vodka"] >= 500);
+		return (get("founded") && value["Vodka"] >= 500);
 	}, function() {
 		addUpgrade("fifafu");
 	}],
 	
 	[function() {
-		return (value["Vodka"] >= 800);
+		return (get("founded") && value["Vodka"] >= 800);
 	}, function() {
 		addUpgrade("meta");
 	}],
 	
 	[function() {
-		return (value["Mitglieder"] >= 8000);
+		return (get("founded") && value["Mitglieder"] >= 8000);
 	}, function() {
 		addUpgrade("metaebene");
 	}],
 	
 	[function() {
-		return (value["Mitglieder"] >= 100);
+		return (get("founded") && value["Mitglieder"] >= 100);
 	}, function() {
 		addUpgrade("justuspeterbob");
 	}],
 	
 	[function() {
-		return (value["Vodka"] >= 1200);
+		return (get("founded") && value["Vodka"] >= 1200);
 	}, function() {
 		addUpgrade("winwin");
 	}],
 	
 	[function() {
-		return (value["Mitglieder"] >= 120);
+		return (get("founded") && value["Mitglieder"] >= 120);
 	}, function() {
 		addUpgrade("glyph");
 	}],
 	
 	[function() {
-		return (value["Vodka"] >= 2500);
+		return (get("founded") && value["Vodka"] >= 2500);
 	}, function() {
 		addUpgrade("ovtk");
 	}],
 	
 	[function() {
-		return (value["Vodka"] >= 5000);
+		return (get("founded") && value["Vodka"] >= 5000);
 	}, function() {
 		addUpgrade("kim");
 	}],
 	
 	[function() {
-		return (value["Mitglieder"] >= 250);
+		return (get("founded") && value["Mitglieder"] >= 250);
 	}, function() {
 		addUpgrade("rule34");
 	}],
 	
 	[function() {
-		return (value["Mitglieder"] >= 1000);
+		return (get("founded") && value["Mitglieder"] >= 1000);
 	}, function() {
 		addUpgrade("error404");
 	}],
 	
 	[function() {
-		return (value["Vodka"] >= 10000);
+		return (get("founded") && value["Vodka"] >= 10000);
 	}, function() {
 		addUpgrade("vodka");
 	}],
 	
 	[function() {
-		return (value["Popularität"] >= 10000);
+		return (get("founded") && value["Popularität"] >= 10000);
 	}, function() {
 		addUpgrade("kohle");
 	}],
 	
 	[function() {
-		return (value["Vodka"] >= 10000);
+		return (get("founded") && value["Vodka"] >= 10000);
 	}, function() {
 		addUpgrade("mauer");
 	}],
 	
 	[function() {
-		return (value["Vodka"] >= 1000000);
+		return (get("founded") && value["Vodka"] >= 1000000);
 	}, function() {
 		addUpgrade("blackhole");
 	}],
 	
 	[function() {
-		return (value["Vodka"] >= 100);
+		return (get("founded") && value["Vodka"] >= 100);
 	}, function() {
 		addUpgrade("pig");
 	}],
 	
 	[function() {
-		return (value["Mitglieder"] >= 5800);
+		return (get("founded") && value["Mitglieder"] >= 5800);
 	}, function() {
 		addUpgrade("fdp");
 	}],
 	
 	[function() {
-		return (value["Popularität"] >= 1000);
+		return (get("founded") && value["Popularität"] >= 1000);
 	}, function() {
 		addUpgrade("turtle");
 	}],
 	
 	[function() {
-		return (value["Vodka"] >= 10000);
+		return (get("founded") && value["Vodka"] >= 10000);
 	}, function() {
 		addUpgrade("brewery");
 	}],
