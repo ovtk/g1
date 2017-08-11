@@ -4,7 +4,8 @@
 	2	requirement val
 	3	text
 	4	result text
-	5	fruits
+	5	fruitcolor (silver, blue, orange, green)
+	6	fruits
 */
 
 var upgrades = {
@@ -13,6 +14,7 @@ var upgrades = {
 		"Vodka", 10,
 		"Trinker fragen, Politiker antworten.",
 		"+ 1 Vodka / s",
+		"silver",
 		function() {
 			growthRate.Vodka += 1;
 			tickText("Perfekt, Du hast die Vodka-Destille angeworfen.");
@@ -27,6 +29,7 @@ var upgrades = {
 		"Vodka", 25,
 		"Wie soll die PARTEI heißen?",
 		"Partei-Name",
+		"silver",
 		function() {
 			growthRate.Vodka *= 2;
 			fadeIn("#ausg");
@@ -40,6 +43,7 @@ var upgrades = {
 		"Mitglieder", 7,
 		"Sind sieben Menschen 1e Partei, wenn sie 1e Partei sind?",
 		"+1 Mitglieder / Sekunde",
+		"blue",
 		function() {
 			growthRate.Mitglieder += 1;
 			addAchievement("Partei gegründet");
@@ -51,6 +55,7 @@ var upgrades = {
 		"Vodka", 100,
 		"Sie zu knechten, sie alle zu finden, ins Dunkel zu treiben...",
 		"+1 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität += 1;
 			fadeIn("#Popularität");
@@ -66,6 +71,7 @@ var upgrades = {
 		"Vodka", 50,
 		"Am besten irgendwas mit Tierschutz!",
 		"+2 Mitglieder / Sekunde",
+		"blue",
 		function() {
 			growthRate.Mitglieder += 2;
 			addAchievement("Ein Partei-Programm");
@@ -76,6 +82,7 @@ var upgrades = {
 		"Mitglieder", 400,
 		"Jetzt wirklich. Ich gebe ihnen mein Ehrenwort!",
 		"+3 Mitglieder / Sekunde",
+		"blue",
 		function() {
 			growthRate.Mitglieder += 3;
 			growthRate.Popularität += 1;
@@ -87,6 +94,7 @@ var upgrades = {
 		"Achievements", 5,
 		"Die nächste Singularität kommt bestimmt.",
 		"x2 Vodka / Sekunde",
+		"silver",
 		function() {
 			delAchievements(5);
 			growthRate.Vodka *= 2;
@@ -98,6 +106,7 @@ var upgrades = {
 		"Achievements", 5,
 		"Die nächste Singularität kommt bestimmt.",
 		"x2 Vodka / Sekunde",
+		"silver",
 		function() {
 			delAchievements(5);
 			clickRate.Vodka += 8;
@@ -109,6 +118,7 @@ var upgrades = {
 		"Vodka", 150,
 		"Weil wir es können",
 		"+3 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität += 3;
 		}],
@@ -118,6 +128,7 @@ var upgrades = {
 		"Mitglieder", 250,
 		"Blablabla bla blabla blablablablabla.",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 2;
 		}],
@@ -127,6 +138,7 @@ var upgrades = {
 		"Popularität", 100,
 		"Für die FDP jubeln!",
 		"x3 Mitglieder / Sekunde",
+		"blue",
 		function() {
 			growthRate.Mitglieder *= 3;
 		}],
@@ -136,6 +148,7 @@ var upgrades = {
 		"Mitglieder", 250,
 		"Reich werden mit GELD!",
 		"x5 Mitglieder / Klick",
+		"blue",
 		function() {
 			clickRate.Mitglieder *= 5;
 		}],
@@ -145,6 +158,7 @@ var upgrades = {
 		"Vodka", 400,
 		"'Wählt die Partei, sie ist sehr gut!'",
 		"x5 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 5;
 		}],
@@ -154,6 +168,7 @@ var upgrades = {
 		"Vodka", 600,
 		"Muss einfach sein.",
 		"x2 Mitglieder / Sekunde",
+		"blue",
 		function() {
 			growthRate.Mitglieder *= 2;
 		}],
@@ -163,6 +178,7 @@ var upgrades = {
 		"Vodka", 900,
 		"Die PARTEI stellt ihre neueste Kollektion vor.",
 		"x2 Vodka / Sekunde",
+		"silver",
 		function() {
 			growthRate.Vodka *= 2;
 		}],
@@ -172,6 +188,7 @@ var upgrades = {
 		"Vodka", 1500,
 		"Europäischen Möchtegern-Diktator beleidigen.",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 2;
 		}],
@@ -181,6 +198,7 @@ var upgrades = {
 		"Vodka", 2500,
 		"Deutschland muss Weltmeister bleiben!",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 2;
 		}],
@@ -190,6 +208,7 @@ var upgrades = {
 		"Vodka", 4000,
 		"Auf der AfD-Pressekonferenz eine Pressekonferenz geben.",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 2;
 		}],
@@ -199,6 +218,7 @@ var upgrades = {
 		"Mitglieder", 20000,
 		"Interview mit Tim für das CRE.",
 		"x2 Mitglieder / Sekunde",
+		"blue",
 		function() {
 			growthRate.Mitglieder *= 2;
 		}],
@@ -208,6 +228,7 @@ var upgrades = {
 		"Mitglieder", 500,
 		"Gegnerische Spaßpartei gründen (z.B. SPD).",
 		"x2 Vodka / Sekunde",
+		"silver",
 		function() {
 			growthRate.Vodka *= 2;
 		}],
@@ -217,6 +238,7 @@ var upgrades = {
 		"Vodka", 5000,
 		"Diesel-Abgas-Inhalatoren verschenken.",
 		"x2 Mitglieder / Sekunde",
+		"blue",
 		function() {
 			growthRate.Mitglieder *= 2;
 		}],
@@ -226,6 +248,7 @@ var upgrades = {
 		"Mitglieder", 800,
 		"Glyphosat dem Vodka beimengen.",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 2;
 		}],
@@ -235,6 +258,7 @@ var upgrades = {
 		"Vodka", 10000,
 		"Ortsverband Treptow-Köpenik gründen",
 		"x2 Vodka / Sekunde",
+		"silver",
 		function() {
 			growthRate.Vodka *= 3;
 		}],
@@ -244,6 +268,7 @@ var upgrades = {
 		"Vodka", 20000,
 		"a Kin Jong Un un peu.",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 2;
 		}],
@@ -253,6 +278,7 @@ var upgrades = {
 		"Mitglieder", 1500,
 		"I invoke rule 34 on the 'Die PARTEI'!",
 		"x2 Mitglieder / Sekunde",
+		"blue",
 		function() {
 			growthRate.Mitglieder *= 2;
 		}],
@@ -262,6 +288,7 @@ var upgrades = {
 		"Mitglieder", 8818,
 		"AfD Wühler sind hier richtig!",
 		"+69 Vodka / Sekunde",
+		"silver",
 		function() {
 			growthRate.Vodka += 69;
 		}],
@@ -271,6 +298,7 @@ var upgrades = {
 		"Popularität", 100000,
 		"Ein Sitzen im Europaparlament.",
 		"x2 Vodka / Sekunde",
+		"silver",
 		function() {
 			growthRate.Vodka += 100;
 		}],
@@ -280,6 +308,7 @@ var upgrades = {
 		"Vodka", 50000,
 		"makes the world go round.",
 		"x2 Vodka / Sekunde",
+		"silver",
 		function() {
 			growthRate.Vodka *= 2;
 		}],
@@ -289,6 +318,7 @@ var upgrades = {
 		"Vodka", 5000000,
 		"Die Mauer wieder aufbauen.",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 10;
 		}],
@@ -298,6 +328,7 @@ var upgrades = {
 		"Vodka", 999999999999999999,
 		"Ein schwarzes Loch mit Vodka (ab-) füllen.",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 2;
 		}],
@@ -307,6 +338,7 @@ var upgrades = {
 		"Mitglieder", 500,
 		"Singularis Porcus und dazu lauwarme Cervisia.",
 		"-200 Popularität",
+		"orange",
 		function() {
 			// growthRate.Popularität *= 2;
 			addAchievement("Singularis Porcus");
@@ -318,6 +350,7 @@ var upgrades = {
 		"Mitglieder", 58000,
 		"Die wer?",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 2;
 		}],
@@ -327,6 +360,7 @@ var upgrades = {
 		"Vodka", 500000,
 		"Schildkrötensuppe für der Vorstand!",
 		"x2 Mitglieder / Sekunde",
+		"blue",
 		function() {
 			growthRate.Mitglieder *= 2;
 		}],
@@ -336,6 +370,7 @@ var upgrades = {
 		"Popularität", 5000,
 		"Alles legal, ich gebe ihnen mein teutsches Reinheitsgebiet!",
 		"+ 10.000.000 Geld",
+		"silver",
 		function() {
 			value.Vodka += 10000000;
 			addAchievement("Wir vergessen keinen", 600);
@@ -346,6 +381,7 @@ var upgrades = {
 		"Mitglieder", 500,
 		" Zum Kaffee (in Moskau).",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 2;
 		}],
@@ -355,6 +391,7 @@ var upgrades = {
 		"Mitglieder", 500,
 		"Prinz Steineimer nach Guantanamo entführen.",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 2;
 		}],
@@ -364,6 +401,7 @@ var upgrades = {
 		"Mitglieder", 500,
 		"Irgendwas mit Roderich Egeler machen.",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 2;
 		}],
@@ -373,6 +411,7 @@ var upgrades = {
 		"Mitglieder", 500,
 		"Ha ha ha aha ha ha ah aha hahahah!!",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 2;
 		}],
@@ -382,6 +421,7 @@ var upgrades = {
 		"Mitglieder", 500,
 		"Neeeooowrrmmmm!!!!!",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 2;
 		}],
@@ -391,6 +431,7 @@ var upgrades = {
 		"Mitglieder", 500,
 		"Nikotinsteuer anheben, du Spast.",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 2;
 		}],
@@ -400,6 +441,7 @@ var upgrades = {
 		"Mitglieder", 500,
 		"Atomwaffen vernichten, Parkplätze bauen.",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 2;
 		}],
@@ -409,6 +451,7 @@ var upgrades = {
 		"Mitglieder", 500,
 		"Dieter, wir vermissen dich!",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 2;
 		}],
@@ -418,6 +461,7 @@ var upgrades = {
 		"Mitglieder", 500,
 		"Manager-Gehälter auf 25 mio / Monat begrenzen.",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 2;
 		}],
@@ -427,6 +471,7 @@ var upgrades = {
 		"Mitglieder", 500,
 		"Die 100 reichsten Deutschen flachlegen.",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 2;
 		}],
@@ -436,6 +481,7 @@ var upgrades = {
 		"Mitglieder", 500,
 		"1000 qm Leerstand in bester Lage, zu günstigen Konditionen.",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 2;
 		}],
@@ -445,6 +491,7 @@ var upgrades = {
 		"Mitglieder", 500,
 		"Gottkaiser Pabst Martin I, der Sonnengeborene.",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 2;
 		}],
@@ -454,6 +501,7 @@ var upgrades = {
 		"Mitglieder", 500,
 		"Die Industrie die Gesetze schreiben lassen und später Aufsichtsratsposten abgreifen.",
 		"x2 Popularität / Sekunde",
+		"orange",
 		function() {
 			growthRate.Popularität *= 2;
 		}],
@@ -463,6 +511,7 @@ var upgrades = {
 		"Popularität", 50000,
 		"Kl. Aufmerksamkeit eines namhaften Mineralölkonzerns;.",
 		" Elf Millionen Mark",
+		"silver",
 		function() {
 			value.Vodka += 5500000;
 		}]

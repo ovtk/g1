@@ -1,3 +1,30 @@
+@font-face{ 
+	font-family: 'share_bold';
+	src: url('fonts/Share-Bold-webfont.eot');
+	src: url('fonts/Share-Bold-webfont.eot?iefix') format('eot'),
+	     url('fonts/Share-Bold-webfont.woff') format('woff'),
+	     url('fonts/Share-Bold-webfont.ttf') format('truetype'),
+	     url('fonts/Share-Bold-webfont.svg#webfont') format('svg');
+}
+
+@font-face{ 
+	font-family: 'share_regular';
+	src: url('fonts/Share-Regular-webfont.eot');
+	src: url('fonts/Share-Regular-webfont.eot?iefix') format('eot'),
+	     url('fonts/Share-Regular-webfont.woff') format('woff'),
+	     url('fonts/Share-Regular-webfont.ttf') format('truetype'),
+	     url('fonts/Share-Regular-webfont.svg#webfont') format('svg');
+}
+
+@font-face{ 
+	font-family: 'fjalla_one';
+	src: url('fonts/fjallaone-regular-webfont.eot');
+	src: url('fonts/fjallaone-regular-webfont.eot?iefix') format('eot'),
+	     url('fonts/fjallaone-regular-webfont.woff') format('woff'),
+	     url('fonts/fjallaone-regular-webfont.ttf') format('truetype'),
+	     url('fonts/fjallaone-regular-webfont.svg#webfont') format('svg');
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -8,7 +35,7 @@ html, body {
 	position: relative;
 	height: 100%;
 	background: #232323;
-	font: 12px/1.2em Verdana, Arial, Helvetica, sans-serif;
+	font: 12px/1.2em share_regular;
 	color: #fff;
 }
 
@@ -93,9 +120,10 @@ html, body {
 /* clicker buttons */
 
 #prod, #ausg {
+	font: 20px/2em share_bold;
 	font-size: 2em;	
 	line-height: 1.2em;
-	padding: 25px 10px;
+	padding: 14px 10px;
 	width: 85%;
 }
 
@@ -124,7 +152,7 @@ html, body {
 }
 
 .values .value {
-	font-size: 3em;
+	font: 40px/4em fjalla_one;
 	line-height: 1em;
 	font-weight: bold;
 	float: left;
@@ -148,6 +176,20 @@ html, body {
 
 #Popularität .values .text {
 	color: #ff8000;
+}
+
+.blue {
+	color: #7fd9ff;
+}
+
+.orange {
+	color: #ff8000;
+}
+
+#Setting > div {
+	position: absolute;
+	top: 5px;
+	left: 7px;
 }
 
 
@@ -235,6 +277,7 @@ html, body {
 	vertical-align: middle;
 	text-align: center;
 	border: 2px dotted #bbb;
+	padding: 2px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
