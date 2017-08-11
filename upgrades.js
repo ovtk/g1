@@ -26,7 +26,7 @@ var upgrades = {
 		
 	"parteiname": [
 		"Ich hab einen Traum!",
-		"Vodka", 10,
+		"Vodka", 11,
 		"Es braucht eine neue Partei! Aber wie soll die PARTEI heißen?",
 		"+ Partei-Name",
 		"blue",
@@ -39,7 +39,7 @@ var upgrades = {
 
 	"vereinsheim": [
 		"Wir brauchen ein Vereinsheim",
-		"Vodka", 25,
+		"Vodka", 23,
 		"Erbaut auf den Ruinen der Manyo. (Never forget, never forgive.)",
 		"+ Vereinsheim",
 		"blue",
@@ -48,7 +48,7 @@ var upgrades = {
 			growthRate.Vodka += 1;
 			fadeIn("#Setting");
 			set("setting1");
-			fadeIn("#ausg", 8000);
+			fadeIn("#ausg", 2000);
 		}],
 
 	"founding1": [
@@ -65,7 +65,7 @@ var upgrades = {
 		
 	"saalrunde": [
 		"Ihr seid alle meine Kumpels!",
-		"Vodka", 100,
+		"Vodka", 73,
 		"Trinker fragen, Politiker antworten.",
 		"+ 1 Mitglieder / s",
 		"blue",
@@ -75,23 +75,27 @@ var upgrades = {
 
 	"parteilogo": [
 		"Ein Logo",
-		"Vodka", 250,
+		"Vodka", 120,
 		"Sie zu knechten, sie alle zu finden, ins Dunkel zu treiben...",
 		"+1 Popularität / Sekunde",
 		"orange",
 		function() {
 			growthRate.Popularität += 1;
-			// growthRate.Vodka += 1;
 			clickRate.Vodka += 3;
-			// $("#Vodka div.perclick span").text(clickRate.Vodka);
-			fadeIn("#logo", 5000);
-			addAchievement("Logos regieren die Welt", 6000);
-			set("logo");
+			$("#logo img").fadeOut(500, function() {
+				$("#logo img").replaceWith("<img src='images/die_partei_logo2.png' />");
+				$("#logo img").css("opacity", "0.0");
+				$("#logo img").animate({opacity: "1.0"}, 3000, function() {
+					addAchievement("Logos regieren die Welt");
+					set("logo");
+				});
+			});
+			//fadeIn("#logo", 5000);
 		}],
 		
 	"parteiprogramm": [
 		"Ein Parteiprogramm schreiben",
-		"Mitglieder", 100,
+		"Mitglieder", 73,
 		"Am besten irgendwas mit Tierschutz!",
 		"+2 Mitglieder / Sekunde",
 		"blue",

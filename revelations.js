@@ -66,13 +66,13 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (get("founded") && value.Vodka >= 50);
+		return (get("founded") && value.Vodka >= 40);
 	}, function() {
 		addUpgrade("parteilogo");
 	}],
 	
 	[function() {
-		return (get("founded") && value.Mitglieder >= 20);
+		return (get("founded") && value.Mitglieder >= 13);
 	}, function() {
 		addUpgrade("parteiprogramm");
 	}],
