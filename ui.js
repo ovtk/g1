@@ -64,11 +64,13 @@ function tickText(text) {
 
 function addAchievement(text, delay = 0) {
 	var j = $("#Achievements");
-	j.append("<table><tr><td>" + text + "</td></tr></table>");
-	var n = j.find("table:last-of-type");
-	n.css("marginTop", "-400px");
+	j.prepend("<table><tr><td>" + text + "</td></tr></table>");
+	var n = j.find("table:first-of-type");
+	n.css("marginTop", "-200px");
+	n.css("marginBottom", "121px");
 	n.delay(delay).animate({ 
-		marginTop: "3px",
+		marginTop: "5px",
+		marginBottom: "5px",
 		opacity: 1.0
 		}, 500, 
 		function() {
@@ -78,7 +80,7 @@ function addAchievement(text, delay = 0) {
 
 function delAchievements(num = 1) {
 	for (var i = 0; i < num; i++) { 
-		$("#Achievements div:first").remove();
+		$("#Achievements table:last").remove();
 	}
 }
 

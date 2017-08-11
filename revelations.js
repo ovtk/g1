@@ -15,13 +15,20 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (value.Klicks >= 4);
+		return (value.Klicks >= 3);
 	}, function() {
 		tickText("Immer weiter, bis Du 10 Vodka hast!");
 	}],
 	
 	[function() {
-		return (value.Vodka >= 7);
+		return (value.Klicks >= 6);
+	}, function() {
+		tickText("Ich mach schon mal das Licht an.");
+		fadeIn("#Setting");
+	}],
+	
+	[function() {
+		return (value.Vodka >= 8);
 	}, function() {
 		addUpgrade("saalrunde");
 	}],
