@@ -86,6 +86,7 @@ var upgrades = {
 			// $("#Vodka div.perclick span").text(clickRate.Vodka);
 			fadeIn("#logo", 5000);
 			addAchievement("Logos regieren die Welt", 6000);
+			set("logo");
 		}],
 		
 	"parteiprogramm": [
@@ -97,7 +98,7 @@ var upgrades = {
 		function() {
 			growthRate.Mitglieder += 2;
 			addAchievement("Ein Partei-Programm");
-			set("programm");
+			set("logo");
 		}],
 		
 	"founding2": [

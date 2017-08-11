@@ -5,7 +5,7 @@ var conditions = {
 	"setting1": false,
 	"founded": false, 
 	"members": false, 
-	"programm": false,
+	"logo": false,
 	"voters": false,
 	"sold1": false,
 	"sold2": false,

@@ -59,17 +59,22 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (get("setting1") && value.Vodka >= 25);
+		return (get("setting1") && value.Vodka >= 5);
 	}, function() {
 		addUpgrade("saalrunde");
 		tickText("Klick auf 'einen ausgeben', um einen auszugeben!");
 	}],
 	
 	[function() {
-		return (get("founded"));
+		return (get("founded") && value.Vodka >= 50);
+	}, function() {
+		addUpgrade("parteilogo");
+	}],
+	
+	[function() {
+		return (get("founded") && value.Mitglieder >= 20);
 	}, function() {
 		addUpgrade("parteiprogramm");
-		addUpgrade("parteilogo");
 	}],
 	
 	[function() {
@@ -142,157 +147,157 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (get("founded") && value["Vodka"] >= 15);
-	}, function() {
-		addUpgrade("mettbrot");
-	}],
-	
-	[function() {
-		return (value["Mitglieder"] >= 100);
-	}, function() {
-		addUpgrade("blabla");
-	}],
-	
-	[function() {
-		return (value["Popularität"] >= 30);
-	}, function() {
-		addUpgrade("jubelperser");
-	}],
-	
-	[function() {
-		return (value["Mitglieder"] >= 100);
-	}, function() {
-		addUpgrade("sellmoney");
-	}],
-	
-	[function() {
-		return (get("founded") && value["Vodka"] >= 40);
+		return (get("logo") && value["Vodka"] >= 40);
 	}, function() {
 		addUpgrade("slogan");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Vodka"] >= 100);
+		return (get("logo") && value["Vodka"] >= 15);
+	}, function() {
+		addUpgrade("mettbrot");
+	}],
+	
+	[function() {
+		return (get("logo") && value["Mitglieder"] >= 100);
+	}, function() {
+		addUpgrade("blabla");
+	}],
+	
+	[function() {
+		return (get("logo") && value["Popularität"] >= 30);
+	}, function() {
+		addUpgrade("jubelperser");
+	}],
+	
+	[function() {
+		return (get("logo") && value["Mitglieder"] >= 100);
+	}, function() {
+		addUpgrade("sellmoney");
+	}],
+	
+	[function() {
+		return (get("logo") && value["Vodka"] >= 100);
 	}, function() {
 		addUpgrade("dictator");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Vodka"] >= 300);
+		return (get("logo") && value["Vodka"] >= 300);
 	}, function() {
 		addUpgrade("kollektion");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Vodka"] >= 500);
+		return (get("logo") && value["Vodka"] >= 500);
 	}, function() {
 		addUpgrade("goaty");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Vodka"] >= 500);
+		return (get("logo") && value["Vodka"] >= 500);
 	}, function() {
 		addUpgrade("fifafu");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Vodka"] >= 800);
+		return (get("logo") && value["Vodka"] >= 800);
 	}, function() {
 		addUpgrade("meta");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Mitglieder"] >= 8000);
+		return (get("logo") && value["Mitglieder"] >= 8000);
 	}, function() {
 		addUpgrade("metaebene");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Mitglieder"] >= 100);
+		return (get("logo") && value["Mitglieder"] >= 100);
 	}, function() {
 		addUpgrade("justuspeterbob");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Vodka"] >= 1200);
+		return (get("logo") && value["Vodka"] >= 1200);
 	}, function() {
 		addUpgrade("winwin");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Mitglieder"] >= 120);
+		return (get("logo") && value["Mitglieder"] >= 120);
 	}, function() {
 		addUpgrade("glyph");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Vodka"] >= 2500);
+		return (get("logo") && value["Vodka"] >= 2500);
 	}, function() {
 		addUpgrade("ovtk");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Vodka"] >= 5000);
+		return (get("logo") && value["Vodka"] >= 5000);
 	}, function() {
 		addUpgrade("kim");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Mitglieder"] >= 250);
+		return (get("logo") && value["Mitglieder"] >= 250);
 	}, function() {
 		addUpgrade("rule34");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Mitglieder"] >= 1000);
+		return (get("logo") && value["Mitglieder"] >= 1000);
 	}, function() {
 		addUpgrade("error404");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Vodka"] >= 10000);
+		return (get("logo") && value["Vodka"] >= 10000);
 	}, function() {
 		addUpgrade("vodka");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Popularität"] >= 10000);
+		return (get("logo") && value["Popularität"] >= 10000);
 	}, function() {
 		addUpgrade("kohle");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Vodka"] >= 10000);
+		return (get("logo") && value["Vodka"] >= 10000);
 	}, function() {
 		addUpgrade("mauer");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Vodka"] >= 1000000);
+		return (get("logo") && value["Vodka"] >= 1000000);
 	}, function() {
 		addUpgrade("blackhole");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Vodka"] >= 100);
+		return (get("logo") && value["Vodka"] >= 100);
 	}, function() {
 		addUpgrade("pig");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Mitglieder"] >= 5800);
+		return (get("logo") && value["Mitglieder"] >= 5800);
 	}, function() {
 		addUpgrade("fdp");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Popularität"] >= 1000);
+		return (get("logo") && value["Popularität"] >= 1000);
 	}, function() {
 		addUpgrade("turtle");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Vodka"] >= 10000);
+		return (get("logo") && value["Vodka"] >= 10000);
 	}, function() {
 		addUpgrade("brewery");
 	}],
