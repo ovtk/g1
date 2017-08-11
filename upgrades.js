@@ -39,7 +39,7 @@ var upgrades = {
 
 	"vereinsheim": [
 		"Wir brauchen ein Vereinsheim",
-		"Vodka", 30,
+		"Vodka", 25,
 		"Erbaut auf den Ruinen der Manyo. (Never forget, never forgive.)",
 		"+ Vereinsheim",
 		"blue",

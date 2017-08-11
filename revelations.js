@@ -135,7 +135,7 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (get("founded") && value["Mitglieder"] >= 50);
+		return (get("founded") && value["Mitglieder"] >= 100);
 	}, function() {
 		addUpgrade("founding2");
 	}],
@@ -153,7 +153,7 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (get("logo") && value["Vodka"] >= 15);
+		return (get("logo") && value["Vodka"] >= 100);
 	}, function() {
 		addUpgrade("mettbrot");
 	}],
@@ -165,37 +165,37 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (get("logo") && value["Popularität"] >= 30);
+		return (get("logo") && value["Popularität"] >= 100);
 	}, function() {
 		addUpgrade("jubelperser");
 	}],
 	
 	[function() {
-		return (get("logo") && value["Mitglieder"] >= 100);
+		return (get("logo") && value["Mitglieder"] >= 200);
 	}, function() {
 		addUpgrade("sellmoney");
 	}],
 	
 	[function() {
-		return (get("logo") && value["Vodka"] >= 100);
+		return (get("logo") && value["Vodka"] >= 400);
 	}, function() {
 		addUpgrade("dictator");
 	}],
 	
 	[function() {
-		return (get("logo") && value["Vodka"] >= 300);
+		return (get("logo") && value["Vodka"] >= 500);
 	}, function() {
 		addUpgrade("kollektion");
 	}],
 	
 	[function() {
-		return (get("logo") && value["Vodka"] >= 500);
+		return (get("logo") && value["Vodka"] >= 600);
 	}, function() {
 		addUpgrade("goaty");
 	}],
 	
 	[function() {
-		return (get("logo") && value["Vodka"] >= 500);
+		return (get("logo") && value["Vodka"] >= 800);
 	}, function() {
 		addUpgrade("fifafu");
 	}],
