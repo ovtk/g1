@@ -94,13 +94,18 @@ html, body {
 	background: #171717;
 }
 
+.centered {
+	vertical-align: middle;
+	text-align: center;
+}
 
 
 /* partei logo */
 
 #logo {
 	width: 640px;
-	height: 70px;
+	height: 80px;
+	background: #5b5b5b;
 }
 
 /* upper playboard */
@@ -120,10 +125,6 @@ html, body {
 	padding: 0;
 	position: relative;
 }
-
-#upper_playboard td.left {
-	background: #222;
-} 
 
 /* clicker buttons */
 
@@ -212,8 +213,6 @@ html, body {
 	width: 100%;
 	font-size: 1.6em;
 	margin: 10px 0;
-	vertical-align: middle;
-	text-align: center;
 	overflow: hidden;
 }
 
@@ -295,8 +294,6 @@ html, body {
 #Achievements td {
 	font-size: 1.2em;
 	line-height: 1.2em;
-	vertical-align: middle;
-	text-align: center;
 	border: 2px dotted #bbb;
 	padding: 2px;
 	-moz-border-radius: 10px;

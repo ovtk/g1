@@ -342,7 +342,7 @@ var upgrades = {
 		function() {
 			// growthRate.Popularität *= 2;
 			addAchievement("Singularis Porcus");
-			growthRate.Popularität -= 200;
+			value.Popularität -= 200;
 		}],
 
 	"fdp": [

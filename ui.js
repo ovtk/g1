@@ -72,7 +72,7 @@ function tickText(text) {
 
 function addAchievement(text, delay = 0) {
 	var j = $("#Achievements");
-	j.prepend("<table><tr><td>" + text + "</td></tr></table>");
+	j.prepend("<table><tr><td class='centered'>" + text + "</td></tr></table>");
 	var n = j.find("table:first-of-type");
 	n.css("marginTop", "-200px");
 	n.css("marginBottom", "121px");
