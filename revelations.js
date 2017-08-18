@@ -135,27 +135,39 @@ var revelations = [
 	}],
 	
 	[function() {
+		return (get("logo") && value["Vodka"] >= 40);
+	}, function() {
+		addUpgrade("mettbrot");
+	}],
+	
+	[function() {
+		return (get("logo") && value["Vodka"] >= 60);
+	}, function() {
+		addUpgrade("poster1");
+	}],
+	
+	[function() {
+		return (get("logo") && value["Vodka"] >= 200);
+	}, function() {
+		addUpgrade("slogan");
+	}],
+	
+	[function() {
 		return (get("founded") && value["Mitglieder"] >= 100);
 	}, function() {
 		addUpgrade("founding2");
 	}],
 	
 	[function() {
-		return (get("sold1") && value.Achievements >= 2);
-	}, function() {
-		addUpgrade("sellach2");
-	}],
-	
-	[function() {
-		return (get("logo") && value["Vodka"] >= 40);
-	}, function() {
-		addUpgrade("slogan");
-	}],
-	
-	[function() {
 		return (get("logo") && value["Vodka"] >= 100);
 	}, function() {
-		addUpgrade("mettbrot");
+		addUpgrade("pig");
+	}],
+	
+	[function() {
+		return (get("sold1") && value.Achievements >= 3);
+	}, function() {
+		addUpgrade("sellach2");
 	}],
 	
 	[function() {
@@ -276,12 +288,6 @@ var revelations = [
 		return (get("logo") && value["Vodka"] >= 1000000);
 	}, function() {
 		addUpgrade("blackhole");
-	}],
-	
-	[function() {
-		return (get("logo") && value["Vodka"] >= 100);
-	}, function() {
-		addUpgrade("pig");
 	}],
 	
 	[function() {

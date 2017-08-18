@@ -51,11 +51,24 @@ var upgrades = {
 			fadeIn("#ausg", 2000);
 		}],
 
+	"sellach1": [
+		"Auszeichnungen verkaufen",
+		"Achievements", 5,
+		"Die nächste Singularität kommt bestimmt.",
+		"x2 Vodka / s",
+		"silver",
+		function() {
+			delAchievements(5);
+			growthRate.Vodka *= 2;
+			clickRate.Vodka *= 2;
+			set("sold1");
+		}],
+
 	"founding1": [
 		"Gründungs-Mythos",
 		"Mitglieder", 7,
 		"Sind sieben Menschen 1e Partei, wenn sie 1e Partei sind?",
-		"+1 Mitglieder / Sekunde",
+		"+1 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder += 1;
@@ -75,9 +88,9 @@ var upgrades = {
 
 	"parteilogo": [
 		"Ein Logo",
-		"Vodka", 120,
+		"Mitglieder", 73,
 		"Sie zu knechten, sie alle zu finden, ins Dunkel zu treiben...",
-		"+1 Popularität / Sekunde",
+		"+1 Popularität / s",
 		"orange",
 		function() {
 			growthRate.Popularität += 1;
@@ -95,9 +108,9 @@ var upgrades = {
 		
 	"parteiprogramm": [
 		"Ein Parteiprogramm schreiben",
-		"Mitglieder", 73,
+		"Vodka", 149,
 		"Am besten irgendwas mit Tierschutz!",
-		"+2 Mitglieder / Sekunde",
+		"+2 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder += 2;
@@ -105,11 +118,42 @@ var upgrades = {
 			set("logo");
 		}],
 		
+	"mettbrot": [
+		"Mettbrötchen verschenken",
+		"Vodka", 227,
+		"Weil wir es können.",
+		"x3 Vodka / s",
+		"orange",
+		function() {
+			growthRate.Vodka *= 3;
+		}],
+
+	"poster1": [
+		"Ein lustiges Poster machen",
+		"Vodka", 487,
+		"Weil wir auch das können.",
+		"+3 Popularität / s",
+		"orange",
+		function() {
+			growthRate.Popularität += 3;
+			alert("poster!");
+		}],
+
+	"slogan": [
+		"Der besten Slogan aller Zeiten",
+		"Vodka", 1000,
+		"'Wählt die Partei, sie ist sehr gut!'",
+		"x5 Popularität / s",
+		"orange",
+		function() {
+			growthRate.Popularität *= 5;
+		}],
+
 	"founding2": [
 		"Die PARTEI gründen",
 		"Mitglieder", 400,
 		"Jetzt wirklich. Ich gebe ihnen mein Ehrenwort!",
-		"+3 Mitglieder / Sekunde",
+		"+3 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder += 3;
@@ -117,45 +161,49 @@ var upgrades = {
 			addAchievement("Partei gegründet (2)");
 		}],
 		
-	"sellach1": [
-		"Auszeichnungen verkaufen",
-		"Achievements", 5,
-		"Die nächste Singularität kommt bestimmt.",
-		"x2 Vodka / Sekunde",
-		"silver",
+	"pig": [
+		"Ein Schwein schlachten und grillen",
+		"Mitglieder", 1000,
+		"Singularis Porcus und dazu lauwarme Cervisia.",
+		"-200 Popularität",
+		"orange",
 		function() {
-			delAchievements(5);
-			growthRate.Vodka *= 2;
-			set("sold1");
+			// growthRate.Popularität *= 2;
+			addAchievement("Singularis Porcus");
+			clickRate.Mitglieder *= 3;
+			value.Popularität -= 200;
 		}],
-		
+
+	"parteizentrale": [
+		"Neue Heimat",
+		"Mitglieder", 5000,
+		"Zum symbolischen Preis von 1 Mark.",
+		"+3 Mitglieder / s",
+		"blue",
+		function() {
+			growthRate.Mitglieder += 3;
+			growthRate.Popularität += 1;
+			addAchievement("Partei gegründet (2)");
+		}],
+
 	"sellach2": [
 		"Auszeichnungen verkaufen (2)",
 		"Achievements", 5,
 		"Die nächste Singularität kommt bestimmt.",
-		"x2 Vodka / Sekunde",
+		"x5 Vodka / s",
 		"silver",
 		function() {
 			delAchievements(5);
-			clickRate.Vodka += 8;
+			growthRate.Vodka *= 5;
+			clickRate.Vodka *= 3;
 			set("sold2");
 		}],
 
-	"mettbrot": [
-		"Mettbrötchen verschenken",
-		"Vodka", 150,
-		"Weil wir es können",
-		"+3 Popularität / Sekunde",
-		"orange",
-		function() {
-			growthRate.Popularität += 3;
-		}],
-		
 	"blabla": [
 		"Bla bla",
 		"Mitglieder", 250,
 		"Blablabla bla blabla blablablablabla.",
-		"x2 Popularität / Sekunde",
+		"x2 Popularität / s",
 		"orange",
 		function() {
 			growthRate.Popularität *= 2;
@@ -165,7 +213,7 @@ var upgrades = {
 		"Jubelperser",
 		"Popularität", 100,
 		"Für die FDP jubeln!",
-		"x3 Mitglieder / Sekunde",
+		"x3 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 3;
@@ -181,21 +229,11 @@ var upgrades = {
 			clickRate.Mitglieder *= 5;
 		}],
 
-	"slogan": [
-		"Der besten Slogan aller Zeiten",
-		"Vodka", 400,
-		"'Wählt die Partei, sie ist sehr gut!'",
-		"x5 Popularität / Sekunde",
-		"orange",
-		function() {
-			growthRate.Popularität *= 5;
-		}],
-
 	"dictator": [
 		"Diktator beleidigen",
 		"Vodka", 600,
 		"Muss einfach sein.",
-		"x2 Mitglieder / Sekunde",
+		"x2 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 2;
@@ -205,7 +243,7 @@ var upgrades = {
 		"Forever Grau",
 		"Vodka", 900,
 		"Die PARTEI stellt ihre neueste Kollektion vor.",
-		"x2 Vodka / Sekunde",
+		"x2 Vodka / s",
 		"silver",
 		function() {
 			growthRate.Vodka *= 2;
@@ -215,7 +253,7 @@ var upgrades = {
 		"Der alte Ziegenwitz",
 		"Vodka", 1500,
 		"Europäischen Möchtegern-Diktator beleidigen.",
-		"x2 Popularität / Sekunde",
+		"x2 Popularität / s",
 		"orange",
 		function() {
 			growthRate.Popularität *= 2;
@@ -225,7 +263,7 @@ var upgrades = {
 		"FIFA-Funktionär bestechen",
 		"Vodka", 2500,
 		"Deutschland muss Weltmeister bleiben!",
-		"x2 Popularität / Sekunde",
+		"x2 Popularität / s",
 		"orange",
 		function() {
 			growthRate.Popularität *= 2;
@@ -235,7 +273,7 @@ var upgrades = {
 		"Meta",
 		"Vodka", 4000,
 		"Auf der AfD-Pressekonferenz eine Pressekonferenz geben.",
-		"x2 Popularität / Sekunde",
+		"x2 Popularität / s",
 		"orange",
 		function() {
 			growthRate.Popularität *= 2;
@@ -245,7 +283,7 @@ var upgrades = {
 		"Metaebene",
 		"Mitglieder", 20000,
 		"Interview mit Tim für das CRE.",
-		"x2 Mitglieder / Sekunde",
+		"x2 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 2;
@@ -255,7 +293,7 @@ var upgrades = {
 		"Its wots behind mwe that I am",
 		"Mitglieder", 500,
 		"Gegnerische Spaßpartei gründen (z.B. SPD).",
-		"x2 Vodka / Sekunde",
+		"x2 Vodka / s",
 		"silver",
 		function() {
 			growthRate.Vodka *= 2;
@@ -265,7 +303,7 @@ var upgrades = {
 		"Win-Win",
 		"Vodka", 5000,
 		"Diesel-Abgas-Inhalatoren verschenken.",
-		"x2 Mitglieder / Sekunde",
+		"x2 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 2;
@@ -275,7 +313,7 @@ var upgrades = {
 		"Bayer-Monsanto-Grasovka",
 		"Mitglieder", 800,
 		"Glyphosat dem Vodka beimengen.",
-		"x2 Popularität / Sekunde",
+		"x2 Popularität / s",
 		"orange",
 		function() {
 			growthRate.Popularität *= 2;
@@ -285,7 +323,7 @@ var upgrades = {
 		"Wo die wilden Kerle hausen",
 		"Vodka", 10000,
 		"Ortsverband Treptow-Köpenik gründen",
-		"x2 Vodka / Sekunde",
+		"x2 Vodka / s",
 		"silver",
 		function() {
 			growthRate.Vodka *= 3;
@@ -359,18 +397,6 @@ var upgrades = {
 		"orange",
 		function() {
 			growthRate.Popularität *= 2;
-		}],
-
-	"pig": [
-		"Ein Schwein schlachten und grillen",
-		"Mitglieder", 500,
-		"Singularis Porcus und dazu lauwarme Cervisia.",
-		"-200 Popularität",
-		"orange",
-		function() {
-			// growthRate.Popularität *= 2;
-			addAchievement("Singularis Porcus");
-			value.Popularität -= 200;
 		}],
 
 	"fdp": [

@@ -49,6 +49,13 @@ function reveal() {
 	}
 }
 
+function checkElection() {
+	day += 1;
+	if (day % 300 == 0) {
+		electionResults();
+	}
+}
+
 
 
 function inc(key, val) {
@@ -72,6 +79,10 @@ function requirements(key, val, fruits, kill = false) {
 			delUpgrade(kill);
 		}
 	}
+}
+
+function prozent() {
+	return prettyShortNumbers(value.Popularität / (value.Wahlberechtigte * 0.7)  * 100);
 }
 
 

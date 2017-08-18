@@ -70,6 +70,10 @@ function tickText(text) {
 	
 }
 
+function electionResults() {
+	alert("Wahlergebnis: " + prozent() + "%");
+}
+
 function addAchievement(text, delay = 0) {
 	var j = $("#Achievements");
 	j.prepend("<table><tr><td class='centered'>" + text + "</td></tr></table>");
