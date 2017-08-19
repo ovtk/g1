@@ -71,7 +71,7 @@ function tickText(text) {
 }
 
 function electionResults() {
-	alert("Wahlergebnis: " + prozent() + "%");
+	// alert("Wahlergebnis: " + prozent() + "%");
 }
 
 function addAchievement(text, delay = 0) {
@@ -110,7 +110,7 @@ function addUpgrade(key) {
 	var n = j.find("div:last-of-type");
 	n.append("<p class='title bold'>" + up[0] + "</p>");
 	n.append("<p class='text'>" + up[3] + "</p>");
-	n.append("<p class='requirement " + upgradeColors[up[1]] + "'>– " + up[2] + " " + up[1] + "</p>");
+	n.append("<p class='requirement " + upgradeColors[up[1]] + "'>– " + prettyShortNumbers(up[2]) + " " + up[1] + "</p>");
 	n.append("<p class='fruit " + up[5] + "'>" + up[4] + "</p>");
 	n.css("display", "none");
 	n.fadeIn(500);

@@ -147,55 +147,55 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (get("logo") && value["Vodka"] >= 200);
+		return (get("logo") && value["Vodka"] >= 400);
 	}, function() {
 		addUpgrade("slogan");
 	}],
 	
 	[function() {
-		return (get("founded") && value["Mitglieder"] >= 100);
+		return (get("founded") && value.Mitglieder >= 100);
 	}, function() {
 		addUpgrade("founding2");
 	}],
 	
 	[function() {
-		return (get("logo") && value["Vodka"] >= 100);
+		return (get("logo") && value.Popularität >= 250);
 	}, function() {
 		addUpgrade("pig");
 	}],
 	
 	[function() {
-		return (get("sold1") && value.Achievements >= 3);
+		return (get("sold1") && value.Achievements >= 4);
 	}, function() {
 		addUpgrade("sellach2");
 	}],
 	
 	[function() {
-		return (get("logo") && value["Mitglieder"] >= 100);
-	}, function() {
-		addUpgrade("blabla");
-	}],
-	
-	[function() {
-		return (get("logo") && value["Popularität"] >= 100);
+		return (get("logo") && value.Mitglieder >= 200);
 	}, function() {
 		addUpgrade("jubelperser");
 	}],
 	
 	[function() {
-		return (get("logo") && value["Mitglieder"] >= 200);
+		return (get("logo") && value.Popularität >= 500);
 	}, function() {
 		addUpgrade("sellmoney");
 	}],
 	
 	[function() {
-		return (get("logo") && value["Vodka"] >= 400);
+		return (get("logo") && value.Vodka >= 1000);
+	}, function() {
+		addUpgrade("blabla");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Vodka >= 400);
 	}, function() {
 		addUpgrade("dictator");
 	}],
 	
 	[function() {
-		return (get("logo") && value["Vodka"] >= 500);
+		return (get("logo") && value.Vodka >= 500);
 	}, function() {
 		addUpgrade("kollektion");
 	}],
