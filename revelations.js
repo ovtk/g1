@@ -248,11 +248,16 @@ var revelations = [
 		addUpgrade("brewery");
 	}],
 	
+	
 	[function() {
-		return (get("founded") && value.Mitglieder >= 100);
+		return (get("logo") && value.Vodka >= 1000000);
 	}, function() {
-		addUpgrade("founding2");
+		addUpgrade("blackhole");
 	}],
+	
+	
+	
+	
 	
 	[function() {
 		return (get("logo") && value.Vodka >= 1000);
@@ -266,53 +271,95 @@ var revelations = [
 		addUpgrade("sellach2");
 	}],
 	
+
+
 	[function() {
-		return (get("logo") && value.Mitglieder >= 8000);
+		return (get("logo") && value.Mitglieder >= 17);
 	}, function() {
-		addUpgrade("metaebene");
+		addUpgrade("poster2");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 500);
+		return (get("logo") && value.Mitglieder >= 34);
 	}, function() {
 		addUpgrade("rule34");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 1000);
+		return (get("founded") && value.Mitglieder >= 83);
+	}, function() {
+		addUpgrade("founding2");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Mitglieder >= 187);
+	}, function() {
+		addUpgrade("spd");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Mitglieder >= 380);
+	}, function() {
+		addUpgrade("poster3");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Mitglieder >= 750);
+	}, function() {
+		addUpgrade("metaebene");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Mitglieder >= 1440);
+	}, function() {
+		addUpgrade("poster4");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Mitglieder >= 2733);
 	}, function() {
 		addUpgrade("error404");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Popularität >= 10000);
+		return (get("logo") && value.Mitglieder >= 5063);
+	}, function() {
+		addUpgrade("parteizentrale");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Mitglieder >= 9145);
+	}, function() {
+		addUpgrade("snowden");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Mitglieder >= 16333);
 	}, function() {
 		addUpgrade("kohle");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 10000);
+		return (get("logo") && value.Mitglieder >= 28700);
+	}, function() {
+		addUpgrade("poster5");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Mitglieder >= 49875);
 	}, function() {
 		addUpgrade("mauer");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Mitglieder >= 85928);
 	}, function() {
-		addUpgrade("blackhole");
+		addUpgrade("poster6");
 	}],
 	
-	[function() {
-		return (get("logo") && value.Mitglieder >= 5800);
-	}, function() {
-		addUpgrade("fdp");
-	}],
 	
-	[function() {
-		return (get("regierung") && value.Vodka >= 10000);
-	}, function() {
-		addUpgrade("snowden");
-	}],
+	
+	
 	
 	[function() {
 		return (get("regierung") && value.Vodka >= 10000);

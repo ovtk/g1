@@ -105,6 +105,10 @@ var upgrades = {
 			});
 			//fadeIn("#logo", 5000);
 		}],
+	
+	
+	
+	
 		
 	"parteiprogramm": [
 		"Ein Parteiprogramm schreiben",
@@ -312,17 +316,172 @@ var upgrades = {
 			addAchievement("Wir vergessen keinen", 600);
 		}],
 
-	"founding2": [
-		"Die PARTEI gründen",
-		"Mitglieder", 400,
-		"Jetzt wirklich. Ich gebe ihnen mein Ehrenwort!",
-		"+ 3 Mitglieder / s",
+
+
+
+
+	"poster2": [
+		"Yeah, Poster!",
+		"Mitglieder", 50,
+		"Just another poster on the wall.",
+		"x 1.5 Mitglieder / Sekunde",
 		"blue",
 		function() {
-			growthRate.Mitglieder += 4;
+			growthRate.Mitglieder *= 1.5;
+		}],
+
+	"rule34": [
+		"Rule 34",
+		"Mitglieder", 105,
+		"I invoke rule 34 on the 'Die PARTEI'!",
+		"x 1.5 Mitglieder / Sekunde",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 1.5;
+			addAchievement("pwnd by 4chan");
+		}],
+
+	"founding2": [
+		"Die PARTEI gründen",
+		"Mitglieder", 250,
+		"Jetzt wirklich. Ich gebe ihnen mein Ehrenwort!",
+		"x 1.5 Mitglieder / Sekunde",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 1.5;
 			clickRate.Mitglieder *= 3;
 			growthRate.Popularität += 3;
 			addAchievement("Partei gegründet (2)");
+		}],
+
+	"spd": [
+		"Die SPD auslachen",
+		"Mitglieder", 560,
+		"Die wer?",
+		"x 1.5 Mitglieder / Sekunde",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 1.5;
+		}],
+
+	"poster3": [
+		"Yeah, Poster!",
+		"Mitglieder", 1140,
+		"Just another poster on the wall.",
+		"x 1.5 Mitglieder / Sekunde",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 1.5;
+		}],
+
+	"metaebene": [
+		"Metaebene",
+		"Mitglieder", 2250,
+		"Interview mit Tim für das CRE.",
+		"x 1.5 Mitglieder / Sekunde",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 1.5;
+		}],
+
+	"poster4": [
+		"Yeah, Poster!",
+		"Mitglieder", 4320,
+		"Just another poster on the wall.",
+		"x 1.5 Mitglieder / Sekunde",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 1.5;
+		}],
+
+	"error404": [
+		"Error 404",
+		"Mitglieder", 8819,
+		"AfD Wühler sind hier richtig!",
+		"x 1.5 Mitglieder / Sekunde",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 1.5;
+		}],
+
+	"parteizentrale": [
+		"Neue Heimat",
+		"Mitglieder", 15190,
+		"Zum symbolischen Preis von 1 Mark.",
+		"x 1.5 Mitglieder / Sekunde",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 1.5;
+			growthRate.Popularität *= 2;
+			addAchievement("Partei gegründet (2)");
+		}],
+
+	"snowden": [
+		"Ed Snowden einladen",
+		"Mitglieder", 27435,
+		" Zum Kaffee (in Moskau).",
+		"x 1.5 Mitglieder / Sekunde",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 1.5;
+		}],
+
+	"kohle": [
+		"Fett Kohle einstreichen",
+		"Popularität", 49000,
+		"Ein Sitzen im Europaparlament.",
+		"x 1.5 Mitglieder / Sekunde",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 1.5;
+		}],
+
+	"poster5": [
+		"Yeah, Poster!",
+		"Mitglieder", 86100,
+		"Just another poster on the wall.",
+		"x 1.5 Mitglieder / Sekunde",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 1.5;
+		}],
+
+	"mauer": [
+		"Antikapitalistischer Schutzwall",
+		"Vodka", 149625,
+		"Die Mauer wieder aufbauen.",
+		"x 1.5 Mitglieder / Sekunde",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 1.5;
+		}],
+
+	"poster6": [
+		"Yeah, Poster!",
+		"Mitglieder", 257785,
+		"Just another poster on the wall.",
+		"x 1.5 Mitglieder / Sekunde",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 1.5;
+		}],
+
+
+
+
+
+	"sellach2": [
+		"Auszeichnungen verkaufen (2)",
+		"Achievements", 5,
+		"Die nächste Singularität kommt bestimmt.",
+		"+ 40k Popularität",
+		"silver",
+		function() {
+			delAchievements(5);
+			value.Popularität += 40000;
+			// growthRate.Vodka *= 5;
+			// clickRate.Vodka *= 3;
+			set("sold2");
 		}],
 
 	"pig": [
@@ -338,105 +497,10 @@ var upgrades = {
 			value.Popularität -= 4000;
 		}],
 
-	"parteizentrale": [
-		"Neue Heimat",
-		"Mitglieder", 5000,
-		"Zum symbolischen Preis von 1 Mark.",
-		"+3 Mitglieder / s",
-		"blue",
-		function() {
-			growthRate.Mitglieder += 3;
-			growthRate.Popularität += 1;
-			addAchievement("Partei gegründet (2)");
-		}],
-
-	"sellach2": [
-		"Auszeichnungen verkaufen (2)",
-		"Achievements", 5,
-		"Die nächste Singularität kommt bestimmt.",
-		"x 5 Vodka / s",
-		"silver",
-		function() {
-			delAchievements(5);
-			growthRate.Vodka *= 5;
-			clickRate.Vodka *= 3;
-			set("sold2");
-		}],
-
-	"error404": [
-		"Error 404",
-		"Mitglieder", 8819,
-		"AfD Wühler sind hier richtig!",
-		"+69 Vodka / Sekunde",
-		"silver",
-		function() {
-			growthRate.Vodka += 69;
-		}],
-
-	"metaebene": [
-		"Metaebene",
-		"Mitglieder", 20000,
-		"Interview mit Tim für das CRE.",
-		"x2 Mitglieder / s",
-		"blue",
-		function() {
-			growthRate.Mitglieder *= 2;
-		}],
-
-	"rule34": [
-		"Rule 34",
-		"Mitglieder", 1500,
-		"I invoke rule 34 on the 'Die PARTEI'!",
-		"x2 Mitglieder / Sekunde",
-		"blue",
-		function() {
-			growthRate.Mitglieder *= 2;
-		}],
-
-	"kohle": [
-		"Fett Kohle einstreichen",
-		"Popularität", 100000,
-		"Ein Sitzen im Europaparlament.",
-		"x2 Vodka / Sekunde",
-		"silver",
-		function() {
-			growthRate.Vodka += 100;
-		}],
-
-	"mauer": [
-		"Antikapitalistischer Schutzwall",
-		"Vodka", 5000000,
-		"Die Mauer wieder aufbauen.",
-		"x2 Popularität / Sekunde",
-		"orange",
-		function() {
-			growthRate.Popularität *= 10;
-		}],
-
 	"blackhole": [
 		"Einen drin",
 		"Vodka", 999999999999999999,
 		"Ein schwarzes Loch mit Vodka (ab-) füllen.",
-		"x2 Popularität / Sekunde",
-		"orange",
-		function() {
-			growthRate.Popularität *= 2;
-		}],
-
-	"fdp": [
-		"Die FDP auslachen",
-		"Mitglieder", 58000,
-		"Die wer?",
-		"x2 Popularität / Sekunde",
-		"orange",
-		function() {
-			growthRate.Popularität *= 2;
-		}],
-
-	"snowden": [
-		"Ed Snowden einladen",
-		"Mitglieder", 500,
-		" Zum Kaffee (in Moskau).",
 		"x2 Popularität / Sekunde",
 		"orange",
 		function() {
