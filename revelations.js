@@ -72,12 +72,6 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (get("founded") && value.Mitglieder >= 13);
-	}, function() {
-		addUpgrade("parteiprogramm");
-	}],
-	
-	[function() {
 		return (value.Mitglieder >= 1);
 	}, function() {
 		fadeIn("#Mitglieder");
@@ -135,21 +129,123 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (get("logo") && value["Vodka"] >= 100);
+		return (get("founded") && value.Vodka >= 40);
+	}, function() {
+		addUpgrade("parteiprogramm");
+	}],
+	
+	[function() {
+		return (get("logo") && value["Vodka"] >= 64);
 	}, function() {
 		addUpgrade("mettbrot");
 	}],
 	
 	[function() {
-		return (get("logo") && value["Vodka"] >= 120);
+		return (get("logo") && value["Vodka"] >= 160);
 	}, function() {
 		addUpgrade("poster1");
 	}],
 	
 	[function() {
-		return (get("logo") && value["Vodka"] >= 400);
+		return (get("logo") && value["Vodka"] >= 405);
 	}, function() {
 		addUpgrade("slogan");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Vodka >= 1024);
+	}, function() {
+		addUpgrade("jubelperser");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Vodka >= 2560);
+	}, function() {
+		addUpgrade("sellmoney");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Vodka >= 6315);
+	}, function() {
+		addUpgrade("blabla");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Vodka >= 15360);
+	}, function() {
+		addUpgrade("dictator");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Vodka >= 36864);
+	}, function() {
+		addUpgrade("kollektion");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Vodka >= 87381);
+	}, function() {
+		addUpgrade("goaty");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Vodka >= 204800);
+	}, function() {
+		addUpgrade("fifafu");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Vodka >= 475136);
+	}, function() {
+		addUpgrade("meta");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Vodka >= 1092267);
+	}, function() {
+		addUpgrade("justuspeterbob");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Vodka >= 2490368);
+	}, function() {
+		addUpgrade("winwin");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Vodka >= 5636096);
+	}, function() {
+		addUpgrade("glyph");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Vodka >= 12670293);
+	}, function() {
+		addUpgrade("ovtk");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Vodka >= 28311552);
+	}, function() {
+		addUpgrade("kim");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Vodka >= 62914560);
+	}, function() {
+		addUpgrade("vodka");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Vodka >= 139111083);
+	}, function() {
+		addUpgrade("turtle");
+	}],
+	
+	[function() {
+		return (get("logo") && value.Vodka >= 306184192);
+	}, function() {
+		addUpgrade("brewery");
 	}],
 	
 	[function() {
@@ -171,87 +267,9 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 3000);
-	}, function() {
-		addUpgrade("jubelperser");
-	}],
-	
-	[function() {
-		return (get("logo") && value.Vodka >= 9000);
-	}, function() {
-		addUpgrade("sellmoney");
-	}],
-	
-	[function() {
-		return (get("logo") && value.Vodka >= 20000);
-	}, function() {
-		addUpgrade("blabla");
-	}],
-	
-	[function() {
-		return (get("logo") && value.Vodka >= 40000);
-	}, function() {
-		addUpgrade("dictator");
-	}],
-	
-	[function() {
-		return (get("logo") && value.Vodka >= 90000);
-	}, function() {
-		addUpgrade("kollektion");
-	}],
-	
-	[function() {
-		return (get("logo") && value.Vodka >= 200000);
-	}, function() {
-		addUpgrade("goaty");
-	}],
-	
-	[function() {
-		return (get("logo") && value.Vodka >= 400000);
-	}, function() {
-		addUpgrade("fifafu");
-	}],
-	
-	[function() {
-		return (get("logo") && value.Vodka >= 800000);
-	}, function() {
-		addUpgrade("meta");
-	}],
-	
-	[function() {
 		return (get("logo") && value.Mitglieder >= 8000);
 	}, function() {
 		addUpgrade("metaebene");
-	}],
-	
-	[function() {
-		return (get("logo") && value.Vodka >= 1600000);
-	}, function() {
-		addUpgrade("justuspeterbob");
-	}],
-	
-	[function() {
-		return (get("logo") && value.Vodka >= 3000000);
-	}, function() {
-		addUpgrade("winwin");
-	}],
-	
-	[function() {
-		return (get("logo") && value.Vodka >= 6000000);
-	}, function() {
-		addUpgrade("glyph");
-	}],
-	
-	[function() {
-		return (get("logo") && value.Vodka >= 10000000);
-	}, function() {
-		addUpgrade("ovtk");
-	}],
-	
-	[function() {
-		return (get("logo") && value.Vodka >= 20000000);
-	}, function() {
-		addUpgrade("kim");
 	}],
 	
 	[function() {
@@ -264,12 +282,6 @@ var revelations = [
 		return (get("logo") && value.Mitglieder >= 1000);
 	}, function() {
 		addUpgrade("error404");
-	}],
-	
-	[function() {
-		return (get("logo") && value.Vodka >= 10000);
-	}, function() {
-		addUpgrade("vodka");
 	}],
 	
 	[function() {
@@ -294,18 +306,6 @@ var revelations = [
 		return (get("logo") && value.Mitglieder >= 5800);
 	}, function() {
 		addUpgrade("fdp");
-	}],
-	
-	[function() {
-		return (get("logo") && value.Popularität >= 1000);
-	}, function() {
-		addUpgrade("turtle");
-	}],
-	
-	[function() {
-		return (get("logo") && value.Vodka >= 10000);
-	}, function() {
-		addUpgrade("brewery");
 	}],
 	
 	[function() {
