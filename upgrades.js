@@ -48,7 +48,7 @@ var upgrades = {
 			growthRate.Vodka += 1;
 			fadeIn("#Setting");
 			set("setting1");
-			fadeIn("#ausg", 2000);
+			fadeIn("#spendVodka", 2000);
 		}],
 
 	"sellach1": [

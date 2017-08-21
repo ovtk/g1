@@ -46,7 +46,7 @@
 				</tr>
 				<tr>
 					<td class="left klick">
-						<div id="prod" class="box button active bold">
+						<div id="makeVodka" class="box button active bold">
 							<span id="clickVodka"></span>Vodka
 							<br />produzieren
 						</div>
@@ -59,7 +59,7 @@
 				</tr>
 				<tr>
 					<td class="left klick">
-						<div id="ausg" class="box button active bold">
+						<div id="spendVodka" class="box button active bold">
 							<span id="clickMitglieder">einen</span>
 							<br />ausgeben
 						</div>
@@ -92,8 +92,6 @@
 	<script type="text/javascript">
 		$(document).ready( function() {	
 			
-			// alert(Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
-						
 			mainLoop();
 										
 			var update_interval = setInterval(mainLoop, Math.round(1000 / fps));

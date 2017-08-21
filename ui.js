@@ -1,11 +1,11 @@
 // make Vodka
-$("#prod").click( function() {
+$("#makeVodka").click( function() {
 	value.Klicks += 1;
 	inc("Vodka", clickValue("Vodka"));
 });
 
 // spend Vodka
-$("#ausg").click( function() {
+$("#spendVodka").click( function() {
 	value.Klicks += 1;
 	
 	requirements("Vodka", clickValue("Mitglieder"), function() {
@@ -89,7 +89,6 @@ function tickText(text) {
 }
 
 function electionResults() {
-	// alert("Wahlergebnis: " + prozent() + "%");
 	tickText("Wahlergebnis: " + prozent() + "%");
 }
 

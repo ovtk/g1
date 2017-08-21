@@ -128,7 +128,7 @@ html, body {
 
 /* clicker buttons */
 
-#prod, #ausg {
+#makeVodka, #spendVodka {
 	font: 20px/2em share_bold;
 	font-size: 2em;	
 	line-height: 1.2em;
@@ -313,7 +313,7 @@ html, body {
 #Vodka, 
 #Destille, #Vodka .persecond, 
 #Setting,
-#ausg,
+#spendVodka,
 #Mitglieder, #Popularität, 
 #logo{
 	opacity: 0.0;

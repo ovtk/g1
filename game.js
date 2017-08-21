@@ -18,7 +18,7 @@ for (var i = 0; i < values.length; i++) {
 
 value.Wahlberechtigte = 61500000;
 value.Weltbevölkerung = 7540123440;
-growthRate.Weltbevölkerung = 229277; // Zuwachs pro Tag
+growthRate.Weltbevölkerung = 229277; 
 
 
 
@@ -138,12 +138,7 @@ function getWindowDimensions() {
 	displayH = round(c.getBoundingClientRect().bottom);
 	displayW = round(c.getBoundingClientRect().width);
 	alert(displayW + " / " + displayH);
-
-//	xoCenterX = xo.first().width() / 2;
-//	xoCenterY = xoHeight / 2;
-	
-//	containerHeight = getBottom($("#container")[0]);
 }
 
-//getWindowDimensions();
+
 
