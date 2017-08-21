@@ -60,7 +60,6 @@ var upgrades = {
 		function() {
 			delAchievements(5);
 			growthRate.Vodka += 2;
-			clickRate.Vodka += 2;
 			set("sold1");
 		}],
 
@@ -94,7 +93,6 @@ var upgrades = {
 		"orange",
 		function() {
 			growthRate.Popularität += 1;
-			clickRate.Vodka += 3;
 			$("#logo img").fadeOut(500, function() {
 				$("#logo img").replaceWith("<img src='images/die_partei_logo2.png' />");
 				$("#logo img").css("opacity", "0.0");
@@ -103,7 +101,6 @@ var upgrades = {
 					set("logo");
 				});
 			});
-			//fadeIn("#logo", 5000);
 		}],
 	
 	
@@ -349,7 +346,6 @@ var upgrades = {
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
-			clickRate.Mitglieder *= 3;
 			growthRate.Popularität += 3;
 			addAchievement("Partei gegründet (2)");
 		}],
@@ -407,13 +403,15 @@ var upgrades = {
 	"parteizentrale": [
 		"Neue Heimat",
 		"Mitglieder", 15190,
-		"Zum symbolischen Preis von 1 Mark.",
+		"Lehrter Bahnhof, zum symbolischen Preis von 1 Mark.",
 		"x 1.5 Mitglieder / Sekunde",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
 			growthRate.Popularität *= 2;
-			addAchievement("Partei gegründet (2)");
+			changeSetting(2, function() {
+				addAchievement("This Train Don't Stop There Anymore");
+			});
 		}],
 
 	"snowden": [
@@ -479,8 +477,6 @@ var upgrades = {
 		function() {
 			delAchievements(5);
 			value.Popularität += 40000;
-			// growthRate.Vodka *= 5;
-			// clickRate.Vodka *= 3;
 			set("sold2");
 		}],
 
@@ -493,7 +489,6 @@ var upgrades = {
 		function() {
 			addAchievement("Singularis Porcus");
 			growthRate.Vodka += 37;
-			clickRate.Mitglieder += 11;
 			value.Popularität -= 4000;
 		}],
 

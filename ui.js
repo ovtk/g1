@@ -1,14 +1,15 @@
 // make Vodka
 $("#prod").click( function() {
 	value.Klicks += 1;
-	inc("Vodka", clickRate.Vodka);
+	inc("Vodka", clickValue("Vodka"));
 });
 
 // spend Vodka
 $("#ausg").click( function() {
 	value.Klicks += 1;
-	requirements("Vodka", clickRate.Mitglieder, function() {
-		inc("Mitglieder", clickRate.Mitglieder);
+	
+	requirements("Vodka", clickValue("Mitglieder"), function() {
+		inc("Mitglieder", clickValue("Mitglieder"));
 	});
 });
 
@@ -19,11 +20,11 @@ function updateValuesView() {
 		$("#" + key + " div.value").text(prettyShortNumbers(value[key]));
 		$("#" + key + " div.persecond span").text(prettyShortNumbers(growthRate[key]));
 
-		if (clickRate.Vodka > 1) {
-			$("#clickVodka").text(prettyShortNumbers(clickRate.Vodka) + " ");
+		if (clickValue("Vodka") > 1) {
+			$("#clickVodka").text(prettyShortNumbers(clickValue("Vodka")) + " ");
 		}
-		if (clickRate.Mitglieder > 1) {
-			$("#clickMitglieder").text(prettyShortNumbers(clickRate.Mitglieder) + " Vodka");
+		if (clickValue("Mitglieder") > 1) {
+			$("#clickMitglieder").text(prettyShortNumbers(clickValue("Mitglieder")) + " Vodka");
 		}
 	}
 }
@@ -62,6 +63,17 @@ function showLogo() {
 	$("#logo").delay(500).animate({ 
 		height: "90px"
 		}, 5000);
+}
+
+function changeSetting(num, fun) {
+	$("#Setting").fadeOut(500, function() {
+		$("#Setting .bg img").replaceWith("<img src='images/setting" + num + "_bg.png' />");
+		$("#Setting .fg img").replaceWith("<img src='images/setting" + num + "_fg.png' />");
+	//	clear members!
+		$("#Setting").fadeIn(500, fun());
+		//$("#Setting").css("opacity", "0.0");
+		//$("#Setting").animate( {opacity: "1.0"}, 3000, fun() );
+	});
 }
 
 function tickText(text) {

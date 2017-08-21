@@ -8,23 +8,30 @@ var values = ["Vodka", "Mitglieder", "Popularität", "Klicks", "Achievements", "
 var value = {};
 var growth = {};
 var growthRate = {};
-var clickRate = {};
-
 
 for (var i = 0; i < values.length; i++) {
 	var key = values[i];
 	value[key] = 0;
 	growth[key] = 0;
 	growthRate[key] = 0;
-	clickRate[key] = 0;
 }
 
-clickRate.Vodka = 1;
-clickRate.Mitglieder = 1;
 value.Wahlberechtigte = 61500000;
 value.Weltbevölkerung = 7540123440;
 growthRate.Weltbevölkerung = 229277; // Zuwachs pro Tag
 
+
+
+function clickValue(key) {
+	var x = growthRate[key];
+	var value = (Math.sqrt(x) + x / 2) / 2;
+	
+	if (value > 1) {
+		return value;
+	} else {
+		return 1;
+	}
+}
 
 function grow() {	
 	var g = 0;
