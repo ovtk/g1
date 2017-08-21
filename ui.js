@@ -72,6 +72,7 @@ function tickText(text) {
 
 function electionResults() {
 	// alert("Wahlergebnis: " + prozent() + "%");
+	tickText("Wahlergebnis: " + prozent() + "%");
 }
 
 function addAchievement(text, delay = 0) {

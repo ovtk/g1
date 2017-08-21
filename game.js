@@ -107,7 +107,9 @@ function prettyShortNumbers(num) {
 		num /= 1000000000000;
 	}
 	
-	if (num < 10) {
+	if (num < 0) {
+		dp = 2;
+	} else if (num < 10) {
 		dp = 1;
 	} else if (num < 100) {
 		dp = 0;
