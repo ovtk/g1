@@ -18,7 +18,13 @@ function updateValuesView() {
 		var key = values[i];
 		$("#" + key + " div.value").text(prettyShortNumbers(value[key]));
 		$("#" + key + " div.persecond span").text(prettyShortNumbers(growthRate[key]));
-		$("#" + key + " div.perclick span").text(prettyShortNumbers(clickRate[key]));
+
+		if (clickRate.Vodka > 1) {
+			$("#clickVodka").text(prettyShortNumbers(clickRate.Vodka) + " ");
+		}
+		if (clickRate.Mitglieder > 1) {
+			$("#clickMitglieder").text(prettyShortNumbers(clickRate.Mitglieder) + " Vodka");
+		}
 	}
 }
 

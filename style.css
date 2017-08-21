@@ -315,16 +315,7 @@ html, body {
 #Setting,
 #ausg,
 #Mitglieder, #Popularität, 
-#logo, .perclick {
+#logo{
 	opacity: 0.0;
 }
 
-/* init 
-
-, 
-#Vodka .value,
-#Vodka .perclick,
- {
-	display: none;
-}
-*/
