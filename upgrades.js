@@ -320,25 +320,25 @@ var upgrades = {
 
 
 
-	"poster2": [
-		"Yeah, Poster!",
-		"Mitglieder", 50,
-		"Just another poster on the wall.",
-		"x 1.5 Mitglieder / Sekunde",
-		"blue",
-		function() {
-			growthRate.Mitglieder *= 1.5;
-		}],
-
 	"rule34": [
 		"Rule 34",
-		"Mitglieder", 105,
+		"Mitglieder", 34,
 		"I invoke rule 34 on the 'Die PARTEI'!",
 		"x 1.5 Mitglieder / Sekunde",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
 			addAchievement("pwnd by 4chan");
+		}],
+
+	"idemo": [
+		"iDemo",
+		"Mitglieder", 105,
+		"The fastest, most powerful iDemo yet.",
+		"x 1.5 Mitglieder / Sekunde",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 1.5;
 		}],
 
 	"founding2": [

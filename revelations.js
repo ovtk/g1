@@ -135,115 +135,115 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (get("logo") && value["Vodka"] >= 64);
+		return (get("logo") && value["Vodka"] >= 96);
 	}, function() {
 		addUpgrade("mettbrot");
 	}],
 	
 	[function() {
-		return (get("logo") && value["Vodka"] >= 160);
+		return (get("logo") && value["Vodka"] >= 240);
 	}, function() {
 		addUpgrade("poster1");
 	}],
 	
 	[function() {
-		return (get("logo") && value["Vodka"] >= 405);
+		return (get("logo") && value["Vodka"] >= 608);
 	}, function() {
 		addUpgrade("slogan");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1024);
+		return (get("logo") && value.Vodka >= 1536);
 	}, function() {
 		addUpgrade("jubelperser");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 2560);
+		return (get("logo") && value.Vodka >= 3840);
 	}, function() {
 		addUpgrade("sellmoney");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 6315);
+		return (get("logo") && value.Vodka >= 9472);
 	}, function() {
 		addUpgrade("blabla");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 15360);
+		return (get("logo") && value.Vodka >= 23040);
 	}, function() {
 		addUpgrade("dictator");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 36864);
+		return (get("logo") && value.Vodka >= 55296);
 	}, function() {
 		addUpgrade("kollektion");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 87381);
+		return (get("logo") && value.Vodka >= 131072);
 	}, function() {
 		addUpgrade("goaty");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 204800);
+		return (get("logo") && value.Vodka >= 307200);
 	}, function() {
 		addUpgrade("fifafu");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 475136);
+		return (get("logo") && value.Vodka >= 712704);
 	}, function() {
 		addUpgrade("meta");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1092267);
+		return (get("logo") && value.Vodka >= 1638400);
 	}, function() {
 		addUpgrade("justuspeterbob");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 2490368);
+		return (get("logo") && value.Vodka >= 3735552);
 	}, function() {
 		addUpgrade("winwin");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 5636096);
+		return (get("logo") && value.Vodka >= 8454144);
 	}, function() {
 		addUpgrade("glyph");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 12670293);
+		return (get("logo") && value.Vodka >= 19005440);
 	}, function() {
 		addUpgrade("ovtk");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 28311552);
+		return (get("logo") && value.Vodka >= 42467328);
 	}, function() {
 		addUpgrade("kim");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 62914560);
+		return (get("logo") && value.Vodka >= 94371840);
 	}, function() {
 		addUpgrade("vodka");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 139111083);
+		return (get("logo") && value.Vodka >= 208666624);
 	}, function() {
 		addUpgrade("turtle");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 306184192);
+		return (get("logo") && value.Vodka >= 459276288);
 	}, function() {
 		addUpgrade("brewery");
 	}],
@@ -271,88 +271,90 @@ var revelations = [
 		addUpgrade("sellach2");
 	}],
 	
+	
+	
 
 
 	[function() {
 		return (get("logo") && value.Mitglieder >= 17);
 	}, function() {
-		addUpgrade("poster2");
-	}],
-	
-	[function() {
-		return (get("logo") && value.Mitglieder >= 34);
-	}, function() {
 		addUpgrade("rule34");
 	}],
 	
 	[function() {
-		return (get("founded") && value.Mitglieder >= 83);
+		return (get("logo") && value.Mitglieder >= 53);
+	}, function() {
+		addUpgrade("idemo");
+	}],
+	
+	[function() {
+		return (get("founded") && value.Mitglieder >= 125);
 	}, function() {
 		addUpgrade("founding2");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 187);
+		return (get("logo") && value.Mitglieder >= 280);
 	}, function() {
 		addUpgrade("spd");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 380);
+		return (get("logo") && value.Mitglieder >= 570);
 	}, function() {
 		addUpgrade("poster3");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 750);
+		return (get("logo") && value.Mitglieder >= 1125);
 	}, function() {
 		addUpgrade("metaebene");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 1440);
+		return (get("logo") && value.Mitglieder >= 2160);
 	}, function() {
 		addUpgrade("poster4");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 2733);
+		return (get("logo") && value.Mitglieder >= 4100);
 	}, function() {
 		addUpgrade("error404");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 5063);
+		return (get("logo") && value.Mitglieder >= 7595);
 	}, function() {
 		addUpgrade("parteizentrale");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 9145);
+		return (get("logo") && value.Mitglieder >= 13718);
 	}, function() {
 		addUpgrade("snowden");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 16333);
+		return (get("logo") && value.Mitglieder >= 24500);
 	}, function() {
 		addUpgrade("kohle");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 28700);
+		return (get("logo") && value.Mitglieder >= 43050);
 	}, function() {
 		addUpgrade("poster5");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 49875);
+		return (get("logo") && value.Mitglieder >= 74813);
 	}, function() {
 		addUpgrade("mauer");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 85928);
+		return (get("logo") && value.Mitglieder >= 128893);
 	}, function() {
 		addUpgrade("poster6");
 	}],
