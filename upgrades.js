@@ -131,185 +131,185 @@ var upgrades = {
 
 	"poster1": [
 		"Ein lustiges Poster machen",
-		"Vodka", 480,
+		"Vodka", 720,
 		"Weil wir auch das können.",
-		"x 2 Vodka / s",
+		"x 3 Vodka / s",
 		"silver",
 		function() {
-			growthRate.Vodka *= 2;
+			growthRate.Vodka *= 3;
 			alert("poster!");
 		}],
 
 	"slogan": [
 		"Der besten Slogan aller Zeiten",
-		"Vodka", 1216,
+		"Vodka", 3648,
 		"'Wählt die Partei, sie ist sehr gut!'",
-		"x 2 Vodka / s",
+		"x 4 Vodka / s",
 		"silver",
 		function() {
-			growthRate.Vodka *= 2;
+			growthRate.Vodka *= 4;
 			tickText("Wählt die Partei, sie ist sehr gut!");
 			addAchievement("Ein sehr guter Slogan!");
 		}],
 
 	"jubelperser": [
 		"Jubelperser",
-		"Vodka", 3072,
+		"Vodka", 23040,
 		"Auf der FdP-Wahlparty für die 'guten' Ergebnisse jubeln!",
-		"x 2 Vodka / s",
+		"x 5 Vodka / s",
 		"silver",
 		function() {
-			growthRate.Vodka *= 2;
+			growthRate.Vodka *= 5;
 		}],
 
 	"sellmoney": [
 		"Geld verkaufen",
-		"Vodka", 7680,
+		"Vodka", 172800,
 		"Reich werden mit GELD!",
-		"x 2 Vodka / s",
+		"x 6 Vodka / s",
 		"silver",
 		function() {
-			growthRate.Vodka *= 2;
+			growthRate.Vodka *= 6;
 		}],
 
 	"blabla": [
 		"Bla bla",
-		"Vodka", 18944,
+		"Vodka", 1491840,
 		"Blablabla bla blabla blablablablabla.",
-		"x 2 Vodka / s",
+		"x 7 Vodka / s",
 		"silver",
 		function() {
-			growthRate.Vodka *= 2;
+			growthRate.Vodka *= 7;
 		}],
 
 	"dictator": [
 		"Diktator beleidigen",
-		"Vodka", 46080,
+		"Vodka", 14515200,
 		"Muss einfach sein. Hurra!",
-		"x 2 Vodka / s",
+		"x 8 Vodka / s",
 		"silver",
 		function() {
-			growthRate.Vodka *= 2;
+			growthRate.Vodka *= 8;
 		}],
 
 	"kollektion": [
 		"Forever Grau",
-		"Vodka", 110592,
+		"Vodka", 156764160,
 		"Die PARTEI stellt ihre neueste Kollektion vor.",
-		"x 2 Vodka / s",
+		"x 9 Vodka / s",
 		"silver",
 		function() {
-			growthRate.Vodka *= 2;
+			growthRate.Vodka *= 9;
 		}],
 
 	"goaty": [
 		"Der alte Ziegenwitz",
-		"Vodka", 262144,
+		"Vodka", 1672151040,
 		"Europäischen Möchtegern-Diktator beleidigen.",
-		"x 2 Vodka / s",
+		"x 9 Vodka / s",
 		"silver",
 		function() {
-			growthRate.Vodka *= 2;
+			growthRate.Vodka *= 9;
 		}],
 
 	"fifafu": [
 		"FIFA-Funktionär bestechen",
-		"Vodka", 614400,
+		"Vodka", 17635968000,
 		"Deutschland muss Weltmeister bleiben!",
-		"x 2 Vodka / s",
+		"x 9 Vodka / s",
 		"silver",
 		function() {
-			growthRate.Vodka *= 2;
+			growthRate.Vodka *= 9;
 		}],
 
 	"meta": [
 		"Meta",
-		"Vodka", 1425408,
+		"Vodka", 184119505920,
 		"Auf der AfD-Pressekonferenz eine Pressekonferenz geben.",
-		"x 2 Vodka / s",
+		"x 9 Vodka / s",
 		"silver",
 		function() {
-			growthRate.Vodka *= 2;
+			growthRate.Vodka *= 9;
 		}],
 
 	"justuspeterbob": [
 		"Its wots behind mwe that I am",
-		"Vodka", 3276800,
+		"Vodka", 1904684544000,
 		"Gegnerische Spaßpartei gründen (z.B. SPD).",
-		"x 2 Vodka / s",
+		"x 9 Vodka / s",
 		"silver",
 		function() {
-			growthRate.Vodka *= 2;
+			growthRate.Vodka *= 9;
 		}],
 
 	"winwin": [
 		"Win-Win",
-		"Vodka", 7471104,
+		"Vodka", 19542063421440,
 		"Diesel-Abgas-Inhalatoren verschenken.",
-		"x 2 Vodka / s",
+		"x 9 Vodka / s",
 		"silver",
 		function() {
-			growthRate.Vodka *= 2;
+			growthRate.Vodka *= 9;
 		}],
 
 	"glyph": [
 		"Bayer-Monsanto-Grasovka",
-		"Vodka", 16908288,
+		"Vodka", 199020488002560,
 		"Glyphosat dem Vodka beimengen.",
-		"x 2 Vodka / s",
+		"x 9 Vodka / s",
 		"silver",
 		function() {
-			growthRate.Vodka *= 2;
+			growthRate.Vodka *= 9;
 		}],
 
 	"ovtk": [
 		"Wo die wilden Kerle hausen",
-		"Vodka", 38010880,
+		"Vodka", 2013346797235200,
 		"Ortsverband Treptow-Köpenik gründen",
-		"x 2 Vodka / s",
+		"x 9 Vodka / s",
 		"silver",
 		function() {
-			growthRate.Vodka *= 2;
+			growthRate.Vodka *= 9;
 		}],
 
 	"kim": [
 		"Visionner",
-		"Vodka", 84934656,
+		"Vodka", 20244549174958100,
 		"a Kin Jong Un un peu.",
-		"x 2 Vodka / s",
+		"x 9 Vodka / s",
 		"silver",
 		function() {
-			growthRate.Vodka *= 2;
+			growthRate.Vodka *= 9;
 		}],
 
 	"vodka": [
 		"Vodka",
-		"Vodka", 188743680,
+		"Vodka", 202445491749581000,
 		"makes the world go round.",
-		"x 2 Vodka / s",
+		"x 9 Vodka / s",
 		"silver",
 		function() {
-			growthRate.Vodka *= 2;
+			growthRate.Vodka *= 9;
 		}],
 
 	"turtle": [
 		"Die unsichtbare Schildkröte",
-		"Vodka", 417333248,
+		"Vodka", 2014332642908330000,
 		"Schildkrötensuppe für der Vorstand!",
-		"x 2 Vodka / s",
+		"x 9 Vodka / s",
 		"silver",
 		function() {
-			growthRate.Vodka *= 2;
+			growthRate.Vodka *= 9;
 		}],
 
 	"brewery": [
 		"Parteispende Brauerei",
-		"Vodka", 918552576,
+		"Vodka", 19951003211921200000,
 		"Alles legal, ich gebe ihnen mein teutsches Reinheitsgebiet!",
-		"x 2 Vodka / s",
+		"x 9 Vodka / s",
 		"silver",
 		function() {
-			growthRate.Vodka *= 2;
+			growthRate.Vodka *= 9;
 			addAchievement("Wir vergessen keinen", 600);
 		}],
 
