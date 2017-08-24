@@ -105,7 +105,7 @@ var upgrades = {
 	
 	
 	
-	
+	// vodka -> vodka
 		
 	"parteiprogramm": [
 		"Ein Parteiprogramm schreiben",
@@ -131,7 +131,7 @@ var upgrades = {
 
 	"poster1": [
 		"Ein lustiges Poster machen",
-		"Vodka", 720,
+		"Vodka", 480,
 		"Weil wir auch das können.",
 		"x 3 Vodka / s",
 		"silver",
@@ -142,7 +142,7 @@ var upgrades = {
 
 	"slogan": [
 		"Der besten Slogan aller Zeiten",
-		"Vodka", 3648,
+		"Vodka", 1824,
 		"'Wählt die Partei, sie ist sehr gut!'",
 		"x 4 Vodka / s",
 		"silver",
@@ -154,7 +154,7 @@ var upgrades = {
 
 	"jubelperser": [
 		"Jubelperser",
-		"Vodka", 23040,
+		"Vodka", 9216,
 		"Auf der FdP-Wahlparty für die 'guten' Ergebnisse jubeln!",
 		"x 5 Vodka / s",
 		"silver",
@@ -164,7 +164,7 @@ var upgrades = {
 
 	"sellmoney": [
 		"Geld verkaufen",
-		"Vodka", 172800,
+		"Vodka", 57600,
 		"Reich werden mit GELD!",
 		"x 6 Vodka / s",
 		"silver",
@@ -174,7 +174,7 @@ var upgrades = {
 
 	"blabla": [
 		"Bla bla",
-		"Vodka", 1491840,
+		"Vodka", 426240,
 		"Blablabla bla blabla blablablablabla.",
 		"x 7 Vodka / s",
 		"silver",
@@ -184,7 +184,7 @@ var upgrades = {
 
 	"dictator": [
 		"Diktator beleidigen",
-		"Vodka", 14515200,
+		"Vodka", 3628800,
 		"Muss einfach sein. Hurra!",
 		"x 8 Vodka / s",
 		"silver",
@@ -194,7 +194,7 @@ var upgrades = {
 
 	"kollektion": [
 		"Forever Grau",
-		"Vodka", 156764160,
+		"Vodka", 34836480,
 		"Die PARTEI stellt ihre neueste Kollektion vor.",
 		"x 9 Vodka / s",
 		"silver",
@@ -204,7 +204,7 @@ var upgrades = {
 
 	"goaty": [
 		"Der alte Ziegenwitz",
-		"Vodka", 1672151040,
+		"Vodka", 371589120,
 		"Europäischen Möchtegern-Diktator beleidigen.",
 		"x 9 Vodka / s",
 		"silver",
@@ -214,7 +214,7 @@ var upgrades = {
 
 	"fifafu": [
 		"FIFA-Funktionär bestechen",
-		"Vodka", 17635968000,
+		"Vodka", 3919104000,
 		"Deutschland muss Weltmeister bleiben!",
 		"x 9 Vodka / s",
 		"silver",
@@ -224,7 +224,7 @@ var upgrades = {
 
 	"meta": [
 		"Meta",
-		"Vodka", 184119505920,
+		"Vodka", 40915445760,
 		"Auf der AfD-Pressekonferenz eine Pressekonferenz geben.",
 		"x 9 Vodka / s",
 		"silver",
@@ -234,7 +234,7 @@ var upgrades = {
 
 	"justuspeterbob": [
 		"Its wots behind mwe that I am",
-		"Vodka", 1904684544000,
+		"Vodka", 423263232000,
 		"Gegnerische Spaßpartei gründen (z.B. SPD).",
 		"x 9 Vodka / s",
 		"silver",
@@ -244,7 +244,7 @@ var upgrades = {
 
 	"winwin": [
 		"Win-Win",
-		"Vodka", 19542063421440,
+		"Vodka", 4342680760320,
 		"Diesel-Abgas-Inhalatoren verschenken.",
 		"x 9 Vodka / s",
 		"silver",
@@ -254,7 +254,7 @@ var upgrades = {
 
 	"glyph": [
 		"Bayer-Monsanto-Grasovka",
-		"Vodka", 199020488002560,
+		"Vodka", 44226775111680,
 		"Glyphosat dem Vodka beimengen.",
 		"x 9 Vodka / s",
 		"silver",
@@ -264,7 +264,7 @@ var upgrades = {
 
 	"ovtk": [
 		"Wo die wilden Kerle hausen",
-		"Vodka", 2013346797235200,
+		"Vodka", 447410399385600,
 		"Ortsverband Treptow-Köpenik gründen",
 		"x 9 Vodka / s",
 		"silver",
@@ -274,7 +274,7 @@ var upgrades = {
 
 	"kim": [
 		"Visionner",
-		"Vodka", 20244549174958100,
+		"Vodka", 4498788705546240,
 		"a Kin Jong Un un peu.",
 		"x 9 Vodka / s",
 		"silver",
@@ -284,7 +284,7 @@ var upgrades = {
 
 	"vodka": [
 		"Vodka",
-		"Vodka", 202445491749581000,
+		"Vodka", 44987887055462400,
 		"makes the world go round.",
 		"x 9 Vodka / s",
 		"silver",
@@ -294,7 +294,7 @@ var upgrades = {
 
 	"turtle": [
 		"Die unsichtbare Schildkröte",
-		"Vodka", 2014332642908330000,
+		"Vodka", 447629476201851000,
 		"Schildkrötensuppe für der Vorstand!",
 		"x 9 Vodka / s",
 		"silver",
@@ -304,7 +304,7 @@ var upgrades = {
 
 	"brewery": [
 		"Parteispende Brauerei",
-		"Vodka", 19951003211921200000,
+		"Vodka", 4433556269315820000,
 		"Alles legal, ich gebe ihnen mein teutsches Reinheitsgebiet!",
 		"x 9 Vodka / s",
 		"silver",
@@ -312,10 +312,174 @@ var upgrades = {
 			growthRate.Vodka *= 9;
 			addAchievement("Wir vergessen keinen", 600);
 		}],
+		
+	
+	
+	// vodka -> mitglieder
+
+	"inhalte": [
+		"Parteispende",
+		"Vodka", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 9;
+		}],
+		
+	"hamburg": [
+		"Parteispende",
+		"Vodka", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 9;
+		}],
+
+	"pferd": [
+		"Parteispende",
+		"Vodka", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 9;
+		}],
+
+	"kek": [
+		"Parteispende",
+		"Vodka", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 9;
+		}],
+
+	"nähe": [
+		"Parteispende",
+		"Vodka", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 9;
+		}],
+
+	"temp2": [
+		"Parteispende",
+		"Vodka", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 9;
+		}],
+
+	"dienst": [
+		"Parteispende",
+		"Vodka", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 9;
+		}],
+
+	"temp3": [
+		"Parteispende",
+		"Vodka", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 9;
+		}],
+
+	"raum": [
+		"Parteispende",
+		"Vodka", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 9;
+		}],
+
+	"temp4": [
+		"Parteispende",
+		"Vodka", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 9;
+		}],
+
+	"lorem": [
+		"Parteispende",
+		"Vodka", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 9;
+		}],
+
+	"belgien": [
+		"Parteispende",
+		"Vodka", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 9;
+		}],
+
+	"temp5": [
+		"Parteispende",
+		"Vodka", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 9;
+		}],
+
+	"kommen": [
+		"Parteispende",
+		"Vodka", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 9;
+		}],
+
+	"temp6": [
+		"Parteispende",
+		"Vodka", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 9;
+		}],
+
+	"null": [
+		"Parteispende",
+		"Vodka", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 9;
+		}],
 
 
 
-
+	// mitglieder -> mitglieder
 
 	"rule34": [
 		"Rule 34",
@@ -467,6 +631,155 @@ var upgrades = {
 
 
 
+	// mitglieder -> popularität
+
+	"brewery": [
+		"Parteispende",
+		"Mitglieder", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"orange",
+		function() {
+			value.Popularität += 40000;
+			growthRate.Popularität *= 2;
+		}],
+
+	"brewery": [
+		"Parteispende",
+		"Mitglieder", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"orange",
+		function() {
+			value.Popularität += 40000;
+			growthRate.Popularität *= 2;
+		}],
+
+	"brewery": [
+		"Parteispende",
+		"Mitglieder", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"orange",
+		function() {
+			value.Popularität += 40000;
+			growthRate.Popularität *= 2;
+		}],
+
+	"brewery": [
+		"Parteispende",
+		"Mitglieder", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"orange",
+		function() {
+			value.Popularität += 40000;
+			growthRate.Popularität *= 2;
+		}],
+
+	"brewery": [
+		"Parteispende",
+		"Mitglieder", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"orange",
+		function() {
+			value.Popularität += 40000;
+			growthRate.Popularität *= 2;
+		}],
+
+	"brewery": [
+		"Parteispende",
+		"Mitglieder", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"orange",
+		function() {
+			value.Popularität += 40000;
+			growthRate.Popularität *= 2;
+		}],
+
+	"brewery": [
+		"Parteispende",
+		"Mitglieder", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"orange",
+		function() {
+			value.Popularität += 40000;
+			growthRate.Popularität *= 2;
+		}],
+
+	"brewery": [
+		"Parteispende",
+		"Mitglieder", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"orange",
+		function() {
+			value.Popularität += 40000;
+			growthRate.Popularität *= 2;
+		}],
+
+	"brewery": [
+		"Parteispende",
+		"Mitglieder", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"orange",
+		function() {
+			value.Popularität += 40000;
+			growthRate.Popularität *= 2;
+		}],
+
+	"brewery": [
+		"Parteispende",
+		"Mitglieder", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"orange",
+		function() {
+			value.Popularität += 40000;
+			growthRate.Popularität *= 2;
+		}],
+
+	"brewery": [
+		"Parteispende",
+		"Mitglieder", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"orange",
+		function() {
+			value.Popularität += 40000;
+			growthRate.Popularität *= 2;
+		}],
+
+	"brewery": [
+		"Parteispende",
+		"Mitglieder", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"orange",
+		function() {
+			value.Popularität += 40000;
+			growthRate.Popularität *= 2;
+		}],
+
+	"brewery": [
+		"Parteispende",
+		"Mitglieder", 11111,
+		"Reinheitsgebiet!",
+		"x 9 Mitglieder / s",
+		"orange",
+		function() {
+			value.Popularität += 40000;
+			growthRate.Popularität *= 2;
+		}],
+
+
+
+	
+	// misc
 
 	"sellach2": [
 		"Auszeichnungen verkaufen (2)",
@@ -501,6 +814,8 @@ var upgrades = {
 		function() {
 			growthRate.Popularität *= 2;
 		}],
+		
+	// regierung
 
 	"fair": [
 		"All is fair in love and war",
@@ -631,7 +946,7 @@ var upgrades = {
 		function() {
 			value.Vodka += 5500000;
 		}]
-
+	
 }
 
 
