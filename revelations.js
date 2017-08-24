@@ -263,97 +263,97 @@ var revelations = [
 	// vodka -> mitglieder
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Vodka >= 80);
 	}, function() {
 		addUpgrade("inhalte");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Vodka >= 152);
 	}, function() {
 		addUpgrade("hamburg");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Vodka >= 400);
 	}, function() {
 		addUpgrade("pferd");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Vodka >= 1056);
 	}, function() {
 		addUpgrade("kek");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Vodka >= 5504);
 	}, function() {
 		addUpgrade("nähe");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Vodka >= 35200);
 	}, function() {
 		addUpgrade("temp2");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Vodka >= 264960);
 	}, function() {
 		addUpgrade("dienst");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Vodka >= 2284800);
 	}, function() {
-		addUpgrade("temp3");
+		addUpgrade("crypto");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Vodka >= 22149120);
 	}, function() {
 		addUpgrade("raum");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Vodka >= 238049280);
 	}, function() {
 		addUpgrade("temp4");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Vodka >= 2525644800);
 	}, function() {
 		addUpgrade("lorem");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Vodka >= 26493143040);
 	}, function() {
 		addUpgrade("belgien");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Vodka >= 275121100800);
 	}, function() {
 		addUpgrade("temp5");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Vodka >= 2831631022080);
 	}, function() {
 		addUpgrade("kommen");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Vodka >= 28913111377920);
 	}, function() {
 		addUpgrade("temp6");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Vodka >= 293130951321601);
 	}, function() {
 		addUpgrade("null");
 	}],
@@ -470,79 +470,79 @@ var revelations = [
 	// mitglieder -> popularität
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Mitglieder >= 60);
 	}, function() {
 		addUpgrade("raub");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Mitglieder >= 81);
 	}, function() {
 		addUpgrade("lieber");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Mitglieder >= 188);
 	}, function() {
 		addUpgrade("temp7");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Mitglieder >= 275);
 	}, function() {
 		addUpgrade("wann");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Mitglieder >= 552);
 	}, function() {
 		addUpgrade("nescit");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Mitglieder >= 1080);
 	}, function() {
 		addUpgrade("temp8");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Mitglieder >= 2061);
 	}, function() {
 		addUpgrade("bleu");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Mitglieder >= 3895);
 	}, function() {
 		addUpgrade("endlich");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Mitglieder >= 7192);
 	}, function() {
 		addUpgrade("temp9");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Mitglieder >= 12958);
 	}, function() {
 		addUpgrade("lenin");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Mitglieder >= 23100);
 	}, function() {
 		addUpgrade("temp10");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Mitglieder >= 40530);
 	}, function() {
 		addUpgrade("dieblaue");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1000000);
+		return (get("logo") && value.Mitglieder >= 70350);
 	}, function() {
 		addUpgrade("rente");
 	}],

@@ -318,163 +318,163 @@ var upgrades = {
 	// vodka -> mitglieder
 
 	"inhalte": [
-		"Inhalte Überwinden",
-		"Vodka", 11111,
-		"",
-		"x 9 Mitglieder / s",
+		"Inhalte überwinden",
+		"Vodka", 160,
+		"&nbsp;",
+		"x 1.2 Mitglieder / s",
 		"blue",
 		function() {
-			growthRate.Mitglieder *= 9;
+			growthRate.Mitglieder *= 1.2;
 		}],
 		
 	"hamburg": [
 		"Hamburg",
-		"Vodka", 11111,
+		"Vodka", 304,
 		"Stadt im Norden.",
-		"x 9 Mitglieder / s",
+		"x 1.2 Mitglieder / s",
 		"blue",
 		function() {
-			growthRate.Mitglieder *= 9;
+			growthRate.Mitglieder *= 1.2;
 		}],
 
 	"pferd": [
 		"Das Pferd frisst keinen Gurkensalat",
-		"Vodka", 11111,
+		"Vodka", 800,
 		"Walter Ulbricht, 15. Juni 1961",
-		"x 9 Mitglieder / s",
+		"x 1.2 Mitglieder / s",
 		"blue",
 		function() {
-			growthRate.Mitglieder *= 9;
+			growthRate.Mitglieder *= 1.2;
 		}],
 
 	"kek": [
 		"Diplomatie",
-		"Vodka", 11111,
+		"Vodka", 3168,
 		"Bilaterales Abkommen mit der Republik Kekistan.",
-		"x 9 Mitglieder / s",
+		"x 1.2 Mitglieder / s",
 		"blue",
 		function() {
-			growthRate.Mitglieder *= 9;
+			growthRate.Mitglieder *= 1.2;
 		}],
 
 	"nähe": [
 		"Bürgernähe",
-		"Vodka", 11111,
+		"Vodka", 16512,
 		"Hier könnte Dein Wahlspruch stehen!",
-		"x 9 Mitglieder / s",
+		"x 1.2 Mitglieder / s",
 		"blue",
 		function() {
-			growthRate.Mitglieder *= 9;
+			growthRate.Mitglieder *= 1.2;
 		}],
 
 	"temp2": [
 		"temp2",
-		"Vodka", 11111,
+		"Vodka", 105600,
 		"temp2",
-		"x 9 Mitglieder / s",
+		"x 1.2 Mitglieder / s",
 		"blue",
 		function() {
-			growthRate.Mitglieder *= 9;
+			growthRate.Mitglieder *= 1.2;
 		}],
 
 	"dienst": [
 		"Die PARTEI",
-		"Vodka", 11111,
+		"Vodka", 794880,
 		"Ihr seriöser Politikdienstleister.",
-		"x 9 Mitglieder / s",
+		"x 1.2 Mitglieder / s",
 		"blue",
 		function() {
-			growthRate.Mitglieder *= 9;
+			growthRate.Mitglieder *= 1.2;
 		}],
 
 	"crypto": [
 		"Statt Vodka",
-		"Vodka", 11111,
+		"Vodka", 6854400,
 		"Grafikkarten kaufen, Cryptowährung schlürfen!",
-		"x 9 Mitglieder / s",
+		"x 1.2 Mitglieder / s",
 		"blue",
 		function() {
-			growthRate.Mitglieder *= 9;
+			growthRate.Mitglieder *= 1.2;
 		}],
 
 	"raum": [
 		"Volk mit Raum",
-		"Vodka", 11111,
+		"Vodka", 66447360,
 		"Raum für Deine Notizen:",
-		"x 9 Mitglieder / s",
+		"x 1.2 Mitglieder / s",
 		"blue",
 		function() {
-			growthRate.Mitglieder *= 9;
+			growthRate.Mitglieder *= 1.2;
 		}],
 
 	"temp4": [
 		"temp4",
-		"Vodka", 11111,
+		"Vodka", 714147840,
 		"temp4",
-		"x 9 Mitglieder / s",
+		"x 1.2 Mitglieder / s",
 		"blue",
 		function() {
-			growthRate.Mitglieder *= 9;
+			growthRate.Mitglieder *= 1.2;
 		}],
 
 	"lorem": [
 		"Lorem ipsum",
-		"Vodka", 11111,
+		"Vodka", 7576934400,
 		"dolor sit amet, consetetur sadipscing elitr, bla bla, sed diam voluptua.",
-		"x 9 Mitglieder / s",
+		"x 1.2 Mitglieder / s",
 		"blue",
 		function() {
-			growthRate.Mitglieder *= 9;
+			growthRate.Mitglieder *= 1.2;
 		}],
 
 	"belgien": [
 		"Belgien",
-		"Vodka", 11111,
+		"Vodka", 79479429120,
 		"ist eine wunderschöne Stadt.",
-		"x 9 Mitglieder / s",
+		"x 1.2 Mitglieder / s",
 		"blue",
 		function() {
-			growthRate.Mitglieder *= 9;
+			growthRate.Mitglieder *= 1.2;
 		}],
 
 	"temp5": [
 		"temp5",
-		"Vodka", 11111,
+		"Vodka", 825363302400,
 		"temp5",
-		"x 9 Mitglieder / s",
+		"x 1.2 Mitglieder / s",
 		"blue",
 		function() {
-			growthRate.Mitglieder *= 9;
+			growthRate.Mitglieder *= 1.2;
 		}],
 
 	"kommen": [
 		"Erwartet mein Kommen",
-		"Vodka", 11111,
+		"Vodka", 8494893066240,
 		"beim ersten Licht des fünften Tages. Bei Sonnenaufgang, schaut nach Osten.",
-		"x 9 Mitglieder / s",
+		"x 1.2 Mitglieder / s",
 		"blue",
 		function() {
-			growthRate.Mitglieder *= 9;
+			growthRate.Mitglieder *= 1.2;
 		}],
 
 	"temp6": [
 		"temp6",
-		"Vodka", 11111,
+		"Vodka", 86739334133760,
 		"temp6",
-		"x 9 Mitglieder / s",
+		"x 1.2 Mitglieder / s",
 		"blue",
 		function() {
-			growthRate.Mitglieder *= 9;
+			growthRate.Mitglieder *= 1.2;
 		}],
 
 	"null": [
 		"Martin Sonneborn",
-		"Vodka", 11111,
+		"Vodka", 879392853964800,
 		"kann durch Null teilen.",
-		"x 9 Mitglieder / s",
+		"x 1.2 Mitglieder / s",
 		"blue",
 		function() {
-			growthRate.Mitglieder *= 9;
+			growthRate.Mitglieder *= 1.2;
 		}],
 
 
@@ -634,145 +634,145 @@ var upgrades = {
 	// mitglieder -> popularität
 
 	"raub": [
-		"Raubüberfall",
-		"Mitglieder", 11111,
-		"Ein professionell ausgeführter Raubüberfall muss nicht unbedingt ein unangenehmes Erlebnis sein.",
-		"x 9 Mitglieder / s",
+		"Ein Raubüberfall",
+		"Mitglieder", 120,
+		"Professionell ausgeführt, muss nicht unbedingt ein unangenehmes Erlebnis sein.",
+		"+ 4k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 40000;
+			value.Popularität += 4000;
 			growthRate.Popularität *= 2;
 		}],
 
 	"lieber": [
 		"Halb gerührt",
-		"Mitglieder", 11111,
+		"Mitglieder", 162,
 		"Lieber etwas misstrauisch als etwas tot!",
-		"x 9 Mitglieder / s",
+		"+ 9k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 40000;
+			value.Popularität += 9000;
 			growthRate.Popularität *= 2;
 		}],
 
 	"temp7": [
 		"temp7",
-		"Mitglieder", 11111,
+		"Mitglieder", 375,
 		"temp7",
-		"x 9 Mitglieder / s",
+		"+ 19k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 40000;
+			value.Popularität += 19000;
 			growthRate.Popularität *= 2;
 		}],
 
 	"wann": [
 		"Ab wann?",
-		"Mitglieder", 11111,
+		"Mitglieder", 824,
 		"Das tritt nach meiner Kenntnis... ist das sofort, unverzüglich.",
-		"x 9 Mitglieder / s",
+		"+ 37k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 40000;
+			value.Popularität += 37000;
 			growthRate.Popularität *= 2;
 		}],
 
 	"nescit": [
 		"Qui nescit",
-		"Mitglieder", 11111,
+		"Mitglieder", 1656,
 		"dissimulare nescit regnare.",
-		"x 9 Mitglieder / s",
+		"+ 75k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 40000;
+			value.Popularität += 75000;
 			growthRate.Popularität *= 2;
 		}],
 
 	"temp8": [
 		"temp8",
-		"Mitglieder", 11111,
+		"Mitglieder", 3240,
 		"temp8",
-		"x 9 Mitglieder / s",
+		"+ 150k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 40000;
+			value.Popularität += 150000;
 			growthRate.Popularität *= 2;
 		}],
 
 	"bleu": [
 		"Le ciel bleu",
-		"Mitglieder", 11111,
+		"Mitglieder", 6183,
 		"sur nous peut s'effondrer, et la terre peut bien s'écrouler.",
-		"x 9 Mitglieder / s",
+		"+ 300k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 40000;
+			value.Popularität += 300000;
 			growthRate.Popularität *= 2;
 		}],
 
 	"endlich": [
 		"Martin Sonneborn ",
-		"Mitglieder", 11111,
+		"Mitglieder", 11685,
 		"hat bis Unendlich gezählt. Zweimal!",
-		"x 9 Mitglieder / s",
+		"+ 600k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 40000;
+			value.Popularität += 600000;
 			growthRate.Popularität *= 2;
 		}],
 
 	"temp9": [
 		"temp9",
-		"Mitglieder", 11111,
+		"Mitglieder", 21576,
 		"temp9",
-		"x 9 Mitglieder / s",
+		"+ 1.2m Popularität",
 		"orange",
 		function() {
-			value.Popularität += 40000;
+			value.Popularität += 1200000;
 			growthRate.Popularität *= 2;
 		}],
 
 	"lenin": [
 		"Dem Kleinbürgertum",
-		"Mitglieder", 11111,
+		"Mitglieder", 38874,
 		"groß im Prahlen, fehlt die Kraft zur Tat, und es scheut ängstlich vor jedem Wagnis zurück.",
-		"x 9 Mitglieder / s",
+		"+ 2.5m Popularität",
 		"orange",
 		function() {
-			value.Popularität += 40000;
+			value.Popularität += 2500000;
 			growthRate.Popularität *= 2;
 		}],
 
 	"temp10": [
 		"Kanzlerkandidat Roberto Blanco",
-		"Mitglieder", 11111,
+		"Mitglieder", 69300,
 		"Alt wie Adenauer, lustiger als Oliver Welke.",
-		"x 9 Mitglieder / s",
+		"+ 5m Popularität",
 		"orange",
 		function() {
-			value.Popularität += 40000;
+			value.Popularität += 5000000;
 			growthRate.Popularität *= 2;
 		}],
 
 	"dieblaue": [
 		"Die Blaue oder die Rote?",
-		"Mitglieder", 11111,
+		"Mitglieder", 121590,
 		"Bedenke, alles was ich dir anbiete ist der totale Schwachsinn.",
-		"x 9 Mitglieder / s",
+		"+ 10m Popularität",
 		"orange",
 		function() {
-			value.Popularität += 40000;
+			value.Popularität += 10000000;
 			growthRate.Popularität *= 2;
 		}],
 
 	"rente": [
 		"Die Rente ist sicher",
-		"Mitglieder", 11111,
+		"Mitglieder", 211050,
 		"Jedenfalls für Angela Merkel. Jetzt. Sofort.",
-		"x 9 Mitglieder / s",
+		"+ 20m Popularität",
 		"orange",
 		function() {
-			value.Popularität += 40000;
+			value.Popularität += 20000000;
 			growthRate.Popularität *= 2;
 		}],
 
