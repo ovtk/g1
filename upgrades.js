@@ -318,9 +318,9 @@ var upgrades = {
 	// vodka -> mitglieder
 
 	"inhalte": [
-		"Parteispende",
+		"Inhalte Überwinden",
 		"Vodka", 11111,
-		"Reinheitsgebiet!",
+		"",
 		"x 9 Mitglieder / s",
 		"blue",
 		function() {
@@ -328,9 +328,9 @@ var upgrades = {
 		}],
 		
 	"hamburg": [
-		"Parteispende",
+		"Hamburg",
 		"Vodka", 11111,
-		"Reinheitsgebiet!",
+		"Stadt im Norden.",
 		"x 9 Mitglieder / s",
 		"blue",
 		function() {
@@ -338,9 +338,9 @@ var upgrades = {
 		}],
 
 	"pferd": [
-		"Parteispende",
+		"Das Pferd frisst keinen Gurkensalat",
 		"Vodka", 11111,
-		"Reinheitsgebiet!",
+		"Walter Ulbricht, 15. Juni 1961",
 		"x 9 Mitglieder / s",
 		"blue",
 		function() {
@@ -348,9 +348,9 @@ var upgrades = {
 		}],
 
 	"kek": [
-		"Parteispende",
+		"Diplomatie",
 		"Vodka", 11111,
-		"Reinheitsgebiet!",
+		"Bilaterales Abkommen mit der Republik Kekistan.",
 		"x 9 Mitglieder / s",
 		"blue",
 		function() {
@@ -358,9 +358,9 @@ var upgrades = {
 		}],
 
 	"nähe": [
-		"Parteispende",
+		"Bürgernähe",
 		"Vodka", 11111,
-		"Reinheitsgebiet!",
+		"Hier könnte Dein Wahlspruch stehen!",
 		"x 9 Mitglieder / s",
 		"blue",
 		function() {
@@ -368,9 +368,9 @@ var upgrades = {
 		}],
 
 	"temp2": [
-		"Parteispende",
+		"temp2",
 		"Vodka", 11111,
-		"Reinheitsgebiet!",
+		"temp2",
 		"x 9 Mitglieder / s",
 		"blue",
 		function() {
@@ -378,19 +378,19 @@ var upgrades = {
 		}],
 
 	"dienst": [
-		"Parteispende",
+		"Die PARTEI",
 		"Vodka", 11111,
-		"Reinheitsgebiet!",
+		"Ihr seriöser Politikdienstleister.",
 		"x 9 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 9;
 		}],
 
-	"temp3": [
-		"Parteispende",
+	"crypto": [
+		"Statt Vodka",
 		"Vodka", 11111,
-		"Reinheitsgebiet!",
+		"Grafikkarten kaufen, Cryptowährung schlürfen!",
 		"x 9 Mitglieder / s",
 		"blue",
 		function() {
@@ -398,9 +398,9 @@ var upgrades = {
 		}],
 
 	"raum": [
-		"Parteispende",
+		"Volk mit Raum",
 		"Vodka", 11111,
-		"Reinheitsgebiet!",
+		"Raum für Deine Notizen:",
 		"x 9 Mitglieder / s",
 		"blue",
 		function() {
@@ -408,9 +408,9 @@ var upgrades = {
 		}],
 
 	"temp4": [
-		"Parteispende",
+		"temp4",
 		"Vodka", 11111,
-		"Reinheitsgebiet!",
+		"temp4",
 		"x 9 Mitglieder / s",
 		"blue",
 		function() {
@@ -418,9 +418,9 @@ var upgrades = {
 		}],
 
 	"lorem": [
-		"Parteispende",
+		"Lorem ipsum",
 		"Vodka", 11111,
-		"Reinheitsgebiet!",
+		"dolor sit amet, consetetur sadipscing elitr, bla bla, sed diam voluptua.",
 		"x 9 Mitglieder / s",
 		"blue",
 		function() {
@@ -428,9 +428,9 @@ var upgrades = {
 		}],
 
 	"belgien": [
-		"Parteispende",
+		"Belgien",
 		"Vodka", 11111,
-		"Reinheitsgebiet!",
+		"ist eine wunderschöne Stadt.",
 		"x 9 Mitglieder / s",
 		"blue",
 		function() {
@@ -438,9 +438,9 @@ var upgrades = {
 		}],
 
 	"temp5": [
-		"Parteispende",
+		"temp5",
 		"Vodka", 11111,
-		"Reinheitsgebiet!",
+		"temp5",
 		"x 9 Mitglieder / s",
 		"blue",
 		function() {
@@ -448,9 +448,9 @@ var upgrades = {
 		}],
 
 	"kommen": [
-		"Parteispende",
+		"Erwartet mein Kommen",
 		"Vodka", 11111,
-		"Reinheitsgebiet!",
+		"beim ersten Licht des fünften Tages. Bei Sonnenaufgang, schaut nach Osten.",
 		"x 9 Mitglieder / s",
 		"blue",
 		function() {
@@ -458,9 +458,9 @@ var upgrades = {
 		}],
 
 	"temp6": [
-		"Parteispende",
+		"temp6",
 		"Vodka", 11111,
-		"Reinheitsgebiet!",
+		"temp6",
 		"x 9 Mitglieder / s",
 		"blue",
 		function() {
@@ -468,9 +468,9 @@ var upgrades = {
 		}],
 
 	"null": [
-		"Parteispende",
+		"Martin Sonneborn",
 		"Vodka", 11111,
-		"Reinheitsgebiet!",
+		"kann durch Null teilen.",
 		"x 9 Mitglieder / s",
 		"blue",
 		function() {
@@ -633,10 +633,10 @@ var upgrades = {
 
 	// mitglieder -> popularität
 
-	"brewery": [
-		"Parteispende",
+	"raub": [
+		"Raubüberfall",
 		"Mitglieder", 11111,
-		"Reinheitsgebiet!",
+		"Ein professionell ausgeführter Raubüberfall muss nicht unbedingt ein unangenehmes Erlebnis sein.",
 		"x 9 Mitglieder / s",
 		"orange",
 		function() {
@@ -644,10 +644,10 @@ var upgrades = {
 			growthRate.Popularität *= 2;
 		}],
 
-	"brewery": [
-		"Parteispende",
+	"lieber": [
+		"Halb gerührt",
 		"Mitglieder", 11111,
-		"Reinheitsgebiet!",
+		"Lieber etwas misstrauisch als etwas tot!",
 		"x 9 Mitglieder / s",
 		"orange",
 		function() {
@@ -655,10 +655,10 @@ var upgrades = {
 			growthRate.Popularität *= 2;
 		}],
 
-	"brewery": [
-		"Parteispende",
+	"temp7": [
+		"temp7",
 		"Mitglieder", 11111,
-		"Reinheitsgebiet!",
+		"temp7",
 		"x 9 Mitglieder / s",
 		"orange",
 		function() {
@@ -666,10 +666,10 @@ var upgrades = {
 			growthRate.Popularität *= 2;
 		}],
 
-	"brewery": [
-		"Parteispende",
+	"wann": [
+		"Ab wann?",
 		"Mitglieder", 11111,
-		"Reinheitsgebiet!",
+		"Das tritt nach meiner Kenntnis... ist das sofort, unverzüglich.",
 		"x 9 Mitglieder / s",
 		"orange",
 		function() {
@@ -677,10 +677,10 @@ var upgrades = {
 			growthRate.Popularität *= 2;
 		}],
 
-	"brewery": [
-		"Parteispende",
+	"nescit": [
+		"Qui nescit",
 		"Mitglieder", 11111,
-		"Reinheitsgebiet!",
+		"dissimulare nescit regnare.",
 		"x 9 Mitglieder / s",
 		"orange",
 		function() {
@@ -688,10 +688,10 @@ var upgrades = {
 			growthRate.Popularität *= 2;
 		}],
 
-	"brewery": [
-		"Parteispende",
+	"temp8": [
+		"temp8",
 		"Mitglieder", 11111,
-		"Reinheitsgebiet!",
+		"temp8",
 		"x 9 Mitglieder / s",
 		"orange",
 		function() {
@@ -699,10 +699,10 @@ var upgrades = {
 			growthRate.Popularität *= 2;
 		}],
 
-	"brewery": [
-		"Parteispende",
+	"bleu": [
+		"Le ciel bleu",
 		"Mitglieder", 11111,
-		"Reinheitsgebiet!",
+		"sur nous peut s'effondrer, et la terre peut bien s'écrouler.",
 		"x 9 Mitglieder / s",
 		"orange",
 		function() {
@@ -710,10 +710,10 @@ var upgrades = {
 			growthRate.Popularität *= 2;
 		}],
 
-	"brewery": [
-		"Parteispende",
+	"endlich": [
+		"Martin Sonneborn ",
 		"Mitglieder", 11111,
-		"Reinheitsgebiet!",
+		"hat bis Unendlich gezählt. Zweimal!",
 		"x 9 Mitglieder / s",
 		"orange",
 		function() {
@@ -721,10 +721,10 @@ var upgrades = {
 			growthRate.Popularität *= 2;
 		}],
 
-	"brewery": [
-		"Parteispende",
+	"temp9": [
+		"temp9",
 		"Mitglieder", 11111,
-		"Reinheitsgebiet!",
+		"temp9",
 		"x 9 Mitglieder / s",
 		"orange",
 		function() {
@@ -732,10 +732,10 @@ var upgrades = {
 			growthRate.Popularität *= 2;
 		}],
 
-	"brewery": [
-		"Parteispende",
+	"lenin": [
+		"Dem Kleinbürgertum",
 		"Mitglieder", 11111,
-		"Reinheitsgebiet!",
+		"groß im Prahlen, fehlt die Kraft zur Tat, und es scheut ängstlich vor jedem Wagnis zurück.",
 		"x 9 Mitglieder / s",
 		"orange",
 		function() {
@@ -743,10 +743,10 @@ var upgrades = {
 			growthRate.Popularität *= 2;
 		}],
 
-	"brewery": [
-		"Parteispende",
+	"temp10": [
+		"Kanzlerkandidat Roberto Blanco",
 		"Mitglieder", 11111,
-		"Reinheitsgebiet!",
+		"Alt wie Adenauer, lustiger als Oliver Welke.",
 		"x 9 Mitglieder / s",
 		"orange",
 		function() {
@@ -754,10 +754,10 @@ var upgrades = {
 			growthRate.Popularität *= 2;
 		}],
 
-	"brewery": [
-		"Parteispende",
+	"dieblaue": [
+		"Die Blaue oder die Rote?",
 		"Mitglieder", 11111,
-		"Reinheitsgebiet!",
+		"Bedenke, alles was ich dir anbiete ist der totale Schwachsinn.",
 		"x 9 Mitglieder / s",
 		"orange",
 		function() {
@@ -765,10 +765,10 @@ var upgrades = {
 			growthRate.Popularität *= 2;
 		}],
 
-	"brewery": [
-		"Parteispende",
+	"rente": [
+		"Die Rente ist sicher",
 		"Mitglieder", 11111,
-		"Reinheitsgebiet!",
+		"Jedenfalls für Angela Merkel. Jetzt. Sofort.",
 		"x 9 Mitglieder / s",
 		"orange",
 		function() {
