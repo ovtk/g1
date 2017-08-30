@@ -25,6 +25,8 @@
 	     url('fonts/fjallaone-regular-webfont.svg#webfont') format('svg');
 }
 
+
+
 * {
 	padding: 0;
 	margin: 0;
@@ -44,8 +46,7 @@ html, body {
 
 .box, .values {
 	float: left;
-	padding: 5px 10px;
-	margin: 5px;
+	padding: 10px;
 }
 
 .button {
@@ -112,7 +113,7 @@ html, body {
 
 #logo {
 	width: 375px;
-	height: 50px;
+	height: 44px;
 	background: #5b5b5b;
 }
 
@@ -211,15 +212,15 @@ html, body {
 }
 
 .values .value {
-	font: 34px fjalla_one;
+	font: 32px fjalla_one;
 	line-height: 1em;
 	float: left;
-	margin-right: 0.3em;
+	margin-right: 3px;
 }
 
 .values .persecond {
 	float: left;
-	margin-top: 0.6em;
+	margin-top: 3px;
 }
 
 .values .text {
