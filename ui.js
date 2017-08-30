@@ -65,12 +65,12 @@ function showLogo() {
 		}, 5000);
 }
 
-function changeSetting(num, fun) {
+function changeSetting(num, func) {
 	$("#Setting").fadeOut(500, function() {
 		$("#Setting .bg img").replaceWith("<img src='images/setting" + num + "_bg.png' />");
 		$("#Setting .fg img").replaceWith("<img src='images/setting" + num + "_fg.png' />");
 	//	clear members!
-		$("#Setting").fadeIn(500, fun());
+		$("#Setting").fadeIn(500, func());
 		//$("#Setting").css("opacity", "0.0");
 		//$("#Setting").animate( {opacity: "1.0"}, 3000, fun() );
 	});
