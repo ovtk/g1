@@ -94,13 +94,12 @@ function electionResults() {
 
 function addAchievement(text, delay = 0) {
 	var j = $("#Achievements");
-	j.prepend("<table><tr><td class='centered'>" + text + "</td></tr></table>");
-	var n = j.find("table:first-of-type");
-	n.css("marginTop", "-200px");
-	n.css("marginBottom", "121px");
+	j.find("div:last-of-type").text("✭");
+	j.append("<div>" + text + "</div>");
+	var n = j.find("div:last-of-type");
+	n.css("marginLeft", "400px");
 	n.delay(delay).animate({ 
-		marginTop: "5px",
-		marginBottom: "5px",
+		marginLeft: "5px",
 		opacity: 1.0
 		}, 500, 
 		function() {
@@ -110,7 +109,7 @@ function addAchievement(text, delay = 0) {
 
 function delAchievements(num = 1) {
 	for (var i = 0; i < num; i++) { 
-		$("#Achievements table:last").remove();
+		$("#Achievements div:first").remove();
 	}
 }
 
@@ -126,10 +125,9 @@ function addUpgrade(key) {
 	var up = upgrades[key];
 	j.append("<div id='" + key + "' class='button'></dív>");
 	var n = j.find("div:last-of-type");
-	n.append("<p class='title bold'>" + up[0] + "</p>");
+	n.append("<p class='title'>" + up[0] + "</p>");
 	n.append("<p class='text'>" + up[3] + "</p>");
-	n.append("<p class='requirement " + upgradeColors[up[1]] + "'>– " + prettyShortNumbers(up[2]) + " " + up[1] + "</p>");
-	n.append("<p class='fruit " + up[5] + "'>" + up[4] + "</p>");
+	n.append("<p class='info'><span class='" + upgradeColors[up[1]] + "'>– " + prettyShortNumbers(up[2]) + " " + up[1] + "</span><span class='" + up[5] + "'>" + up[4] + "</span></p>");
 	n.css("display", "none");
 	n.fadeIn(500);
 	n.click( function() {

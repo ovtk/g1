@@ -14,70 +14,73 @@
 
 <body>
 	
-<div id="container">
+
+<div id="upper_playboard">
+	<table>
+		<tr>
+			<td id="logo" class="centered" colspan="4">
+				<img src="images/die_partei_logo1.png" />
+			</td>
+		</tr>
+		<tr>
+			<td id="ticker" class="centered" colspan="4">
+				<div><p>Klicke auf 'Vodka produzieren'!</p></div>
+			</td>
+		</tr>
+	</table>	
+</div>
+
+<div id="upgrades"></div>
+
+<div id="lower_playboard">
+	<table>
+		<tr id="values">
+			<td id="Popularität">
+				<div class="values">
+					<div class="value">0</div>
+					<div class="persecond"><span>0</span><br/>/s</div>
+					<div class="text">Popularität</div>
+				</div>
+			</td>
+			<td id="Mitglieder">
+				<div class="values">
+					<div class="value">0</div>
+					<div class="persecond"><span>0</span><br/>/s</div>
+					<div class="text">Mitglieder</div>
+				</div>
+			</td>
+			<td id="Vodka" class="left" colspan="2">
+				<div class="values">
+					<div class="value">0</div>
+					<div class="persecond"><span>0</span><br/>/s</div>
+					<div class="text">Vodka</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td id="Setting" colspan="2">
+				<div class="bg"><img src="images/setting1_bg.png" /></div>
+				<div class="mg"><img src="images/setting1_bg.png" /></div>
+				<div class="fg"><img src="images/setting1_fg.png" /></div>
+			</td>
+			<td class="klick">
+				<div id="spendVodka" class="button active bold">
+					<span id="clickMitglieder">einen</span>
+					<br />
+					<img id="Glass" src="images/spendVodka.png" />
+				</div>
+			</td>
+			<td class="klick">
+				<div id="makeVodka" class="button active bold">
+					<span id="clickVodka"></span>Vodka
+					<br />produzieren
+					<img id="Destille" src="images/destille1.png" />
+				</div>
+			</td>
+		</tr>
+	</table>
 	
-	<div id="fix">
-		<div id="upper_playboard">
-			<table>
-				<tr><td id="logo" class="centered" colspan="4"><img src="images/die_partei_logo1.png" /></td></tr>
-				<tr>
-					<td id="Destille" class="left" rowspan="3"><img src="images/destille1.png" /></td>
-					<td id="Vodka" class="left">
-						<div class="values">
-							<div class="value">0</div>
-							<div class="persecond"><span>0</span><br/>/s</div>
-							<div class="text">Vodka</div>
-						</div>
-					</td>
-					<td id="Mitglieder">
-						<div class="values">
-							<div class="value">0</div>
-							<div class="persecond"><span>0</span><br/>/s</div>
-							<div class="text">Mitglieder</div>
-						</div>
-					</td>
-					<td id="Popularität">
-						<div class="values">
-							<div class="value">0</div>
-							<div class="persecond"><span>0</span><br/>/s</div>
-							<div class="text">Popularität</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td class="left klick">
-						<div id="makeVodka" class="box button active bold">
-							<span id="clickVodka"></span>Vodka
-							<br />produzieren
-						</div>
-					</td>
-					<td id="Setting" colspan="2" rowspan="2">
-						<div class="bg"><img src="images/setting1_bg.png" /></div>
-						<div class="mg"><img src="images/setting1_bg.png" /></div>
-						<div class="fg"><img src="images/setting1_fg.png" /></div>
-					</td>
-				</tr>
-				<tr>
-					<td class="left klick">
-						<div id="spendVodka" class="box button active bold">
-							<span id="clickMitglieder">einen</span>
-							<br />ausgeben
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td id="ticker" class="centered" colspan="4">
-						<div><p>Klicke auf 'Vodka produzieren'!</p></div>
-					</td>
-				</tr>
-			</table>						
-		</div>	
-	</div>
-	
-	<div id="lower_playboard">	
-		<div id="upgrades"></div>
-		<div id="Achievements"></div>
-	</div>
+	<div id="Achievements"></div>						
 </div>
 		
 <footer></footer>	

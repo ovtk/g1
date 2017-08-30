@@ -18,7 +18,7 @@ var upgrades = {
 		function() {
 			growthRate.Vodka += 1;
 			tickText("Perfekt, Du hast die Vodka-Destille angeworfen.");
-			addAchievement("Vodka-Destille läuft", 200);
+			addAchievement("Destille läuft", 200);
 			fadeIn("#Destille");
 			fadeIn("#Vodka .persecond");
 			set("destille");
@@ -33,7 +33,7 @@ var upgrades = {
 		function() {
 			tickText("Sie soll 'Die PARTEI' heißen!");
 			set("name");
-			addAchievement("Die Partei ist 'Die PARTEI'");
+			addAchievement("PARTEI heißen!");
 			fadeIn("#logo", 2000);
 		}],
 

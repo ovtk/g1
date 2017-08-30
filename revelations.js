@@ -5,7 +5,7 @@ var revelations = [
 	}, function() {
 		fadeIn("#Vodka");
 		tickText("Und immer weiter klicken!");
-		addAchievement("1x<br />geklickt");
+		addAchievement("1x geklickt");
 	}],
 	
 	[function() {
@@ -25,13 +25,13 @@ var revelations = [
 		return (value["Klicks"] >= 5);
 	}, function() {
 		tickText("Kauf Dein erstes Upgrade!");
-		addAchievement("10x<br />geklickt", 500);
+		addAchievement("10x geklickt", 500);
 	}],
 	
 	[function() {
 		return (get("destille") && value["Vodka"] >= 5);
 	}, function() {
-		tickText("Klick weiter, um die Vodka-Produktion anzukurbeln.");
+		tickText("Klick weiter, um die Produktion anzukurbeln.");
 	}],
 	
 	[function() {
@@ -86,13 +86,13 @@ var revelations = [
 	[function() {
 		return (value["Klicks"] >= 100);
 	}, function() {
-		addAchievement("100x<br />geklickt");
+		addAchievement("100x geklickt");
 	}],
 	
 	[function() {
 		return (value["Klicks"] >= 1009);
 	}, function() {
-		addAchievement("1009x<br />geklickt");
+		addAchievement("1009x geklickt");
 	}],
 	
 	[function() {
@@ -104,14 +104,14 @@ var revelations = [
 	[function() {
 		return (value["Popularität"] > (value.Wahlberechtigte * 0.7 * 0.05) );
 	}, function() {
-		addAchievement("5%-Hürde überwunden!");
+		addAchievement("5%-Hürde!");
 		growthRate.Vodka *= 1.5;
 	}],
 	
 	[function() {
 		return (value["Popularität"] > (value.Wahlberechtigte * 0.7 * 0.5) );
 	}, function() {
-		addAchievement("Wir sind Regierung!");
+		addAchievement("Regierung!");
 		set("regierung");
 		growthRate.Vodka *= 1.5;
 	}],
@@ -125,7 +125,7 @@ var revelations = [
 	[function() {
 		return (value["Popularität"] >= 23);
 	}, function() {
-		addAchievement("Die ersten 23 (sic!) Wühler (sick!)");
+		addAchievement("23 Wühler!");
 	}],
 	
 	

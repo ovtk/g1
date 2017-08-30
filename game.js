@@ -131,7 +131,7 @@ function round(num, dp = 0) {
 
 
 
-
+/*
 function getWindowDimensions() {
 	var c = $("#container")[0];
 	
@@ -139,6 +139,7 @@ function getWindowDimensions() {
 	displayW = round(c.getBoundingClientRect().width);
 	alert(displayW + " / " + displayH);
 }
+*/
 
 
 
