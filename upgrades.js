@@ -88,7 +88,7 @@ var upgrades = {
 	"parteilogo": [
 		"Ein Logo",
 		"Mitglieder", 37,
-		"Sie zu knechten, sie alle zu finden, ins Dunkel zu treiben...",
+		"Sie zu knechten, sie alle zu finden, ins Dunkel zu treiben und ewig zu binden...",
 		"+ 1 Popularität / s",
 		"orange",
 		function() {
@@ -400,7 +400,7 @@ var upgrades = {
 	"raum": [
 		"Volk mit Raum",
 		"Vodka", 66447360,
-		"Raum für Deine Notizen:",
+		"Raum für Deine Notizen:<br/>&nbsp;",
 		"x 1.2 Mitglieder / s",
 		"blue",
 		function() {

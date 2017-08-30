@@ -209,6 +209,7 @@ html, body {
 
 .values {
 	position: relative;
+	width: 105px;
 }
 
 .values .value {
