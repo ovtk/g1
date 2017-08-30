@@ -73,7 +73,9 @@ html, body {
 /* upper playboard */
 
 #upper_playboard {
-	position: relative;
+	position: fixed;
+	top: 0;
+	z-index: 10;
 }
 
 #upper_playboard table,
@@ -145,6 +147,8 @@ html, body {
 	position: relative;
 	float: left;
 	width: 375px;
+	padding-top: 88px;
+	padding-bottom: 232px;
 }
 
 #upgrades > div {
