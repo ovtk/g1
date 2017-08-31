@@ -1,31 +1,10 @@
-/*
-var displayWidth = 0;
-var displayHeight = 0;
-var layoutWidth = 375;
+// disable iOS double-tap zoom
+$('.no-zoom').bind('touchend', function(e) {
+	e.preventDefault();
+	$(this).click();
+});
+									
 
-function getWindowDimensions() {
-	var c = $("#overlay")[0];
-
-	displayWidth = round(c.getBoundingClientRect().width);
-	displayHeight = round(c.getBoundingClientRect().bottom);
-	alert(displayWidth + " / " + displayHeight);
-}
-
-function initialScaling() {
-	return displayWidth / layoutWidth;
-}
-
-function setViewport() {
-	getWindowDimensions();
-	
-	var s = initialScaling();
-	var t = "<meta name='viewport' content='width=device-width, initial-scale=" + s + ", maximum-scale=" + s + "' />"
-	
-	$("head").append(t);
-	
-	alert(t);
-}
-*/
 
 
 // make Vodka

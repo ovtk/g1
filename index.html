@@ -98,25 +98,6 @@
 	<script type="text/javascript">
 		$(document).ready( function() {	
 			
-			/*
-			var lastTouchEnd = 0;
-			document.addEventListener('touchend', function (event) {
-				var now = (new Date()).getTime();
-				if (now - lastTouchEnd <= 500) {
-					// alert("douple!");
-					event.preventDefault();
-				}
-			 	lastTouchEnd = now;
-			}, false);
-			*/
-			
-			$('.no-zoom').bind('touchend', function(e) {
-				e.preventDefault();
-				$(this).click();
-			});
-						
-		//	setViewport();
-			
 			mainLoop();
 										
 			var update_interval = setInterval(mainLoop, Math.round(1000 / fps));
