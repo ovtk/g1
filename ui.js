@@ -7,7 +7,7 @@ function getWindowDimensions() {
 
 	displayWidth = round(c.getBoundingClientRect().width);
 	displayHeight = round(c.getBoundingClientRect().bottom);
-	alert(displayW + " / " + displayH);
+	alert(displayWidth + " / " + displayHeight);
 }
 
 
