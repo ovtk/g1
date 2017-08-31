@@ -20,8 +20,11 @@ function setViewport() {
 	getWindowDimensions();
 	
 	var s = initialScaling();
+	var t = "<meta name='viewport' content='width=device-width, initial-scale=" + s + ", maximum-scale=" + s + "' />"
 	
-	$("head").append("<meta name='viewport' content='width=device-width, initial-scale=" + s + ", maximum-scale=" + s + "' />");
+	$("head").append(t);
+	
+	alert(t);
 }
 
 
