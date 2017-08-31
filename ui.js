@@ -21,10 +21,10 @@ function updateValuesView() {
 		$("#" + key + " div.persecond span").text(prettyShortNumbers(growthRate[key]));
 
 		if (clickValue("Vodka") > 1) {
-			$("#clickVodka").text(prettyShortNumbers(clickValue("Vodka")) + " ");
+			$("#clickVodka").text(prettyShortNumbers(clickValue("Vodka")));
 		}
 		if (clickValue("Mitglieder") > 1) {
-			$("#clickMitglieder").text(prettyShortNumbers(clickValue("Mitglieder")) + " Vodka");
+			$("#clickMitglieder").text(prettyShortNumbers(clickValue("Mitglieder")));
 		}
 	}
 }

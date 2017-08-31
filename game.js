@@ -152,15 +152,16 @@ function round(num, dp = 0) {
 
 
 
-/*
+
 function getWindowDimensions() {
-	var c = $("#container")[0];
+	var c = $("#overlay")[0];
 	
 	displayH = round(c.getBoundingClientRect().bottom);
 	displayW = round(c.getBoundingClientRect().width);
 	alert(displayW + " / " + displayH);
 }
-*/
 
+
+getWindowDimensions();
 
 
