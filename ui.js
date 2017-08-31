@@ -1,3 +1,31 @@
+var displayWidth = 0;
+var displayHeight = 0;
+var layoutWidth = 375;
+
+function getWindowDimensions() {
+	var c = $("#overlay")[0];
+
+	displayWidth = round(c.getBoundingClientRect().width);
+	displayHeight = round(c.getBoundingClientRect().bottom);
+	// alert(displayW + " / " + displayH);
+}
+
+
+
+function initialScaling() {
+	return displayWidth / layoutWidth;
+}
+
+function setViewport() {
+	getWindowDimensions();
+	
+	var s = initialScaling();
+	
+	$("head").append("<meta name='viewport' content='width=device-width, initial-scale=" + s + ", maximum-scale=" + s + "' />");
+}
+
+
+
 // make Vodka
 $("#makeVodka").click( function() {
 	value.Klicks += 1;
@@ -138,3 +166,5 @@ function addUpgrade(key) {
 function delUpgrade(key) {
 	$("#" + key).remove();
 }
+
+
