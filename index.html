@@ -69,13 +69,13 @@
 				<div class="fg"><img src="images/setting1_fg.png" /></div>
 			</td>
 			<td class="klick">
-				<div id="spendVodka" class="button active bold">
+				<div id="spendVodka" class="button active no-zoom">
 					<span id="clickMitglieder" class="perclick">1</span>
 					<img id="Glass" src="images/spendVodka.png" />
 				</div>
 			</td>
 			<td class="klick">
-				<div id="makeVodka" class="button active bold">
+				<div id="makeVodka" class="button active no-zoom">
 					<span id="clickVodka" class="perclick">1</span>
 					<img id="Destille" src="images/destille1.png" />
 				</div>
@@ -98,41 +98,24 @@
 	<script type="text/javascript">
 		$(document).ready( function() {	
 			
+			/*
 			var lastTouchEnd = 0;
 			document.addEventListener('touchend', function (event) {
 				var now = (new Date()).getTime();
 				if (now - lastTouchEnd <= 500) {
-					alert("douple!");
+					// alert("douple!");
 					event.preventDefault();
 				}
 			 	lastTouchEnd = now;
 			}, false);
-			
-			/*
-			// jQuery no-double-tap-zoom plugin
-			// Triple-licensed: Public Domain, MIT and WTFPL license - share and enjoy!
-			(function($) {
-				var IS_IOS = /iphone|ipad/i.test(navigator.userAgent);
-				alert(IS_IOS);
-				$.fn.nodoubletapzoom = function() {
-					if (IS_IOS)
-					$(this).bind('touchstart', function preventZoom(e) {
-						var t2 = e.timeStamp
-			 			, t1 = $(this).data('lastTouch') || t2
-						, dt = t2 - t1
-						, fingers = e.originalEvent.touches.length;
-						$(this).data('lastTouch', t2);
-			 			if (!dt || dt > 500 || fingers > 1) return; // not double-tap
-
-						e.preventDefault(); // double tap - prevent the zoom
-						// also synthesize click events we just swallowed up
-						$(this).trigger('click').trigger('click');
-						alert("douple!");
-					});
-			 	};
-			})(jQuery);
 			*/
 			
+			$('.no-zoom').bind('touchend', function(e) {
+				e.preventDefault();
+				alert("works");
+				$(this).click();
+			});
+						
 		//	setViewport();
 			
 			mainLoop();

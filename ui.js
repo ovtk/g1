@@ -1,3 +1,4 @@
+/*
 var displayWidth = 0;
 var displayHeight = 0;
 var layoutWidth = 375;
@@ -9,8 +10,6 @@ function getWindowDimensions() {
 	displayHeight = round(c.getBoundingClientRect().bottom);
 	alert(displayWidth + " / " + displayHeight);
 }
-
-
 
 function initialScaling() {
 	return displayWidth / layoutWidth;
@@ -26,7 +25,7 @@ function setViewport() {
 	
 	alert(t);
 }
-
+*/
 
 
 // make Vodka
