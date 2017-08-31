@@ -98,6 +98,16 @@
 	<script type="text/javascript">
 		$(document).ready( function() {	
 			
+			var lastTouchEnd = 0;
+			document.addEventListener('touchend', function (event) {
+			  var now = (new Date()).getTime();
+			  if (now - lastTouchEnd <= 300) {
+			    event.preventDefault();
+			  }
+			  lastTouchEnd = now;
+			}, false);
+			
+			/*
 			// jQuery no-double-tap-zoom plugin
 			// Triple-licensed: Public Domain, MIT and WTFPL license - share and enjoy!
 			(function($) {
@@ -120,6 +130,7 @@
 					});
 			 	};
 			})(jQuery);
+			*/
 			
 		//	setViewport();
 			
