@@ -22,6 +22,11 @@ $("#spendVodka").click( function() {
 	});
 });
 
+// hide overlay window
+$("#overlay").click( function() {
+	hideOverlay();
+});
+
 
 function updateValuesView() {
 	for (var i = 0; i < values.length; i++) {
@@ -99,6 +104,14 @@ function tickText(text) {
 
 function electionResults() {
 	tickText("Wahlergebnis: " + prozent() + "%");
+	$("#Election .mg span").text(prozent());
+	$("#overlay").fadeIn();
+	$("#greyout").fadeIn();
+}
+
+function hideOverlay() {
+	$("#overlay").fadeOut();
+	$("#greyout").fadeOut();
 }
 
 function addAchievement(text, delay = 0) {

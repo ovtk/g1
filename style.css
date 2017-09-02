@@ -70,14 +70,57 @@ html, body {
 
 /* layout */
 
-
 #overlay {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 375px;
 	height: 100%;
+	z-index: 100;
+	background: transparent;
 }
+
+/* pointer-events: none;
+*/
+
+#Election .bg, 
+#Election .fg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 375px;
+	height: 667px;
+	background: transparent;
+}
+
+#Election .mg {
+	position: fixed;
+	top: 240px;
+	left: 90px;
+	width: 160px;
+	height: 80px;
+	overflow: hidden;
+	font: 52px fjalla_one;
+	line-height: 52px;
+	z-index: 102;
+	background: transparent;
+}
+
+#Election .fg {
+	z-index: 105;
+}
+
+#greyout {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 375px;
+	height: 100vh;
+	z-index: 95;
+	background: black;
+	opacity: 0.8;
+}
+
 
 /* upper playboard */
 
