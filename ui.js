@@ -48,6 +48,11 @@ function electionResults() {
 	showOverlay("election");
 }
 
+function showPoster(id) {
+	$("#poster img").replaceWith("<img src='images/" + id + ".png' />");
+	showOverlay("poster");	
+}
+
 
 
 

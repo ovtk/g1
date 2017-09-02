@@ -87,16 +87,11 @@ html, body {
 	pointer-events: auto;
 }
 
-#startscreen {
-}
-
-#election {
+#election, #poster {
 	display: none;
 }
 
-/* pointer-events: none;
-*/
-
+#poster,
 #election .bg, 
 #election .fg {
 	position: fixed;

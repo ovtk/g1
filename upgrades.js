@@ -137,7 +137,7 @@ var upgrades = {
 		"silver",
 		function() {
 			growthRate.Vodka *= 3;
-			alert("poster!");
+			showPoster("poster1");
 		}],
 
 	"slogan": [
