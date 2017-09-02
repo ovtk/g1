@@ -78,13 +78,27 @@ html, body {
 	height: 100%;
 	z-index: 100;
 	background: transparent;
+	pointer-events: none;
+}
+
+#startscreen,
+#election,
+#poster {
+	pointer-events: auto;
+}
+
+#startscreen {
+}
+
+#election {
+	display: none;
 }
 
 /* pointer-events: none;
 */
 
-#Election .bg, 
-#Election .fg {
+#election .bg, 
+#election .fg {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -93,7 +107,7 @@ html, body {
 	background: transparent;
 }
 
-#Election .mg {
+#election .mg {
 	position: fixed;
 	top: 240px;
 	left: 90px;
@@ -106,7 +120,7 @@ html, body {
 	background: transparent;
 }
 
-#Election .fg {
+#election .fg {
 	z-index: 105;
 }
 
@@ -117,8 +131,8 @@ html, body {
 	width: 375px;
 	height: 100vh;
 	z-index: 95;
-	background: black;
-	opacity: 0.8;
+	background: #232323;
+	opacity: 1.0;
 }
 
 
@@ -359,13 +373,12 @@ html, body {
 }
 
 
-
 #Vodka, 
 #Destille, #Vodka .persecond, 
 #Setting,
 #spendVodka,
 #Mitglieder, #Popularität, 
-#logo{
+#logo {
 	opacity: 0.0;
 }
 

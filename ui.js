@@ -22,10 +22,33 @@ $("#spendVodka").click( function() {
 	});
 });
 
-// hide overlay window
-$("#overlay").click( function() {
-	hideOverlay();
+// hide start screen
+$("#startscreen").click( function() {
+	$("#startscreen").fadeOut(1000).off("click");
+	$("#greyout").delay(1000).fadeOut(500);
 });
+
+
+function hideOverlay(id) {
+	$("#" + id).fadeOut(500).off("click");
+	$("#greyout").fadeOut(1000);
+}
+
+function showOverlay(id) {
+	$("#greyout").fadeIn(500);
+	$("#" + id).delay(500).fadeIn(500);
+	$("#" + id).delay(2500).click( function() {
+		hideOverlay(id);
+	});
+}
+
+function electionResults() {
+	tickText("Wahlergebnis: " + prozent() + "%");
+	$("#election .mg span").text(prozent());
+	showOverlay("election");
+}
+
+
 
 
 function updateValuesView() {
@@ -100,18 +123,6 @@ function tickText(text) {
 		$("#ticker p").animate({marginRight: "0px"}, 200);
 	});
 	
-}
-
-function electionResults() {
-	tickText("Wahlergebnis: " + prozent() + "%");
-	$("#Election .mg span").text(prozent());
-	$("#overlay").fadeIn();
-	$("#greyout").fadeIn();
-}
-
-function hideOverlay() {
-	$("#overlay").fadeOut();
-	$("#greyout").fadeOut();
 }
 
 function addAchievement(text, delay = 0) {
