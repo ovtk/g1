@@ -52,7 +52,7 @@ html, body {
 .button {
 	cursor: pointer;
 	background: #666;
-	opacity: 0.33;
+	opacity: 0.25;
 }
 
 .button.active:hover {
@@ -212,12 +212,36 @@ html, body {
 	padding-bottom: 232px;
 }
 
-#upgrades > div {
+#upgrades .upgrade {
+	display: table;
 	position: relative;
-	width: 330px;
-	padding: 5px 35px 10px 10px;
+	width: 375px;
+	padding: 0;
 	margin-bottom: 3px;
 }
+
+.up_left, .up_right {
+    display: table-cell;
+    vertical-align: top;
+    position: relative;
+}
+
+.up_left {
+	padding: 5px 5px 5px 10px;
+}
+
+.up_right {
+	width: 25px;
+}
+
+.progressbar {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 0%;
+}
+
+
 
 #upgrades p.title {
 	font: 22px share_bold;

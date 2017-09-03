@@ -78,6 +78,13 @@ function checkActiveButtons() {
 			var req = upgrades[key][1];
 			var val = upgrades[key][2];
 			$(this).toggleClass("active", value[req] >= val);
+			
+			var progress = value[req] / val;
+			if (progress > 1) {
+				progress = 1;
+			}
+			progress = Math.round(progress * 100);
+			$(this).find(".progressbar").css("height", progress + "%");
 		}
 	})
 }
@@ -158,14 +165,28 @@ var upgradeColors = {
 	"Achievements": "green"
 }
 
+var htmlColors = {
+	"silver": "#bbb",
+	"blue": "#7fd9ff",
+	"orange": "#ff8000",
+	"green": "#80ff80"
+}
+
 function addUpgrade(key) {
 	var j = $("#upgrades");
 	var up = upgrades[key];
-	j.append("<div id='" + key + "' class='button'></dív>");
-	var n = j.find("div:last-of-type");
-	n.append("<p class='title'>" + up[0] + "</p>");
-	n.append("<p class='text'>" + up[3] + "</p>");
-	n.append("<p class='info'><span class='" + upgradeColors[up[1]] + "'>– " + prettyShortNumbers(up[2]) + " " + up[1] + "</span><span class='" + up[5] + "'>" + up[4] + "</span></p>");
+	// var color = upgradeColors[up[1]];
+	j.append("<div id='" + key + "' class='button upgrade'></dív>");
+//	var n = j.find("div:last-of-type");
+	var n = j.find("#" + key);
+	n.append("<div class='up_left'></div><div class='up_right'><div class='progressbar'></div></div>");
+//	var o = n.find("div.up_left");
+	var o = $("#" + key + " .up_left");
+	o.append("<p class='title'>" + up[0] + "</p>");
+	o.append("<p class='text'>" + up[3] + "</p>");
+	o.append("<p class='info'><span class='" + upgradeColors[up[1]] + "'>– " + prettyShortNumbers(up[2]) + " " + up[1] + "</span><span class='" + up[5] + "'>" + up[4] + "</span></p>");
+	$("#" + key + " .progressbar").css("background-color", htmlColors[upgradeColors[up[1]]]);
+
 	n.css("display", "none");
 	n.fadeIn(500);
 	n.click( function() {

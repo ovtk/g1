@@ -58,7 +58,7 @@ function reveal() {
 
 function checkElection() {
 	day += 1;
-	if (day % 150 == 0) {
+	if (day % 1500 == 0) {
 		electionResults();
 	}
 }

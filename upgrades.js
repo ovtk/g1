@@ -532,6 +532,7 @@ var upgrades = {
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
+			showPoster("poster3");
 		}],
 
 	"metaebene": [
@@ -552,6 +553,7 @@ var upgrades = {
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
+			showPoster("poster4");
 		}],
 
 	"error404": [
@@ -606,6 +608,7 @@ var upgrades = {
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
+			showPoster("poster5");
 		}],
 
 	"mauer": [
@@ -626,6 +629,7 @@ var upgrades = {
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
+			showPoster("poster6");
 		}],
 
 
