@@ -395,7 +395,7 @@ html, body {
 	font: 50px share_bold;
 	line-height: 50px;
 	position: absolute;
-	top: 200px;
+	bottom: 250px;
 	left: 375px;
 	width: 575px;
 	height: 80px;
