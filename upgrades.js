@@ -485,7 +485,7 @@ var upgrades = {
 		"Rule 34",
 		"Mitglieder", 34,
 		"I invoke rule 34 on the 'Die PARTEI'!",
-		"x 1.5 Mitglieder / Sekunde",
+		"x 1.5 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
@@ -496,7 +496,7 @@ var upgrades = {
 		"iDemo",
 		"Mitglieder", 105,
 		"The fastest, most powerful iDemo yet.",
-		"x 1.5 Mitglieder / Sekunde",
+		"x 1.5 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
@@ -506,7 +506,7 @@ var upgrades = {
 		"Die PARTEI gründen",
 		"Mitglieder", 250,
 		"Jetzt wirklich. Ich gebe ihnen mein Ehrenwort!",
-		"x 1.5 Mitglieder / Sekunde",
+		"x 1.5 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
@@ -518,7 +518,7 @@ var upgrades = {
 		"Die SPD auslachen",
 		"Mitglieder", 560,
 		"Die wer?",
-		"x 1.5 Mitglieder / Sekunde",
+		"x 1.5 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
@@ -528,7 +528,7 @@ var upgrades = {
 		"Yeah, Poster!",
 		"Mitglieder", 1140,
 		"Just another poster on the wall.",
-		"x 1.5 Mitglieder / Sekunde",
+		"x 1.5 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
@@ -539,7 +539,7 @@ var upgrades = {
 		"Metaebene",
 		"Mitglieder", 2250,
 		"Interview mit Tim für das CRE.",
-		"x 1.5 Mitglieder / Sekunde",
+		"x 1.5 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
@@ -549,7 +549,7 @@ var upgrades = {
 		"Yeah, Poster!",
 		"Mitglieder", 4320,
 		"Just another poster on the wall.",
-		"x 1.5 Mitglieder / Sekunde",
+		"x 1.5 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
@@ -560,7 +560,7 @@ var upgrades = {
 		"Error 404",
 		"Mitglieder", 8819,
 		"AfD Wühler sind hier richtig!",
-		"x 1.5 Mitglieder / Sekunde",
+		"x 1.5 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
@@ -570,7 +570,7 @@ var upgrades = {
 		"Neue Heimat",
 		"Mitglieder", 15190,
 		"Lehrter Bahnhof, zum symbolischen Preis von 1 Mark.",
-		"x 1.5 Mitglieder / Sekunde",
+		"x 1.5 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
@@ -584,7 +584,7 @@ var upgrades = {
 		"Ed Snowden einladen",
 		"Mitglieder", 27435,
 		" Zum Kaffee (in Moskau).",
-		"x 1.5 Mitglieder / Sekunde",
+		"x 1.5 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
@@ -594,7 +594,7 @@ var upgrades = {
 		"Fett Kohle einstreichen",
 		"Popularität", 49000,
 		"Ein Sitzen im Europaparlament.",
-		"x 1.5 Mitglieder / Sekunde",
+		"x 1.5 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
@@ -604,7 +604,7 @@ var upgrades = {
 		"Yeah, Poster!",
 		"Mitglieder", 86100,
 		"Just another poster on the wall.",
-		"x 1.5 Mitglieder / Sekunde",
+		"x 1.5 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
@@ -615,7 +615,7 @@ var upgrades = {
 		"Antikapitalistischer Schutzwall",
 		"Vodka", 149625,
 		"Die Mauer wieder aufbauen.",
-		"x 1.5 Mitglieder / Sekunde",
+		"x 1.5 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
@@ -625,7 +625,7 @@ var upgrades = {
 		"Yeah, Poster!",
 		"Mitglieder", 257785,
 		"Just another poster on the wall.",
-		"x 1.5 Mitglieder / Sekunde",
+		"x 1.5 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
@@ -813,7 +813,7 @@ var upgrades = {
 		"Einen drin",
 		"Vodka", 999999999999999999,
 		"Ein schwarzes Loch mit Vodka (ab-) füllen.",
-		"x2 Popularität / Sekunde",
+		"x2 Popularität / s",
 		"orange",
 		function() {
 			growthRate.Popularität *= 2;
@@ -825,7 +825,7 @@ var upgrades = {
 		"All is fair in love and war",
 		"Mitglieder", 500,
 		"Prinz Steineimer nach Guantanamo entführen.",
-		"x2 Popularität / Sekunde",
+		"x2 Popularität / s",
 		"orange",
 		function() {
 			growthRate.Popularität *= 2;
@@ -835,7 +835,7 @@ var upgrades = {
 		"Irgendwie, irdendwo.",
 		"Mitglieder", 500,
 		"Irgendwas mit Roderich Egeler machen.",
-		"x2 Popularität / Sekunde",
+		"x2 Popularität / s",
 		"orange",
 		function() {
 			growthRate.Popularität *= 2;
@@ -845,7 +845,7 @@ var upgrades = {
 		"Canabis verbieten",
 		"Mitglieder", 500,
 		"Ha ha ha aha ha ha ah aha hahahah!!",
-		"x2 Popularität / Sekunde",
+		"x2 Popularität / s",
 		"orange",
 		function() {
 			growthRate.Popularität *= 2;
@@ -855,7 +855,7 @@ var upgrades = {
 		"Speedlimit abschaffen",
 		"Mitglieder", 500,
 		"Neeeooowrrmmmm!!!!!",
-		"x2 Popularität / Sekunde",
+		"x2 Popularität / s",
 		"orange",
 		function() {
 			growthRate.Popularität *= 2;
@@ -865,7 +865,7 @@ var upgrades = {
 		"Brennstäbe besteuern",
 		"Mitglieder", 500,
 		"Nikotinsteuer anheben, du Spast.",
-		"x2 Popularität / Sekunde",
+		"x2 Popularität / s",
 		"orange",
 		function() {
 			growthRate.Popularität *= 2;
@@ -875,7 +875,7 @@ var upgrades = {
 		"Weltfrieden",
 		"Mitglieder", 500,
 		"Atomwaffen vernichten, Parkplätze bauen.",
-		"x2 Popularität / Sekunde",
+		"x2 Popularität / s",
 		"orange",
 		function() {
 			growthRate.Popularität *= 2;
@@ -885,7 +885,7 @@ var upgrades = {
 		"Krebs besiegen",
 		"Mitglieder", 500,
 		"Dieter, wir vermissen dich!",
-		"x2 Popularität / Sekunde",
+		"x2 Popularität / s",
 		"orange",
 		function() {
 			growthRate.Popularität *= 2;
@@ -895,7 +895,7 @@ var upgrades = {
 		"Wahlversprechen einhalten",
 		"Mitglieder", 500,
 		"Manager-Gehälter auf 25 mio / Monat begrenzen.",
-		"x2 Popularität / Sekunde",
+		"x2 Popularität / s",
 		"orange",
 		function() {
 			growthRate.Popularität *= 2;
@@ -905,7 +905,7 @@ var upgrades = {
 		"Wahlversprechen einhalten (2)",
 		"Mitglieder", 500,
 		"Die 100 reichsten Deutschen flachlegen.",
-		"x2 Popularität / Sekunde",
+		"x2 Popularität / s",
 		"orange",
 		function() {
 			growthRate.Popularität *= 2;
@@ -915,7 +915,7 @@ var upgrades = {
 		"Pyromiden bauen",
 		"Mitglieder", 500,
 		"1000 qm Leerstand in bester Lage, zu günstigen Konditionen.",
-		"x2 Popularität / Sekunde",
+		"x2 Popularität / s",
 		"orange",
 		function() {
 			growthRate.Popularität *= 2;
@@ -925,7 +925,7 @@ var upgrades = {
 		"Staatsreligion",
 		"Mitglieder", 500,
 		"Gottkaiser Pabst Martin I, der Sonnengeborene.",
-		"x2 Popularität / Sekunde",
+		"x2 Popularität / s",
 		"orange",
 		function() {
 			growthRate.Popularität *= 2;
@@ -935,7 +935,7 @@ var upgrades = {
 		"Auf Wahlversprechen pfeifen",
 		"Mitglieder", 500,
 		"Die Industrie die Gesetze schreiben lassen und später Aufsichtsratsposten abgreifen.",
-		"x2 Popularität / Sekunde",
+		"x2 Popularität / s",
 		"orange",
 		function() {
 			growthRate.Popularität *= 2;
