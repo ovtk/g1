@@ -391,6 +391,19 @@ html, body {
 	margin-top: -10px;
 }
 
+.flyAwayBig {
+	font: 50px share_bold;
+	line-height: 50px;
+	position: absolute;
+	top: 200px;
+	left: 375px;
+	width: 575px;
+	height: 80px;
+	overflow-x: hidden;
+	overflow-y: visible;
+	z-index: 200;
+}
+
 
 #Vodka, 
 #Destille, #Vodka .persecond, 

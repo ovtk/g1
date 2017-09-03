@@ -41,7 +41,7 @@ var upgrades = {
 		"Wir brauchen ein Vereinsheim",
 		"Vodka", 23,
 		"Erbaut auf den Ruinen der Manyo. (Never forget, never forgive.)",
-		"+ Vereinsheim, + 1 Vodka",
+		"+ Vereinsheim",
 		"blue",
 		function() {
 			tickText("Ich mach schon mal das Licht an.");

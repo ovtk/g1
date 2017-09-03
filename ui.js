@@ -16,10 +16,14 @@ $("#makeVodka").click( function() {
 // spend Vodka
 $("#spendVodka").click( function() {
 	value.Klicks += 1;
-	
-	requirements("Vodka", clickValue("Mitglieder"), function() {
-		inc("Mitglieder", clickValue("Mitglieder"));
-	});
+
+	var val = clickValue("Mitglieder");
+
+	if (value["Vodka"] >= val) {
+		dec("Vodka", val);
+		inc("Mitglieder", val);
+		updateValuesView();
+	}
 });
 
 // hide start screen
@@ -83,7 +87,7 @@ function checkActiveButtons() {
 			if (progress > 1) {
 				progress = 1;
 			}
-			progress = Math.round(progress * 100);
+			var progress = Math.round(progress * 100);
 			$(this).find(".progressbar").css("height", progress + "%");
 		}
 	})
@@ -98,10 +102,22 @@ function fadeNumbers(item, val) {
 	n.animate({ 
 		marginTop: "20px",
 		opacity: 0.0
-		}, 800, 
-		function() {
-			$(this).remove();}
-	);
+	}, 800, 
+	function() {
+		$(this).remove();
+	});
+}
+
+function upgradeFX(key, text, colorClass) {
+	$("#" + key).remove();
+	var j = $("body");
+	j.append("<div class='flyAwayBig " + colorClass + "'>" + text + "</dív>");
+	var n = j.find("div.flyAwayBig:last-of-type");
+	n
+		.animate({ left: "25px" }, 1000, "easeOutBack")
+		.fadeOut("slow", function() {
+			$(this).remove();
+		});
 }
 
 function fadeIn(item, time = 500) {
@@ -120,8 +136,6 @@ function changeSetting(num, func) {
 		$("#Setting .fg img").replaceWith("<img src='images/setting" + num + "_fg.png' />");
 	//	clear members!
 		$("#Setting").fadeIn(500, func());
-		//$("#Setting").css("opacity", "0.0");
-		//$("#Setting").animate( {opacity: "1.0"}, 3000, fun() );
 	});
 }
 
@@ -177,10 +191,10 @@ function addUpgrade(key) {
 	var up = upgrades[key];
 	// var color = upgradeColors[up[1]];
 	j.append("<div id='" + key + "' class='button upgrade'></dív>");
-//	var n = j.find("div:last-of-type");
+
 	var n = j.find("#" + key);
 	n.append("<div class='up_left'></div><div class='up_right'><div class='progressbar'></div></div>");
-//	var o = n.find("div.up_left");
+
 	var o = $("#" + key + " .up_left");
 	o.append("<p class='title'>" + up[0] + "</p>");
 	o.append("<p class='text'>" + up[3] + "</p>");
@@ -189,13 +203,12 @@ function addUpgrade(key) {
 
 	n.css("display", "none");
 	n.fadeIn(500);
-	n.click( function() {
-		requirements(up[1], up[2], up[6], key);	
+	n.click( function() {		
+		if (value[up[1]] >= up[2]) {
+			dec(up[1], up[2]);
+			up[6]();
+			updateValuesView();
+			upgradeFX(key, up[4], up[5]);
+		}		
 	});
 }
-
-function delUpgrade(key) {
-	$("#" + key).remove();
-}
-
-

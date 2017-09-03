@@ -77,17 +77,6 @@ function dec(key, val) {
 
 
 
-function requirements(key, val, fruits, kill = false) {
-	if (value[key] >= val) {
-		dec(key, val);
-		fruits();
-		updateValuesView();
-		if (kill != false) {
-			delUpgrade(kill);
-		}
-	}
-}
-
 function prozent() {
 	return prettyShortNumbers(value.Popularität / (value.Wahlberechtigte * 0.7)  * 100);
 }
