@@ -48,6 +48,7 @@ var upgrades = {
 			growthRate.Vodka += 1;
 			fadeIn("#Setting");
 			set("setting1");
+			settingLevel = 1;
 			fadeIn("#spendVodka", 2000);
 		}],
 

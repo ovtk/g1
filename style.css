@@ -75,10 +75,11 @@ html, body {
 	top: 0;
 	left: 0;
 	width: 375px;
-	height: 100%;
+	height: 100vh;
 	z-index: 100;
 	background: transparent;
 	pointer-events: none;
+	overflow: hidden;
 }
 
 #startscreen,
@@ -349,6 +350,7 @@ html, body {
 .silver {color: #bbb;}
 
 #Setting {
+	position: relative;
 	width: 228px;
 	height: 130px;
 }
@@ -385,6 +387,12 @@ html, body {
 	border-right: 3px solid #555;
 }
 
+
+
+.partyPeopleDiv {
+	position: absolute;
+	bottom: -124px;
+}
 
 .flyAway {
 	position: absolute;

@@ -20,8 +20,6 @@ value.Wahlberechtigte = 61500000;
 value.Weltbevölkerung = 7540123440;
 growthRate.Weltbevölkerung = 229277; 
 
-
-
 function clickValue(key) {
 	var x = growthRate[key];
 	var value = (Math.sqrt(x) + x / 2) / 2;
@@ -32,6 +30,18 @@ function clickValue(key) {
 		return 1;
 	}
 }
+
+
+var settingLevel = 0;
+var lastNumPartyPeople = 0;
+
+function numPartyPeople() {
+	// 0, 1, 4, 27, 256
+	var steps = Math.pow(settingLevel, settingLevel) * 50; 
+	
+	return Math.floor(value.Mitglieder / steps);
+}
+
 
 function grow() {	
 	var g = 0;

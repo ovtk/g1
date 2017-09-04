@@ -75,6 +75,36 @@ function updateValuesView() {
 	}
 }
 
+function updatePartyPeople() {
+	// console.log(settingLevel + " " + numPartyPeople());
+	var partyPeople = numPartyPeople();
+	
+	if (partyPeople > lastNumPartyPeople) {
+		addPartyPeople(partyPeople - lastNumPartyPeople);
+	} else if (partyPeople < lastNumPartyPeople) {
+		delPartyPeople(lastNumPartyPeople - partyPeople);
+	}
+	
+	lastNumPartyPeople = partyPeople;
+}
+
+function addPartyPeople(num) {
+	var j = $("#Setting .mg");
+	
+	for (var i = 0; i < num; i++) {
+		j.append("<div class='partyPeopleDiv'><img src='images/m" + (Math.round(Math.random() * 5)) + ".gif' /></dív>");
+		
+		var n = j.find("div.partyPeopleDiv:last-of-type");
+		n.css("marginLeft", (Math.round(Math.random() * 220)) + "px");
+	}
+}
+
+function delPartyPeople(num) {
+	for (var i = 0; i < num; i++) {
+		$(".partyPeopleDiv:first-of-type").remove();
+	}
+}
+
 function checkActiveButtons() {
 	$(".button").each( function() {
 		var key = $(this).attr("id");
@@ -110,7 +140,7 @@ function fadeNumbers(item, val) {
 
 function upgradeFX(key, text, colorClass) {
 	$("#" + key).remove();
-	var j = $("body");
+	var j = $("#overlay");
 	j.append("<div class='flyAwayBig " + colorClass + "'>" + text + "</dív>");
 	var n = j.find("div.flyAwayBig:last-of-type");
 	n
@@ -134,6 +164,7 @@ function changeSetting(num, func) {
 	$("#Setting").fadeOut(500, function() {
 		$("#Setting .bg img").replaceWith("<img src='images/setting" + num + "_bg.png' />");
 		$("#Setting .fg img").replaceWith("<img src='images/setting" + num + "_fg.png' />");
+		settingLevel = num;
 	//	clear members!
 		$("#Setting").fadeIn(500, func());
 	});
