@@ -802,7 +802,7 @@ var upgrades = {
 		"Ein Schwein schlachten und grillen",
 		"Vodka", 6000,
 		"Singularis Porcus und dazu lauwarme Cervisia.",
-		"- 4000 Popularität,  + 37 Vodka / s",
+		"- 4000 Popularität",
 		"orange",
 		function() {
 			addAchievement("Singularis Porcus");
