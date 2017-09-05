@@ -1,7 +1,6 @@
 // setup
-var day = 0;
-
 var fps = 5;
+var pause = false;
 
 var values = ["Vodka", "Mitglieder", "Popularität", "Klicks", "Achievements", "Wahlberechtigte", "Weltbevölkerung"];
 
@@ -66,11 +65,21 @@ function reveal() {
 	}
 }
 
+var day = 0;
+var nextElection = 100;
+
 function checkElection() {
+	/*
 	day += 1;
 	if (day % 1500 == 0) {
 		electionResults();
 	}
+	*/
+	nextElection -= 1;
+	if (nextElection == 0) {
+		electionResults();
+	}
+	console.log(nextElection);
 }
 
 

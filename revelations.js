@@ -25,11 +25,16 @@ var revelations = [
 		return (value["Klicks"] >= 5);
 	}, function() {
 		tickText("Kauf Dein erstes Upgrade!");
+	}],
+	
+	[function() {
+		return (value["Klicks"] >= 10);
+	}, function() {
 		addAchievement("10x geklickt", 500);
 	}],
 	
 	[function() {
-		return (get("destille") && value["Vodka"] >= 5);
+		return (get("destille") && value["Vodka"] >= 8);
 	}, function() {
 		tickText("Klick weiter, um die Produktion anzukurbeln.");
 	}],
@@ -62,19 +67,32 @@ var revelations = [
 		return (get("setting1") && value.Vodka >= 5);
 	}, function() {
 		addUpgrade("saalrunde");
-		tickText("Klick auf 'einen ausgeben', um einen auszugeben!");
+		tickText("Klick auf's Schnapsglas, um einen auszugeben!");
+	}],
+	
+	[function() {
+		return (get("setting1") && value.Mitglieder >= 1);
+	}, function() {
+		fadeIn("#Mitglieder");
+		tickText("Jawoll!");
+	}],
+	
+	[function() {
+		return (get("setting1") && value.Mitglieder >= 2);
+	}, function() {
+		tickText("Hurrah!");
+	}],
+	
+	[function() {
+		return (get("setting1") && value.Mitglieder >= 5);
+	}, function() {
+		tickText("Und immer weiter (klicken)!");
 	}],
 	
 	[function() {
 		return (get("founded") && value.Vodka >= 40);
 	}, function() {
 		addUpgrade("parteilogo");
-	}],
-	
-	[function() {
-		return (value.Mitglieder >= 1);
-	}, function() {
-		fadeIn("#Mitglieder");
 	}],
 	
 	[function() {

@@ -16,10 +16,10 @@ var upgrades = {
 		"+ 1 Vodka / s",
 		"silver",
 		function() {
+			changeDestille(1);
 			growthRate.Vodka += 1;
 			tickText("Perfekt, Du hast die Vodka-Destille angeworfen.");
-			addAchievement("Destille läuft", 200);
-			fadeIn("#Destille");
+			addAchievement("Destille läuft", 1000);
 			fadeIn("#Vodka .persecond");
 			set("destille");
 		}],
@@ -31,7 +31,7 @@ var upgrades = {
 		"+ Partei-Name",
 		"blue",
 		function() {
-			tickText("Sie soll 'Die PARTEI' heißen!");
+			tickText("Die Partei soll 'Die PARTEI' heißen!");
 			set("name");
 			addAchievement("PARTEI heißen!");
 			fadeIn("#logo", 2000);
@@ -50,6 +50,7 @@ var upgrades = {
 			set("setting1");
 			settingLevel = 1;
 			fadeIn("#spendVodka", 2000);
+			fadeIn("#clickVodka");
 		}],
 
 	"sellach1": [
@@ -73,7 +74,9 @@ var upgrades = {
 		function() {
 			growthRate.Mitglieder += 1;
 			addAchievement("Partei gegründet");
+			tickText("Wir sind Partei!");
 			set("founded");
+			fadeIn("#clickMitglieder");
 		}],
 		
 	"saalrunde": [

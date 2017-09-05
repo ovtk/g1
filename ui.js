@@ -28,14 +28,14 @@ $("#spendVodka").click( function() {
 
 // hide start screen
 $("#startscreen").click( function() {
-	$("#startscreen").fadeOut(1000).off("click");
+	$("#startscreen").fadeOut(1000).unbind("click");
 	$("#greyout").delay(1000).fadeOut(500);
 });
 
 
 function hideOverlay(id) {
-	$("#" + id).fadeOut(500).off("click");
-	$("#greyout").fadeOut(1000);
+	$("#" + id).fadeOut(500).unbind("click");
+	$("#greyout").delay(500).fadeOut(1000);
 }
 
 function showOverlay(id) {
@@ -47,9 +47,20 @@ function showOverlay(id) {
 }
 
 function electionResults() {
-	tickText("Wahlergebnis: " + prozent() + "%");
-	$("#election .mg span").text(prozent());
-	showOverlay("election");
+	$("#electionButton").animate({"height": "36px"}, 500, function() {
+		$("#electionButton").click( function() {
+			pause = true;
+			$(this).css("height", "0px").unbind("click");
+			$("#election .mg span").text(prozent());
+			$("#greyout").fadeIn(500);
+			$("#election").delay(500).fadeIn(500).delay(2500).click( function() {
+				nextElection = 1000;
+				hideOverlay("election");
+			});
+		});
+	});
+	
+	//tickText("Wahlergebnis: " + prozent() + "%");
 }
 
 function showPoster(id) {
@@ -159,6 +170,14 @@ function showLogo() {
 		height: "90px"
 		}, 5000);
 }
+
+function changeDestille(num) {
+	$("#Destille").fadeOut(500, function() {
+		$("#Destille img").replaceWith("<img src='images/destille" + num + ".gif' />");
+		$("#Destille").fadeIn(500);
+	});
+}
+
 
 function changeSetting(num, func) {
 	$("#Setting").fadeOut(500, function() {
