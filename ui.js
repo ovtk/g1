@@ -103,7 +103,7 @@ function addPartyPeople(num) {
 	var j = $("#Setting .mg");
 	
 	for (var i = 0; i < num; i++) {
-		j.append("<div class='partyPeopleDiv'><img src='images/m" + (Math.floor(Math.random() * 5) + 1) + ".gif' /></dív>");
+		j.append("<div class='partyPeopleDiv'><img src='images/m" + (Math.floor(Math.random() * 8) + 1) + ".gif' /></dív>");
 		
 		var n = j.find("div.partyPeopleDiv:last-of-type");
 		n.css("marginLeft", (Math.round(Math.random() * 220)) + "px");
