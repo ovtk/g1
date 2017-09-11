@@ -35,15 +35,13 @@ var settingLevel = 0;
 var lastNumPartyPeople = 0;
 
 function numPartyPeople() {
-	// 0, 1, 4, 27, 256
-	// var steps = Math.pow(settingLevel, settingLevel) * 50; 
-	// return Math.floor(value.Mitglieder / steps);
+//	var fact = [1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800, 39916800, 479001600, 6227020800, 87178291200, 1307674368000, 20922789888000];
 
-	var fact = [1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800, 39916800, 479001600, 6227020800, 87178291200, 1307674368000, 20922789888000];
-	var max = fact.length;
+	var graph = [2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576];
+	var max = graph.length;
 	
 	for (var i = 0; i < max; i++) {
-		if (fact[i] > value.Mitglieder) {
+		if (Math.pow(graph[i], settingLevel) > value.Mitglieder) {
 			return i;
 		}
 	}
