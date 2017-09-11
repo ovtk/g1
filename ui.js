@@ -26,6 +26,9 @@ $("#spendVodka").click( function() {
 	}
 });
 
+// blink
+$('.blink').blink();
+
 // hide start screen
 $("#startscreen").click( function() {
 	$("#startscreen").fadeOut(1000).unbind("click");
