@@ -10,7 +10,7 @@
 
 var upgrades = {
 	"destille": [
-		"Destille anwerfen",
+		"Upgrade: Destille",
 		"Vodka", 5,
 		"Selbstfahrende Destille, damit Du nicht mehr so viel klicken musst.",
 		"+ 1 Vodka / s",

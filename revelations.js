@@ -17,7 +17,7 @@ var revelations = [
 	[function() {
 		return (value.Klicks >= 3);
 	}, function() {
-		tickText("Immer weiter, bis Du 5 Vodka hast!");
+		tickText(".");
 		addUpgrade("destille");
 	}],
 	

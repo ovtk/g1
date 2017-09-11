@@ -36,9 +36,18 @@ var lastNumPartyPeople = 0;
 
 function numPartyPeople() {
 	// 0, 1, 4, 27, 256
-	var steps = Math.pow(settingLevel, settingLevel) * 50; 
+	// var steps = Math.pow(settingLevel, settingLevel) * 50; 
+	// return Math.floor(value.Mitglieder / steps);
+
+	var fact = [1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800, 39916800, 479001600, 6227020800, 87178291200, 1307674368000, 20922789888000];
+	var max = fact.length;
 	
-	return Math.floor(value.Mitglieder / steps);
+	for (var i = 0; i < max; i++) {
+		if (fact[i] > value.Mitglieder) {
+			return i;
+		}
+	}
+	return max;	
 }
 
 
@@ -69,17 +78,11 @@ var day = 0;
 var nextElection = 100;
 
 function checkElection() {
-	/*
-	day += 1;
-	if (day % 1500 == 0) {
-		electionResults();
-	}
-	*/
 	nextElection -= 1;
 	if (nextElection == 0) {
 		electionResults();
 	}
-	console.log(nextElection);
+//	console.log(nextElection);
 }
 
 

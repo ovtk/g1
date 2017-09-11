@@ -52,7 +52,7 @@ html, body {
 .button {
 	cursor: pointer;
 	background: #666;
-	opacity: 0.25;
+	opacity: 0.20;
 }
 
 .button.active:hover {
