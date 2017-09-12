@@ -49,6 +49,8 @@ function showOverlay(id) {
 	});
 }
 
+var bestElectionResult = 0;
+
 function electionResults() {
 	$("#electionButton").animate({"height": "36px"}, 500, function() {
 		$("#electionButton").click( function() {
@@ -59,11 +61,14 @@ function electionResults() {
 			$("#election").delay(500).fadeIn(500).delay(2500).click( function() {
 				nextElection = 1000;
 				hideOverlay("election");
+				tickText("Wahlergebnis: " + prozent() + "%");
 			});
+			if (value.Popularität >= bestElectionResult) {
+				bestElectionResult = value.Popularität;
+				$("#election .fg2").delay(2000).fadeIn(10).delay(8000).fadeOut(10);
+			}
 		});
 	});
-	
-	//tickText("Wahlergebnis: " + prozent() + "%");
 }
 
 function showPoster(id) {
