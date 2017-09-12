@@ -1,5 +1,5 @@
 // disable iOS double-tap zoom
-$('.no-zoom').bind('touchend', function(e) {
+$('.button').bind('touchend', function(e) {
 	e.preventDefault();
 	$(this).click();
 });
