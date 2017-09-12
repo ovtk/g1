@@ -298,8 +298,15 @@ html, body {
 #makeVodka, #spendVodka {
 	font: 12px fjalla_one;
 	height: 130px;
-	background: #666;
 	border-left: 3px solid black;
+}
+
+#makeVodka {
+	background: #666;
+}
+
+#spendVodka {
+	background: #79cef2;
 }
 
 .perclick {

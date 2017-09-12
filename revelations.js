@@ -84,9 +84,21 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (get("setting1") && value.Mitglieder >= 5);
+		return (get("setting1") && value.Mitglieder >= 3);
 	}, function() {
-		tickText("Und immer weiter (klicken)!");
+		tickText("Hurrah!!!");
+	}],
+	
+	[function() {
+		return (get("setting1") && value.Mitglieder >= 4);
+	}, function() {
+		tickText("Hurrah!!!!!!!1!!!!");
+	}],
+	
+	[function() {
+		return (get("setting1") && value.Mitglieder >= 7);
+	}, function() {
+		tickText("Kauf das Gründungs-Upgrade!");
 	}],
 	
 	[function() {

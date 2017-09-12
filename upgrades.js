@@ -66,7 +66,7 @@ var upgrades = {
 		}],
 
 	"founding1": [
-		"Gründungs-Mythos",
+		"Upgrade: Gründung",
 		"Mitglieder", 7,
 		"Sind sieben Menschen 1e Partei, wenn sie 1e Partei sind?",
 		"+ 1 Mitglieder / s",
