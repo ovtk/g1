@@ -134,9 +134,9 @@ var upgrades = {
 		}],
 
 	"poster1": [
-		"Ein lustiges Poster machen",
+		"Wer lang hat",
 		"Vodka", 480,
-		"Weil wir auch das können.",
+		"kann lang hängen lassen.",
 		"x 3 Vodka / s",
 		"silver",
 		function() {
@@ -371,14 +371,15 @@ var upgrades = {
 			growthRate.Mitglieder *= 1.2;
 		}],
 
-	"temp2": [
-		"temp2",
+	"poster2": [
+		"Grillsaison",
 		"Vodka", 105600,
-		"temp2",
+		"Grüner als die Grünen.",
 		"x 1.2 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.2;
+			showPoster("poster2");
 		}],
 
 	"dienst": [
@@ -411,10 +412,10 @@ var upgrades = {
 			growthRate.Mitglieder *= 1.2;
 		}],
 
-	"temp4": [
-		"temp4",
+	"autobahn": [
+		"Autobahn verkaufen",
 		"Vodka", 714147840,
-		"temp4",
+		"Macht kaputt was euch kaputt macht!",
 		"x 1.2 Mitglieder / s",
 		"blue",
 		function() {
@@ -441,14 +442,15 @@ var upgrades = {
 			growthRate.Mitglieder *= 1.2;
 		}],
 
-	"temp5": [
-		"temp5",
+	"poster7": [
+		"Sex sells",
 		"Vodka", 825363302400,
-		"temp5",
+		"Bitte nicht den Vodka anzünden!",
 		"x 1.2 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.2;
+			showPoster("poster7");
 		}],
 
 	"kommen": [
@@ -461,10 +463,10 @@ var upgrades = {
 			growthRate.Mitglieder *= 1.2;
 		}],
 
-	"temp6": [
-		"temp6",
+	"reichstag": [
+		"Reichstag umbenennen",
 		"Vodka", 86739334133760,
-		"temp6",
+		"Allianz Arena? Heckler Kochtopf? E.ON Eimer?",
 		"x 1.2 Mitglieder / s",
 		"blue",
 		function() {
@@ -529,7 +531,7 @@ var upgrades = {
 		}],
 
 	"poster3": [
-		"Yeah, Poster!",
+		"NSFW",
 		"Mitglieder", 1140,
 		"Just another poster on the wall.",
 		"x 1.5 Mitglieder / s",
@@ -550,9 +552,9 @@ var upgrades = {
 		}],
 
 	"poster4": [
-		"Yeah, Poster!",
+		"Der Käse",
 		"Mitglieder", 4320,
-		"Just another poster on the wall.",
+		"stinkt nach Fisch.",
 		"x 1.5 Mitglieder / s",
 		"blue",
 		function() {
@@ -605,9 +607,9 @@ var upgrades = {
 		}],
 
 	"poster5": [
-		"Yeah, Poster!",
+		"4-Punkte-Plan",
 		"Mitglieder", 86100,
-		"Just another poster on the wall.",
+		"4. ???, 5. Profit!",
 		"x 1.5 Mitglieder / s",
 		"blue",
 		function() {
@@ -626,9 +628,9 @@ var upgrades = {
 		}],
 
 	"poster6": [
-		"Yeah, Poster!",
+		"Miro",
 		"Mitglieder", 257785,
-		"Just another poster on the wall.",
+		"Jetzt sehe ich es auch .",
 		"x 1.5 Mitglieder / s",
 		"blue",
 		function() {
@@ -663,15 +665,16 @@ var upgrades = {
 			growthRate.Popularität *= 2;
 		}],
 
-	"temp7": [
-		"temp7",
+	"poster9": [
+		"Adrenochrome",
 		"Mitglieder", 375,
-		"temp7",
+		"Es ist genug für alle da!",
 		"+ 19k Popularität",
 		"orange",
 		function() {
 			value.Popularität += 19000;
 			growthRate.Popularität *= 2;
+			showPoster("poster9");
 		}],
 
 	"wann": [
@@ -696,15 +699,16 @@ var upgrades = {
 			growthRate.Popularität *= 2;
 		}],
 
-	"temp8": [
-		"temp8",
+	"poster8": [
+		"Der Irre vom Bosporus",
 		"Mitglieder", 3240,
-		"temp8",
+		"Er ist wieder da.",
 		"+ 150k Popularität",
 		"orange",
 		function() {
 			value.Popularität += 150000;
 			growthRate.Popularität *= 2;
+			showPoster("poster8");
 		}],
 
 	"bleu": [
@@ -729,10 +733,10 @@ var upgrades = {
 			growthRate.Popularität *= 2;
 		}],
 
-	"temp9": [
-		"temp9",
+	"verfass": [
+		"Verfassungsschutz abschaffen",
 		"Mitglieder", 21576,
-		"temp9",
+		"Echt jetzt? Nee, nur Spaß...",
 		"+ 1.2m Popularität",
 		"orange",
 		function() {
@@ -751,7 +755,7 @@ var upgrades = {
 			growthRate.Popularität *= 2;
 		}],
 
-	"temp10": [
+	"roberto": [
 		"Kanzlerkandidat Roberto Blanco",
 		"Mitglieder", 69300,
 		"Alt wie Adenauer, lustiger als Oliver Welke.",

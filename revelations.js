@@ -325,7 +325,7 @@ var revelations = [
 	[function() {
 		return (get("logo") && value.Vodka >= 35200);
 	}, function() {
-		addUpgrade("temp2");
+		addUpgrade("poster2");
 	}],
 	
 	[function() {
@@ -349,7 +349,7 @@ var revelations = [
 	[function() {
 		return (get("logo") && value.Vodka >= 238049280);
 	}, function() {
-		addUpgrade("temp4");
+		addUpgrade("autobahn");
 	}],
 	
 	[function() {
@@ -367,7 +367,7 @@ var revelations = [
 	[function() {
 		return (get("logo") && value.Vodka >= 275121100800);
 	}, function() {
-		addUpgrade("temp5");
+		addUpgrade("poster7");
 	}],
 	
 	[function() {
@@ -379,7 +379,7 @@ var revelations = [
 	[function() {
 		return (get("logo") && value.Vodka >= 28913111377920);
 	}, function() {
-		addUpgrade("temp6");
+		addUpgrade("reichstag");
 	}],
 	
 	[function() {
@@ -514,7 +514,7 @@ var revelations = [
 	[function() {
 		return (get("logo") && value.Mitglieder >= 188);
 	}, function() {
-		addUpgrade("temp7");
+		addUpgrade("poster9");
 	}],
 	
 	[function() {
@@ -532,7 +532,7 @@ var revelations = [
 	[function() {
 		return (get("logo") && value.Mitglieder >= 1080);
 	}, function() {
-		addUpgrade("temp8");
+		addUpgrade("poster8");
 	}],
 	
 	[function() {
@@ -550,7 +550,7 @@ var revelations = [
 	[function() {
 		return (get("logo") && value.Mitglieder >= 7192);
 	}, function() {
-		addUpgrade("temp9");
+		addUpgrade("verfass");
 	}],
 	
 	[function() {
@@ -562,7 +562,7 @@ var revelations = [
 	[function() {
 		return (get("logo") && value.Mitglieder >= 23100);
 	}, function() {
-		addUpgrade("temp10");
+		addUpgrade("roberto");
 	}],
 	
 	[function() {
