@@ -500,9 +500,9 @@ var revelations = [
 	// mitglieder -> popularität
 	
 	[function() {
-		return (value.Mitglieder >= 40000);
+		return (value.Popularität >= 40000);
 	}, function() {
-		nextElection = 0;
+		nextElection = 10;
 	}],
 	
 	[function() {
