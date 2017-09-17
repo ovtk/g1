@@ -48,7 +48,7 @@ var revelations = [
 	[function() {
 		return (get("name") && value["Vodka"] >= 2);
 	}, function() {
-		addUpgrade("vereinsheim");
+		addUpgrade("setting1");
 	}],
 	
 	[function() {
@@ -126,6 +126,12 @@ var revelations = [
 	}],
 	
 	[function() {
+		return (value["Popularität"] >= 23);
+	}, function() {
+		addAchievement("23 Wühler!");
+	}],
+	
+	[function() {
 		return (value["Popularität"] > value["Mitglieder"]);
 	}, function() {
 		addAchievement("Mehr Wühler als Mitglieder!");
@@ -139,23 +145,9 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (value["Popularität"] > (value.Wahlberechtigte * 0.7 * 0.5) );
-	}, function() {
-		addAchievement("Regierung!");
-		set("regierung");
-		growthRate.Vodka *= 1.5;
-	}],
-	
-	[function() {
 		return (value["Popularität"] > value.Wahlberechtigte);
 	}, function() {
 		addAchievement("100% + X");
-	}],
-	
-	[function() {
-		return (value["Popularität"] >= 23);
-	}, function() {
-		addAchievement("23 Wühler!");
 	}],
 	
 	
@@ -438,13 +430,13 @@ var revelations = [
 	[function() {
 		return (get("logo") && value.Mitglieder >= 380);
 	}, function() {
-		addUpgrade("poster3");
+		addUpgrade("metaebene");
 	}],
 	
 	[function() {
 		return (get("logo") && value.Mitglieder >= 750);
 	}, function() {
-		addUpgrade("metaebene");
+		addUpgrade("setting2");
 	}],
 	
 	[function() {
@@ -462,19 +454,19 @@ var revelations = [
 	[function() {
 		return (get("logo") && value.Mitglieder >= 5063);
 	}, function() {
-		addUpgrade("parteizentrale");
+		addUpgrade("snowden");
 	}],
 	
 	[function() {
 		return (get("logo") && value.Mitglieder >= 9145);
 	}, function() {
-		addUpgrade("snowden");
+		addUpgrade("kohle");
 	}],
 	
 	[function() {
 		return (get("logo") && value.Mitglieder >= 16333);
 	}, function() {
-		addUpgrade("kohle");
+		addUpgrade("setting3");
 	}],
 	
 	[function() {
@@ -520,7 +512,7 @@ var revelations = [
 	[function() {
 		return (get("logo") && value.Mitglieder >= 450);
 	}, function() {
-		addUpgrade("poster9");
+		addUpgrade("poster3");
 	}],
 	
 	[function() {
@@ -556,7 +548,7 @@ var revelations = [
 	[function() {
 		return (get("logo") && value.Mitglieder >= 207292);
 	}, function() {
-		addUpgrade("verfass");
+		addUpgrade("poster9");
 	}],
 	
 	[function() {
@@ -582,6 +574,15 @@ var revelations = [
 	}, function() {
 		addUpgrade("rente");
 	}],
+
+
+
+	[function() {
+		return (get("regierung") && value.Mitglieder >= 207292);
+	}, function() {
+		addUpgrade("verfass");
+	}],
+	
 	
 	
 	

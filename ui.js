@@ -63,7 +63,12 @@ function electionResults() {
 				hideOverlay("election");
 				tickText("Wahlergebnis: " + prozent() + "%");
 			});
-			if (value.Popularität >= bestElectionResult) {
+			if (! get("regierung") && prozent() >= 50) {
+				$("#election .fg3").delay(2000).fadeIn(10).delay(8000).fadeOut(10);
+				set("regierung");
+				addAchievement("Regierung!");
+				growthRate.Vodka *= 1.5;
+			} else if (value.Popularität >= bestElectionResult) {
 				bestElectionResult = value.Popularität;
 				$("#election .fg2").delay(2000).fadeIn(10).delay(8000).fadeOut(10);
 			}

@@ -89,14 +89,16 @@ html, body {
 }
 
 #election, #poster,
-#election .fg2 {
+#election .fg2,
+#election .fg3 {
 	display: none;
 }
 
 #poster,
 #election .bg, 
 #election .fg,
-#election .fg2 {
+#election .fg2,
+#election .fg3 {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -124,6 +126,12 @@ html, body {
 
 #election .fg2 {
 	top: 184px;
+	left: 152px;
+	z-index: 115;
+}
+
+#election .fg3 {
+	top: 143px;
 	left: 152px;
 	z-index: 115;
 }

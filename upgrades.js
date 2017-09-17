@@ -37,7 +37,7 @@ var upgrades = {
 			fadeIn("#logo", 2000);
 		}],
 
-	"vereinsheim": [
+	"setting1": [
 		"Wir brauchen ein Vereinsheim",
 		"Vodka", 23,
 		"Erbaut auf den Ruinen der Manyo.<br/>(Never forget, never forgive.)",
@@ -530,25 +530,28 @@ var upgrades = {
 			growthRate.Mitglieder *= 1.5;
 		}],
 
-	"poster3": [
-		"NSFW",
-		"Mitglieder", 1140,
-		"Just another poster on the wall.",
-		"x 1.5 Mitglieder / s",
-		"blue",
-		function() {
-			growthRate.Mitglieder *= 1.5;
-			showPoster("poster3");
-		}],
-
 	"metaebene": [
 		"Metaebene",
-		"Mitglieder", 2250,
+		"Mitglieder", 1140,
 		"Interview mit Tim für das CRE.",
 		"x 1.5 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
+		}],
+
+	"setting2": [
+		"Viel hilft viel",
+		"Mitglieder", 2250,
+		"Wir brauchen was größeres.",
+		"x 1.5 Mitglieder / s",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 1.5;
+			growthRate.Popularität *= 2;
+			changeSetting(2, function() {
+				addAchievement("Kaninchenzüchter");
+			});
 		}],
 
 	"poster4": [
@@ -572,23 +575,9 @@ var upgrades = {
 			growthRate.Mitglieder *= 1.5;
 		}],
 
-	"parteizentrale": [
-		"Neue Heimat",
-		"Mitglieder", 15190,
-		"Lehrter Bahnhof, zum symbolischen Preis von 1 Mark.",
-		"x 1.5 Mitglieder / s",
-		"blue",
-		function() {
-			growthRate.Mitglieder *= 1.5;
-			growthRate.Popularität *= 2;
-			changeSetting(2, function() {
-				addAchievement("This Train Don't Stop There Anymore");
-			});
-		}],
-
 	"snowden": [
 		"Ed Snowden einladen",
-		"Mitglieder", 27435,
+		"Mitglieder", 15190,
 		" Zum Kaffee (in Moskau).",
 		"x 1.5 Mitglieder / s",
 		"blue",
@@ -598,12 +587,26 @@ var upgrades = {
 
 	"kohle": [
 		"Fett Kohle einstreichen",
-		"Popularität", 49000,
+		"Popularität", 27435,
 		"Ein Sitzen im Europaparlament.",
 		"x 1.5 Mitglieder / s",
 		"blue",
 		function() {
 			growthRate.Mitglieder *= 1.5;
+		}],
+
+	"setting3": [
+		"Neue Heimat",
+		"Mitglieder", 49000,
+		"Lehrter Bahnhof, zum symbolischen Preis von 1 Mark.",
+		"x 1.5 Mitglieder / s",
+		"blue",
+		function() {
+			growthRate.Mitglieder *= 1.5;
+			growthRate.Popularität *= 2;
+			changeSetting(3, function() {
+				addAchievement("This Train Don't Stop There Anymore");
+			});
 		}],
 
 	"poster5": [
@@ -619,7 +622,7 @@ var upgrades = {
 
 	"mauer": [
 		"Antikapitalistischer Schutzwall",
-		"Vodka", 149625,
+		"Mitglieder", 149625,
 		"Die Mauer wieder aufbauen.",
 		"x 1.5 Mitglieder / s",
 		"blue",
@@ -665,16 +668,16 @@ var upgrades = {
 			growthRate.Popularität *= 2.5;
 		}],
 
-	"poster9": [
-		"Adrenochrome",
+	"poster3": [
+		"NSFW",
 		"Mitglieder", 900,
-		"Es ist genug für alle da!",
-		"+ 57k Popularität",
+		"Just another poster on the wall.",
+		"+ 53k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 57000;
-			growthRate.Popularität *= 2.8;
-			showPoster("poster9");
+			value.Popularität += 53000;
+			growthRate.Popularität *= 3.5;
+			showPoster("poster3");
 		}],
 
 	"wann": [
@@ -733,15 +736,16 @@ var upgrades = {
 			growthRate.Popularität *= 2;
 		}],
 
-	"verfass": [
-		"Verfassungsschutz abschaffen",
+	"poster9": [
+		"Adrenochrome",
 		"Mitglieder", 621876,
-		"Echt jetzt? Nee, nur Spaß...",
+		"Es ist genug für alle da!",
 		"+ 1.2m Popularität",
 		"orange",
 		function() {
 			value.Popularität += 1200000;
 			growthRate.Popularität *= 2;
+			showPoster("poster9");
 		}],
 
 	"lenin": [
@@ -787,6 +791,18 @@ var upgrades = {
 			value.Popularität += 20000000;
 			growthRate.Popularität *= 2;
 		}],
+
+	"verfass": [
+		"Verfassungsschutz abschaffen",
+		"Mitglieder", 621876,
+		"Echt jetzt? Nee, nur Spaß...",
+		"+ 1.2m Popularität",
+		"orange",
+		function() {
+			value.Popularität += 1200000;
+			growthRate.Popularität *= 2;
+		}],
+
 
 
 
