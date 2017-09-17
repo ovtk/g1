@@ -59,7 +59,7 @@ function electionResults() {
 			$("#election .mg span").text(prozent());
 			$("#greyout").fadeIn(500);
 			$("#election").delay(500).fadeIn(500).delay(2500).click( function() {
-				nextElection = 1000;
+				nextElection = 900;
 				hideOverlay("election");
 				tickText("Wahlergebnis: " + prozent() + "%");
 			});

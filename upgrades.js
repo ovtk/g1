@@ -40,7 +40,7 @@ var upgrades = {
 	"vereinsheim": [
 		"Wir brauchen ein Vereinsheim",
 		"Vodka", 23,
-		"Erbaut auf den Ruinen der Manyo. (Never forget, never forgive.)",
+		"Erbaut auf den Ruinen der Manyo.<br/>(Never forget, never forgive.)",
 		"+ Vereinsheim",
 		"blue",
 		function() {
@@ -123,10 +123,10 @@ var upgrades = {
 			set("logo");
 		}],
 		
-	"mettbrot": [
-		"Mettbrötchen verschenken",
+	"ovtk": [
+		"Wo die wilden Kerle hausen",
 		"Vodka", 192,
-		"Weil wir es können.",
+		"Ortsverband Treptow-Köpenik gründen",
 		"x 2 Vodka / s",
 		"silver",
 		function() {
@@ -266,10 +266,10 @@ var upgrades = {
 			growthRate.Vodka *= 9;
 		}],
 
-	"ovtk": [
-		"Wo die wilden Kerle hausen",
+	"mettbrot": [
+		"Mettbrötchen verschenken",
 		"Vodka", 447410399385600,
-		"Ortsverband Treptow-Köpenik gründen",
+		"Weil wir es können.",
 		"x 9 Vodka / s",
 		"silver",
 		function() {
@@ -647,84 +647,84 @@ var upgrades = {
 		"Ein Raubüberfall",
 		"Mitglieder", 120,
 		"Professionell ausgeführt, muss nicht unbedingt ein unangenehmes Erlebnis sein.",
-		"+ 4k Popularität",
+		"+ 42k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 4000;
-			growthRate.Popularität *= 2;
+			value.Popularität += 42000;
+			growthRate.Popularität *= 3;
 		}],
 
 	"lieber": [
 		"Halb gerührt",
-		"Mitglieder", 162,
+		"Mitglieder", 270,
 		"Lieber etwas misstrauisch als etwas tot!",
-		"+ 9k Popularität",
+		"+ 51k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 9000;
-			growthRate.Popularität *= 2;
+			value.Popularität += 51000;
+			growthRate.Popularität *= 2.5;
 		}],
 
 	"poster9": [
 		"Adrenochrome",
-		"Mitglieder", 375,
+		"Mitglieder", 900,
 		"Es ist genug für alle da!",
-		"+ 19k Popularität",
+		"+ 57k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 19000;
-			growthRate.Popularität *= 2;
+			value.Popularität += 57000;
+			growthRate.Popularität *= 2.8;
 			showPoster("poster9");
 		}],
 
 	"wann": [
 		"Ab wann?",
-		"Mitglieder", 824,
+		"Mitglieder", 2884,
 		"Das tritt nach meiner Kenntnis... ist das sofort, unverzüglich.",
-		"+ 37k Popularität",
+		"+ 59k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 37000;
+			value.Popularität += 59000;
 			growthRate.Popularität *= 2;
 		}],
 
 	"nescit": [
 		"Qui nescit",
-		"Mitglieder", 1656,
+		"Mitglieder", 8832,
 		"dissimulare nescit regnare.",
-		"+ 75k Popularität",
+		"+ 61k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 75000;
-			growthRate.Popularität *= 2;
+			value.Popularität += 61000;
+			growthRate.Popularität *= 2.7;
 		}],
 
 	"poster8": [
 		"Der Irre vom Bosporus",
-		"Mitglieder", 3240,
+		"Mitglieder", 26460,
 		"Er ist wieder da.",
-		"+ 150k Popularität",
+		"+ 67k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 150000;
-			growthRate.Popularität *= 2;
+			value.Popularität += 67000;
+			growthRate.Popularität *= 2.3;
 			showPoster("poster8");
 		}],
 
 	"bleu": [
 		"Le ciel bleu",
-		"Mitglieder", 6183,
+		"Mitglieder", 77402,
 		"sur nous peut s'effondrer, et la terre peut bien s'écrouler.",
-		"+ 300k Popularität",
+		"+ 69k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 300000;
-			growthRate.Popularität *= 2;
+			value.Popularität += 69000;
+			growthRate.Popularität *= 2.3;
 		}],
 
 	"endlich": [
 		"Martin Sonneborn ",
-		"Mitglieder", 11685,
+		"Mitglieder", 221445,
 		"hat bis Unendlich gezählt. Zweimal!",
 		"+ 600k Popularität",
 		"orange",
@@ -735,7 +735,7 @@ var upgrades = {
 
 	"verfass": [
 		"Verfassungsschutz abschaffen",
-		"Mitglieder", 21576,
+		"Mitglieder", 621876,
 		"Echt jetzt? Nee, nur Spaß...",
 		"+ 1.2m Popularität",
 		"orange",
@@ -746,7 +746,7 @@ var upgrades = {
 
 	"lenin": [
 		"Dem Kleinbürgertum",
-		"Mitglieder", 38874,
+		"Mitglieder", 1717980,
 		"groß im Prahlen, fehlt die Kraft zur Tat, und es scheut ängstlich vor jedem Wagnis zurück.",
 		"+ 2.5m Popularität",
 		"orange",
@@ -757,7 +757,7 @@ var upgrades = {
 
 	"roberto": [
 		"Kanzlerkandidat Roberto Blanco",
-		"Mitglieder", 69300,
+		"Mitglieder", 4679235,
 		"Alt wie Adenauer, lustiger als Oliver Welke.",
 		"+ 5m Popularität",
 		"orange",
@@ -768,7 +768,7 @@ var upgrades = {
 
 	"dieblaue": [
 		"Die Blaue oder die Rote?",
-		"Mitglieder", 121590,
+		"Mitglieder", 12588618,
 		"Bedenke, alles was ich dir anbiete ist der totale Schwachsinn.",
 		"+ 10m Popularität",
 		"orange",
@@ -779,7 +779,7 @@ var upgrades = {
 
 	"rente": [
 		"Die Rente ist sicher",
-		"Mitglieder", 211050,
+		"Mitglieder", 33504690,
 		"Jedenfalls für Angela Merkel. Jetzt. Sofort.",
 		"+ 20m Popularität",
 		"orange",
@@ -802,6 +802,7 @@ var upgrades = {
 		function() {
 			delAchievements(5);
 			value.Popularität += 40000;
+			growth.Popularität += 3;
 			set("sold2");
 		}],
 

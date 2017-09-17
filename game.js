@@ -73,13 +73,13 @@ function reveal() {
 }
 
 var day = 0;
-var nextElection = 100;
+var nextElection = -1;
 
 function checkElection() {
-	nextElection -= 1;
 	if (nextElection == 0) {
 		electionResults();
 	}
+	nextElection -= 1;
 //	console.log(nextElection);
 }
 

@@ -170,7 +170,7 @@ var revelations = [
 	[function() {
 		return (get("logo") && value["Vodka"] >= 96);
 	}, function() {
-		addUpgrade("mettbrot");
+		addUpgrade("ovtk");
 	}],
 	
 	[function() {
@@ -254,7 +254,7 @@ var revelations = [
 	[function() {
 		return (get("logo") && value.Vodka >= 149136799795201);
 	}, function() {
-		addUpgrade("ovtk");
+		addUpgrade("mettbrot");
 	}],
 	
 	[function() {
@@ -500,79 +500,85 @@ var revelations = [
 	// mitglieder -> popularität
 	
 	[function() {
+		return (value.Mitglieder >= 40000);
+	}, function() {
+		nextElection = 0;
+	}],
+	
+	[function() {
 		return (get("logo") && value.Mitglieder >= 60);
 	}, function() {
 		addUpgrade("raub");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 81);
+		return (get("logo") && value.Mitglieder >= 135);
 	}, function() {
 		addUpgrade("lieber");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 188);
+		return (get("logo") && value.Mitglieder >= 450);
 	}, function() {
 		addUpgrade("poster9");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 275);
+		return (get("logo") && value.Mitglieder >= 961);
 	}, function() {
 		addUpgrade("wann");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 552);
+		return (get("logo") && value.Mitglieder >= 2944);
 	}, function() {
 		addUpgrade("nescit");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 1080);
+		return (get("logo") && value.Mitglieder >= 8820);
 	}, function() {
 		addUpgrade("poster8");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 2061);
+		return (get("logo") && value.Mitglieder >= 25801);
 	}, function() {
 		addUpgrade("bleu");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 3895);
+		return (get("logo") && value.Mitglieder >= 73815);
 	}, function() {
 		addUpgrade("endlich");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 7192);
+		return (get("logo") && value.Mitglieder >= 207292);
 	}, function() {
 		addUpgrade("verfass");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 12958);
+		return (get("logo") && value.Mitglieder >= 572660);
 	}, function() {
 		addUpgrade("lenin");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 23100);
+		return (get("logo") && value.Mitglieder >= 1559745);
 	}, function() {
 		addUpgrade("roberto");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 40530);
+		return (get("logo") && value.Mitglieder >= 4196206);
 	}, function() {
 		addUpgrade("dieblaue");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 70350);
+		return (get("logo") && value.Mitglieder >= 11168230);
 	}, function() {
 		addUpgrade("rente");
 	}],
