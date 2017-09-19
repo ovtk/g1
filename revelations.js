@@ -137,19 +137,6 @@ var revelations = [
 		addAchievement("Mehr Wühler als Mitglieder!");
 	}],
 	
-	[function() {
-		return (value["Popularität"] > (value.Wahlberechtigte * 0.7 * 0.05) );
-	}, function() {
-		addAchievement("5%-Hürde!");
-		growthRate.Vodka *= 1.5;
-	}],
-	
-	[function() {
-		return (value["Popularität"] > value.Wahlberechtigte);
-	}, function() {
-		addAchievement("100% + X");
-	}],
-	
 	
 	// vodka -> vodka
 	
@@ -208,67 +195,67 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 123863040);
+		return (get("logo") && value.Vodka >= 110100480);
 	}, function() {
 		addUpgrade("goaty");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1306368000);
+		return (get("logo") && value.Vodka >= 1032192000);
 	}, function() {
 		addUpgrade("fifafu");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 13638481920);
+		return (get("logo") && value.Vodka >= 9578741760);
 	}, function() {
 		addUpgrade("meta");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 141087744000);
+		return (get("logo") && value.Vodka >= 88080384000);
 	}, function() {
 		addUpgrade("justuspeterbob");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1447560253440);
+		return (get("logo") && value.Vodka >= 803293102080);
 	}, function() {
 		addUpgrade("winwin");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 14742258370560);
+		return (get("logo") && value.Vodka >= 7271916503040);
 	}, function() {
 		addUpgrade("glyph");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 149136799795201);
+		return (get("logo") && value.Vodka >= 65390877081600);
 	}, function() {
 		addUpgrade("mettbrot");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1499596235182080);
+		return (get("logo") && value.Vodka >= 584459149639681);
 	}, function() {
 		addUpgrade("kim");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 14995962351820800);
+		return (get("logo") && value.Vodka >= 5195192441241600);
 	}, function() {
 		addUpgrade("vodka");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 149209825400617000);
+		return (get("logo") && value.Vodka >= 45948590924759000);
 	}, function() {
 		addUpgrade("turtle");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Vodka >= 1477852089771940000);
+		return (get("logo") && value.Vodka >= 404532318091346000);
 	}, function() {
 		addUpgrade("brewery");
 	}],
@@ -399,6 +386,18 @@ var revelations = [
 		addUpgrade("sellach2");
 	}],
 	
+	[function() {
+		return (get("sold2") && value.Achievements >= 4);
+	}, function() {
+		addUpgrade("sellach3");
+	}],
+	
+	[function() {
+		return (get("sold3") && value.Achievements >= 4);
+	}, function() {
+		addUpgrade("sellach4");
+	}],
+	
 	
 	
 	// mitglieder -> mitglieder
@@ -510,75 +509,73 @@ var revelations = [
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 450);
+		return (get("logo") && value.Mitglieder >= 413);
 	}, function() {
 		addUpgrade("poster3");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 961);
+		return (get("logo") && value.Mitglieder >= 790);
 	}, function() {
 		addUpgrade("wann");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 2944);
+		return (get("logo") && value.Mitglieder >= 2116);
 	}, function() {
 		addUpgrade("nescit");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 8820);
+		return (get("logo") && value.Mitglieder >= 5220);
 	}, function() {
 		addUpgrade("poster8");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 25801);
+		return (get("logo") && value.Mitglieder >= 11984);
 	}, function() {
 		addUpgrade("bleu");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 73815);
+		return (get("logo") && value.Mitglieder >= 25365);
 	}, function() {
 		addUpgrade("endlich");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 207292);
+		return (get("logo") && value.Mitglieder >= 49532);
 	}, function() {
 		addUpgrade("poster9");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 572660);
+		return (get("logo") && value.Mitglieder >= 89313);
 	}, function() {
 		addUpgrade("lenin");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 1559745);
+		return (get("logo") && value.Mitglieder >= 148005);
 	}, function() {
 		addUpgrade("roberto");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 4196206);
+		return (get("logo") && value.Mitglieder >= 225038);
 	}, function() {
 		addUpgrade("dieblaue");
 	}],
 	
 	[function() {
-		return (get("logo") && value.Mitglieder >= 11168230);
+		return (get("logo") && value.Mitglieder >= 312443);
 	}, function() {
 		addUpgrade("rente");
 	}],
 
-
-
 	[function() {
-		return (get("regierung") && value.Mitglieder >= 207292);
+		return (get("regierung") && value.Mitglieder >= 425906);
 	}, function() {
 		addUpgrade("verfass");
 	}],

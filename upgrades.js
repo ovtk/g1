@@ -208,7 +208,7 @@ var upgrades = {
 
 	"goaty": [
 		"Der alte Ziegenwitz",
-		"Vodka", 371589120,
+		"Vodka", 330301440,
 		"Europäischen Möchtegern-Diktator beleidigen.",
 		"x 9 Vodka / s",
 		"silver",
@@ -218,7 +218,7 @@ var upgrades = {
 
 	"fifafu": [
 		"FIFA-Funktionär bestechen",
-		"Vodka", 3919104000,
+		"Vodka", 3096576000,
 		"Deutschland muss Weltmeister bleiben!",
 		"x 9 Vodka / s",
 		"silver",
@@ -228,7 +228,7 @@ var upgrades = {
 
 	"meta": [
 		"Meta",
-		"Vodka", 40915445760,
+		"Vodka", 28736225280,
 		"Auf der AfD-Pressekonferenz eine Pressekonferenz geben.",
 		"x 9 Vodka / s",
 		"silver",
@@ -238,7 +238,7 @@ var upgrades = {
 
 	"justuspeterbob": [
 		"Its wots behind mwe that I am",
-		"Vodka", 423263232000,
+		"Vodka", 264241152000,
 		"Gegnerische Spaßpartei gründen (z.B. SPD).",
 		"x 9 Vodka / s",
 		"silver",
@@ -248,7 +248,7 @@ var upgrades = {
 
 	"winwin": [
 		"Win-Win",
-		"Vodka", 4342680760320,
+		"Vodka", 2409879306240,
 		"Diesel-Abgas-Inhalatoren verschenken.",
 		"x 9 Vodka / s",
 		"silver",
@@ -258,7 +258,7 @@ var upgrades = {
 
 	"glyph": [
 		"Bayer-Monsanto-Grasovka",
-		"Vodka", 44226775111680,
+		"Vodka", 21815749509120,
 		"Glyphosat dem Vodka beimengen.",
 		"x 9 Vodka / s",
 		"silver",
@@ -268,7 +268,7 @@ var upgrades = {
 
 	"mettbrot": [
 		"Mettbrötchen verschenken",
-		"Vodka", 447410399385600,
+		"Vodka", 196172631244800,
 		"Weil wir es können.",
 		"x 9 Vodka / s",
 		"silver",
@@ -278,7 +278,7 @@ var upgrades = {
 
 	"kim": [
 		"Visionner",
-		"Vodka", 4498788705546240,
+		"Vodka", 1753377448919040,
 		"a Kin Jong Un un peu.",
 		"x 9 Vodka / s",
 		"silver",
@@ -288,7 +288,7 @@ var upgrades = {
 
 	"vodka": [
 		"Vodka",
-		"Vodka", 44987887055462400,
+		"Vodka", 15585577323724800,
 		"makes the world go round.",
 		"x 9 Vodka / s",
 		"silver",
@@ -298,7 +298,7 @@ var upgrades = {
 
 	"turtle": [
 		"Die unsichtbare Schildkröte",
-		"Vodka", 447629476201851000,
+		"Vodka", 137845772774277000,
 		"Schildkrötensuppe für der Vorstand!",
 		"x 9 Vodka / s",
 		"silver",
@@ -308,7 +308,7 @@ var upgrades = {
 
 	"brewery": [
 		"Parteispende Brauerei",
-		"Vodka", 4433556269315820000,
+		"Vodka", 1213596954274040000,
 		"Alles legal, ich gebe ihnen mein teutsches Reinheitsgebiet!",
 		"x 9 Vodka / s",
 		"silver",
@@ -670,7 +670,7 @@ var upgrades = {
 
 	"poster3": [
 		"NSFW",
-		"Mitglieder", 900,
+		"Mitglieder", 825,
 		"Just another poster on the wall.",
 		"+ 53k Popularität",
 		"orange",
@@ -682,7 +682,7 @@ var upgrades = {
 
 	"wann": [
 		"Ab wann?",
-		"Mitglieder", 2884,
+		"Mitglieder", 2369,
 		"Das tritt nach meiner Kenntnis... ist das sofort, unverzüglich.",
 		"+ 59k Popularität",
 		"orange",
@@ -693,7 +693,7 @@ var upgrades = {
 
 	"nescit": [
 		"Qui nescit",
-		"Mitglieder", 8832,
+		"Mitglieder", 6348,
 		"dissimulare nescit regnare.",
 		"+ 61k Popularität",
 		"orange",
@@ -704,7 +704,7 @@ var upgrades = {
 
 	"poster8": [
 		"Der Irre vom Bosporus",
-		"Mitglieder", 26460,
+		"Mitglieder", 15660,
 		"Er ist wieder da.",
 		"+ 67k Popularität",
 		"orange",
@@ -716,90 +716,90 @@ var upgrades = {
 
 	"bleu": [
 		"Le ciel bleu",
-		"Mitglieder", 77402,
+		"Mitglieder", 35953,
 		"sur nous peut s'effondrer, et la terre peut bien s'écrouler.",
-		"+ 69k Popularität",
+		"+ 83k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 69000;
+			value.Popularität += 83000;
 			growthRate.Popularität *= 2.3;
 		}],
 
 	"endlich": [
 		"Martin Sonneborn ",
-		"Mitglieder", 221445,
+		"Mitglieder", 76095,
 		"hat bis Unendlich gezählt. Zweimal!",
-		"+ 600k Popularität",
+		"+ 97k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 600000;
+			value.Popularität += 97000;
 			growthRate.Popularität *= 2;
 		}],
 
 	"poster9": [
 		"Adrenochrome",
-		"Mitglieder", 621876,
+		"Mitglieder", 148596,
 		"Es ist genug für alle da!",
-		"+ 1.2m Popularität",
+		"+ 117k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 1200000;
+			value.Popularität += 117000;
 			growthRate.Popularität *= 2;
 			showPoster("poster9");
 		}],
 
 	"lenin": [
 		"Dem Kleinbürgertum",
-		"Mitglieder", 1717980,
+		"Mitglieder", 267938,
 		"groß im Prahlen, fehlt die Kraft zur Tat, und es scheut ängstlich vor jedem Wagnis zurück.",
-		"+ 2.5m Popularität",
+		"+ 139k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 2500000;
+			value.Popularität += 139000;
 			growthRate.Popularität *= 2;
 		}],
 
 	"roberto": [
 		"Kanzlerkandidat Roberto Blanco",
-		"Mitglieder", 4679235,
+		"Mitglieder", 444015,
 		"Alt wie Adenauer, lustiger als Oliver Welke.",
-		"+ 5m Popularität",
+		"+ 187k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 5000000;
+			value.Popularität += 187000;
 			growthRate.Popularität *= 2;
 		}],
 
 	"dieblaue": [
 		"Die Blaue oder die Rote?",
-		"Mitglieder", 12588618,
+		"Mitglieder", 675114,
 		"Bedenke, alles was ich dir anbiete ist der totale Schwachsinn.",
-		"+ 10m Popularität",
+		"+ 212k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 10000000;
+			value.Popularität += 212000;
 			growthRate.Popularität *= 2;
 		}],
 
 	"rente": [
 		"Die Rente ist sicher",
-		"Mitglieder", 33504690,
+		"Mitglieder", 937330,
 		"Jedenfalls für Angela Merkel. Jetzt. Sofort.",
-		"+ 20m Popularität",
+		"+ 267k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 20000000;
+			value.Popularität += 267000;
 			growthRate.Popularität *= 2;
 		}],
 
 	"verfass": [
 		"Verfassungsschutz abschaffen",
-		"Mitglieder", 621876,
+		"Mitglieder", 1277719,
 		"Echt jetzt? Nee, nur Spaß...",
-		"+ 1.2m Popularität",
+		"+ 311k Popularität",
 		"orange",
 		function() {
-			value.Popularität += 1200000;
+			value.Popularität += 311000;
 			growthRate.Popularität *= 2;
 		}],
 
@@ -820,6 +820,32 @@ var upgrades = {
 			value.Popularität += 40000;
 			growth.Popularität += 3;
 			set("sold2");
+		}],
+
+	"sellach3": [
+		"Auszeichnungen verkaufen (3)",
+		"Achievements", 5,
+		"Die nächste Singularität kommt bestimmt.",
+		"+ 40k Popularität",
+		"silver",
+		function() {
+			delAchievements(5);
+			value.Popularität += 40000;
+			growth.Popularität += 3;
+			set("sold3");
+		}],
+
+	"sellach4": [
+		"Auszeichnungen verkaufen (4)",
+		"Achievements", 5,
+		"Die nächste Singularität kommt bestimmt.",
+		"+ 40k Popularität",
+		"silver",
+		function() {
+			delAchievements(5);
+			value.Popularität += 40000;
+			growth.Popularität += 3;
+			set("sold3");
 		}],
 
 	"pig": [

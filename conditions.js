@@ -9,8 +9,12 @@ var conditions = {
 	"voters": false,
 	"sold1": false,
 	"sold2": false,
+	"sold3": false,
+	"sold4": false,
 	"geld": false,
-	"regierung": false
+	"drin": false,
+	"regierung": false,
+	"drüber": false
 }
 
 function set(key, boo = true) {

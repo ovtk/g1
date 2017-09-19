@@ -55,19 +55,34 @@ function electionResults() {
 	$("#electionButton").animate({"height": "36px"}, 500, function() {
 		$("#electionButton").click( function() {
 			pause = true;
+			var proz = prozent();
 			$(this).css("height", "0px").unbind("click");
-			$("#election .mg span").text(prozent());
+			$("#election .mg span").text(proz);
 			$("#greyout").fadeIn(500);
 			$("#election").delay(500).fadeIn(500).delay(2500).click( function() {
-				nextElection = 900;
+				nextElection = 600;
 				hideOverlay("election");
-				tickText("Wahlergebnis: " + prozent() + "%");
+				if (! get("drin") && proz >= 5.0) {
+					growthRate.Vodka *= 1.5;
+					set("drin");
+					addAchievement("5%-Horde!", 1000);
+					tickText("Du musst in Bundestag.")
+				} else if (! get("regierung") && proz >= 50.0) {
+					growthRate.Vodka *= 1.5;
+					set("regierung");
+					addAchievement("Regierung!", 1000);
+					tickText("Wir sind Regierung.")
+				} else if (! get("drüber") && proz >=  100.0) {
+					set("drüber");
+					addAchievement("100% + X");
+				} else {
+					tickText("Wahlergebnis: " + proz + "%");
+				}
 			});
+			
+			// deppendorf
 			if (! get("regierung") && prozent() >= 50) {
 				$("#election .fg3").delay(2000).fadeIn(10).delay(8000).fadeOut(10);
-				set("regierung");
-				addAchievement("Regierung!");
-				growthRate.Vodka *= 1.5;
 			} else if (value.Popularität >= bestElectionResult) {
 				bestElectionResult = value.Popularität;
 				$("#election .fg2").delay(2000).fadeIn(10).delay(8000).fadeOut(10);
