@@ -642,7 +642,7 @@ var revelations = [
 	[function() {
 		return (get("regierung") && value.Vodka >= 10000);
 	}, function() {
-		addUpgrade("pyro");
+		addUpgrade("setting4");
 	}],
 	
 	[function() {

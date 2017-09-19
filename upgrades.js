@@ -874,7 +874,7 @@ var upgrades = {
 
 	"fair": [
 		"All is fair in love and war",
-		"Mitglieder", 500,
+		"Vodka", 10639754119662800000,
 		"Prinz Steineimer nach Guantanamo entführen.",
 		"x2 Popularität / s",
 		"orange",
@@ -884,28 +884,8 @@ var upgrades = {
 
 	"roderich": [
 		"Irgendwie, irdendwo.",
-		"Mitglieder", 500,
+		"Vodka", 92920519311721800000,
 		"Irgendwas mit Roderich Egeler machen.",
-		"x2 Popularität / s",
-		"orange",
-		function() {
-			growthRate.Popularität *= 2;
-		}],
-
-	"canabis": [
-		"Canabis verbieten",
-		"Mitglieder", 500,
-		"Ha ha ha aha ha ha ah aha hahahah!!",
-		"x2 Popularität / s",
-		"orange",
-		function() {
-			growthRate.Popularität *= 2;
-		}],
-
-	"speed": [
-		"Speedlimit abschaffen",
-		"Mitglieder", 500,
-		"Neeeooowrrmmmm!!!!!",
 		"x2 Popularität / s",
 		"orange",
 		function() {
@@ -914,8 +894,8 @@ var upgrades = {
 
 	"nuke": [
 		"Brennstäbe besteuern",
-		"Mitglieder", 500,
-		"Nikotinsteuer anheben, du Spast.",
+		"Vodka", 808621313094373000000,
+		"Von wegen, Nikotinsteuer anheben, du Spast.",
 		"x2 Popularität / s",
 		"orange",
 		function() {
@@ -924,7 +904,7 @@ var upgrades = {
 
 	"rip": [
 		"Weltfrieden",
-		"Mitglieder", 500,
+		"Vodka", 7013725915681720000000,
 		"Atomwaffen vernichten, Parkplätze bauen.",
 		"x2 Popularität / s",
 		"orange",
@@ -934,8 +914,59 @@ var upgrades = {
 
 	"cancer": [
 		"Krebs besiegen",
-		"Mitglieder", 500,
+		"Vodka", 60649435749843200000000,
 		"Dieter, wir vermissen dich!",
+		"x2 Popularität / s",
+		"orange",
+		function() {
+			growthRate.Popularität *= 2;
+		}],
+
+
+
+
+	"pope": [
+		"Staatsreligion",
+		"Mitglieder", 440200,
+		"Gottkaiser Pabst Martin I, der Sonnengeborene.",
+		"x2 Popularität / s",
+		"orange",
+		function() {
+			growthRate.Popularität *= 2;
+		}],
+
+	"setting4": [
+		"Pyromiden bauen",
+		"Mitglieder", 745500,
+		"Umgestaltung des Potsdammer Platzes.",
+		"x2 Popularität / s",
+		"orange",
+		function() {
+			growthRate.Mitglieder *= 1.5;
+			growthRate.Popularität *= 2;
+			changeSetting(4, function() {
+				addAchievement("Orgon Kraftwerk");
+			});
+		}],
+
+
+
+
+
+	"canabis": [
+		"Canabis verbieten",
+		"Mitglieder", 1559905,
+		"Ha ha ha aha ha ha ah aha hahahah!!",
+		"x2 Popularität / s",
+		"orange",
+		function() {
+			growthRate.Popularität *= 2;
+		}],
+
+	"speed": [
+		"Speedlimit abschaffen",
+		"Mitglieder", 1750270,
+		"Neeeooowrrmmmm!!!!!",
 		"x2 Popularität / s",
 		"orange",
 		function() {
@@ -944,8 +975,8 @@ var upgrades = {
 
 	"prom1": [
 		"Wahlversprechen einhalten",
-		"Mitglieder", 500,
-		"Manager-Gehälter auf 25 mio / Monat begrenzen.",
+		"Mitglieder", 1794768,
+		"Manager-Gehälter auf 25 Mio pro Monat begrenzen (zzgl. Boni).",
 		"x2 Popularität / s",
 		"orange",
 		function() {
@@ -954,28 +985,8 @@ var upgrades = {
 
 	"prom2": [
 		"Wahlversprechen einhalten (2)",
-		"Mitglieder", 500,
+		"Mitglieder", 1670272,
 		"Die 100 reichsten Deutschen flachlegen.",
-		"x2 Popularität / s",
-		"orange",
-		function() {
-			growthRate.Popularität *= 2;
-		}],
-
-	"pyro": [
-		"Pyromiden bauen",
-		"Mitglieder", 500,
-		"1000 qm Leerstand in bester Lage, zu günstigen Konditionen.",
-		"x2 Popularität / s",
-		"orange",
-		function() {
-			growthRate.Popularität *= 2;
-		}],
-
-	"pope": [
-		"Staatsreligion",
-		"Mitglieder", 500,
-		"Gottkaiser Pabst Martin I, der Sonnengeborene.",
 		"x2 Popularität / s",
 		"orange",
 		function() {
@@ -984,7 +995,7 @@ var upgrades = {
 
 	"break1": [
 		"Auf Wahlversprechen pfeifen",
-		"Mitglieder", 500,
+		"Mitglieder", 1399410,
 		"Die Industrie die Gesetze schreiben lassen und später Aufsichtsratsposten abgreifen.",
 		"x2 Popularität / s",
 		"orange",
@@ -994,7 +1005,7 @@ var upgrades = {
 
 	"break2": [
 		"Parteispende",
-		"Popularität", 50000,
+		"Popularität", 1043574,
 		"Kl. Aufmerksamkeit eines namhaften Mineralölkonzerns;.",
 		" Elf Millionen Mark",
 		"silver",
