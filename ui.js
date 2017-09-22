@@ -27,7 +27,7 @@ $("#spendVodka").click( function() {
 });
 
 var images = [];
-var numPosters = 9;
+var numPosters = 11;
 
 function preloadPosters() {
 	var path = "";

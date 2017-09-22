@@ -204,6 +204,7 @@ var upgrades = {
 		"silver",
 		function() {
 			growthRate.Vodka *= 9;
+			showPoster("poster11");
 		}],
 
 	"goaty": [
@@ -757,6 +758,7 @@ var upgrades = {
 		function() {
 			value.Popularität += 139000;
 			growthRate.Popularität *= 2;
+			showPoster("poster10");
 		}],
 
 	"roberto": [
