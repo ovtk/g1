@@ -26,6 +26,17 @@ $("#spendVodka").click( function() {
 	}
 });
 
+var images = [];
+var numPosters = 9;
+
+function preloadPosters() {
+	var path = "";
+    for (var i = 0; i < numPosters; i++) {
+        images[i] = new Image();
+        images[i].src = "https://ovtk.github.io/g1//images/poster" + (i + 1) + ".png";
+    }
+}
+
 // blink
 $('.blink').blink();
 
