@@ -265,6 +265,7 @@ var upgrades = {
 		"silver",
 		function() {
 			growthRate.Vodka *= 9;
+			$("#Destille img").replaceWith("<img src='images/destille2.gif' />");
 		}],
 
 	"mettbrot": [
